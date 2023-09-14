@@ -4,6 +4,7 @@ import { Navbar } from "@/components/Layout/Navbar";
 import { Message } from "@/types";
 import Head from "next/head";
 import { useEffect, useRef, useState } from "react";
+import { Analytics } from '@vercel/analytics/react';
 
 export default function Home() {
   const [messages, setMessages] = useState<Message[]>([]);
@@ -132,6 +133,7 @@ export default function Home() {
         </div>
         <Footer />
       </div>
+      <Analytics />
     </>
   );
 }
