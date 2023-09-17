@@ -11,6 +11,15 @@ export const Navbar: FC = () => {
           Sanātana Dharma
         </a>
       </div>
+      <div>
+        <a
+          className="border-2 rounded-full py-2 px-3 shadow-md"
+          style={{color: 'white', background: 'black'}}
+          href="http://shop.sanatanadharma.xyz"
+        >
+          Products
+        </a>
+      </div>
     </div>
   );
 };
