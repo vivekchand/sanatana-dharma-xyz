@@ -17,7 +17,7 @@ export const Navbar: FC = () => {
           style={{color: 'white', background: 'black'}}
           href="http://shop.sanatanadharma.xyz"
         >
-          Products
+          View Products
         </a>
       </div>
     </div>
