@@ -15,6 +15,7 @@ export const Navbar: FC = () => {
         <a
           className="border-2 rounded-full py-2 px-3 shadow-md"
           style={{color: 'white', background: 'black'}}
+          target="_blank"
           href="http://shop.sanatanadharma.xyz"
         >
           Products
