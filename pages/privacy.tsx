@@ -56,7 +56,7 @@ const PrivacyPolicy = () => {
         <br/>
         <h2 className="text-xl font-semibold mb-2">8. Contact Us</h2>
         <p>
-          If you have any questions or concerns about our privacy policy, please contact us at <a href="mailto:info@sanatanadharma.xyz">info@sanatanadharma.xyz</a>.
+          If you have any questions or concerns about our privacy policy, including how we handle Google Ads, please contact us at <a href="mailto:info@sanatanadharma.xyz">info@sanatanadharma.xyz</a>.
         </p>
       </div>
     </>
