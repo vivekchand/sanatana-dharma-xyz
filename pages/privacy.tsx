@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
         <p>Last Updated: 20 Sep 2023</p>
 
         <p>
-          This Privacy Policy describes how SanatanaDharma.xyz ("we," "our," or "us") collects, uses, and shares information when you use our website. By using the website, you consent to the practices described in this Privacy Policy.
+            This Privacy Policy describes how SanatanaDharma.xyz (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) collects, uses, and shares information when you use our website. By using the website, you consent to the practices described in this Privacy Policy.
         </p>
 
         <h2 className="text-xl font-semibold mb-2">1. Information We Collect</h2>
@@ -29,7 +29,7 @@ const PrivacyPolicy = () => {
         </p>
         <ul>
           <li>To provide and maintain the website service.</li>
-          <li>To improve the website's functionality and user experience.</li>
+          <li>To improve the website functionality and user experience.</li>
           <li>To respond to your inquiries and requests.</li>
           <li>To send you updates and notifications related to SanatanaDharma.xyz.</li>
           <li>To comply with legal obligations.</li>
