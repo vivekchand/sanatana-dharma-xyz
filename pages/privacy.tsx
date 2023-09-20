@@ -5,7 +5,7 @@ const PrivacyPolicy = () => {
     <>
       <div className="container mx-auto py-8">
         <h1 className="text-2xl font-semibold mb-4">Privacy Policy for SanatanaDharma.xyz</h1>
-        <p>Last Updated: [Date]</p>
+        <p>Last Updated: 20 Sep 2023</p>
 
         <p>
           This Privacy Policy describes how SanatanaDharma.xyz ("we," "our," or "us") collects, uses, and shares information when you use our website. By using the website, you consent to the practices described in this Privacy Policy.
