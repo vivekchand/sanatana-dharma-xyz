@@ -23,7 +23,7 @@ const handler = async (req: Request): Promise<Response> => {
       charCount += message.content.length;
       messagesToSend.push(message);
     }
-
+    console.log(messagesToSend);
     const stream = await OpenAIStream(messagesToSend);
 
     return new Response(stream);
