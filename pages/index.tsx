@@ -5,7 +5,6 @@ import { Message } from "@/types";
 import Head from "next/head";
 import { useEffect, useRef, useState } from "react";
 import { Analytics } from '@vercel/analytics/react';
-import Script from 'next/script'
  
 export default function Home() {
   const [messages, setMessages] = useState<Message[]>([]);
@@ -118,6 +117,16 @@ export default function Home() {
         />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6557627020167681"
           crossOrigin="anonymous"></script>
+        <script src="https://www.googletagmanager.com/gtag/js?id=G-916S3MSTVF" />
+        <script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+  
+            gtag('config', 'G-916S3MSTVF');
+          `}
+        </script>
       </Head>
 
       <div className="flex flex-col h-screen">
@@ -137,16 +146,6 @@ export default function Home() {
         <Footer />
       </div>
       <Analytics />
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-916S3MSTVF" />
-      <Script id="google-analytics">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
- 
-          gtag('config', 'G-916S3MSTVF');
-        `}
-      </Script>
     </>
   );
 }
