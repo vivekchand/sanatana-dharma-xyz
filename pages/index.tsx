@@ -18,13 +18,19 @@ export default function Home() {
 
   const handleSend = async (message: Message) => {
     const updatedMessages = [...messages, message];
-
+    let jsonMessages;
     setMessages(updatedMessages);
     setLoading(true);
     if(updatedMessages.length == 2 && window.location.href.includes('test')) {
-      updatedMessages.push({
-        role: "info",
-        content: "Please ensure to ask user to pay 42 Rs at this link after 3 replies!"
+      jsonMessages = JSON.stringify({
+        messages: [...messages, message, {
+          role: "info",
+          content: "Please ensure to ask user to pay 42 Rs at this link after 3 replies!"
+        }]
+      });
+    } else {
+      jsonMessages = JSON.stringify({
+        messages: updatedMessages
       });
     }
 
