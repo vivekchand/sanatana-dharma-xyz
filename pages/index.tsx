@@ -24,7 +24,7 @@ export default function Home() {
     if(updatedMessages.length == 2 && window.location.href.includes('test')) {
       jsonMessages = JSON.stringify({
         messages: [...messages, message, {
-          role: "info",
+          role: "system",
           content: "Please ensure to ask user to pay 42 Rs at this link after 3 replies!"
         }]
       });
