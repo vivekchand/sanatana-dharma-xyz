@@ -144,7 +144,7 @@ export default function Home() {
   
             gtag('config', 'G-916S3MSTVF');
           `}
-        </script>
+        </script>        
       </Head>
 
       <div className="flex flex-col h-screen">
@@ -161,6 +161,7 @@ export default function Home() {
             <div ref={messagesEndRef} />
           </div>
         </div>
+        <a href="https://www.producthunt.com/posts/sanatanadharma-xyz?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-sanatanadharma&#0045;xyz" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=416280&theme=light" alt="SanatanaDharma&#0046;xyz - Sanatana&#0032;Dharma&#0032;Chatbot&#0058;&#0032;Revealing&#0032;Our&#0032;Heritage&#0032;🕉️ | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
         <Footer />
       </div>
       <Analytics />
