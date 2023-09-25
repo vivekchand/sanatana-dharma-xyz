@@ -12,6 +12,9 @@ export const Navbar: FC = () => {
         </a>
       </div>
       <div>
+        <a href="https://www.producthunt.com/posts/sanatanadharma-xyz?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-sanatanadharma-xyz" target="_blank" rel="noopener noreferrer">
+          <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=416280&theme=neutral" alt="SanatanaDharma.xyz - Sanatana Dharma Chatbot: Revealing Our Heritage 🕉️ | Product Hunt" style={{ width: '250px', height: '54px' }} width="250" height="54" />
+        </a>
         <a
           className="border-2 rounded-full py-2 px-3 shadow-md"
           style={{color: 'white', background: 'black'}}
