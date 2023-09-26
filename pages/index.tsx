@@ -93,7 +93,7 @@ export default function Home() {
     setMessages([
       {
         role: "assistant",
-        content: `Hi there! I'm Sanatana Dharma Chatbot, an AI assistant. I can help you with things like answering questions and providing information about Sanatana Dharma. How can I help you?`
+        content: `Hello! I'm Sanatana Dharma Chatbot, your friendly AI assistant. I'm here to help you by answering questions and providing information about Sanatana Dharma. How can I assist you today?`
       }
     ]);
   };
@@ -106,7 +106,7 @@ export default function Home() {
     setMessages([
       {
         role: "assistant",
-        content: `Hi there! I'm Sanatana Dharma Chatbot, an AI assistant. I can help you with things like answering questions and providing information about Sanatana Dharma. How can I help you?`
+        content: `Hello! I'm Sanatana Dharma Chatbot, your friendly AI assistant. I'm here to help you by answering questions and providing information about Sanatana Dharma. How can I assist you today?`
       }
     ]);
   }, []);
