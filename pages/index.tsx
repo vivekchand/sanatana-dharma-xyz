@@ -21,7 +21,7 @@ export default function Home() {
     let jsonMessages;
     setMessages(updatedMessages);
     setLoading(true);
-    if(window.location.href.includes('test')) {
+    if(updatedMessages.length == 2 && window.location.href.includes('test')) {
       jsonMessages = JSON.stringify({
         messages: [...messages, message, {
           role: "system",
@@ -40,7 +40,7 @@ export default function Home() {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        messages: jsonMessages
+        messages: updatedMessages
       })
     });
 
