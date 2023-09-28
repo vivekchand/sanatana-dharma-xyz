@@ -21,7 +21,7 @@ export default function Home() {
     let jsonMessages;
     setMessages(updatedMessages);
     setLoading(true);
-    if(updatedMessages.length == 2 && window.location.href.includes('test')) {
+    if(window.location.href.includes('test')) {
       jsonMessages = JSON.stringify({
         messages: [...messages, message, {
           role: "system",
