@@ -159,13 +159,11 @@ export default function Home() {
         </script>        
       </Head>
 
-      <div className="bg-gray-100 h-screen flex flex-col">
-        <div className="bg-gray-300 h-full w-1/12"></div> {/* Left pillar */}
+      <div className="flex flex-col h-screen">
         <Navbar />
-        <div className="bg-gray-300 h-full w-1/12"></div> {/* Right pillar */}
 
-        <div className="flex-1 overflow-auto sm:px-10 pb-4 sm:pb-10 bg-white rounded-lg mx-2">
-        <div className="max-w-3xl mx-auto mt-4 sm:mt-12">
+        <div className="flex-1 overflow-auto sm:px-10 pb-4 sm:pb-10">
+          <div className="max-w-[800px] mx-auto mt-4 sm:mt-12">
             <Chat
               messages={messages}
               loading={loading}
