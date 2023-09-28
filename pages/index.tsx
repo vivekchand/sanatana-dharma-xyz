@@ -40,6 +40,8 @@ export default function Home() {
         History and Evolution: Trace the historical journey of Sanatana Dharma.
         Other Texts: Find information on texts like the Ramayana, Mahabharata, and more.
         Modern Interpretations: Learn how Hinduism is practiced and adapted in the modern world.
+
+        Please feel free to ask related to Sanatana Dharma
         `
       }]
     });
