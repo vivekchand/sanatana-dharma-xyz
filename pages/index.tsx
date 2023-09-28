@@ -17,7 +17,7 @@ export default function Home() {
   };
 
   const handleSend = async (message: Message) => {
-    const updatedMessages = [...messages, message];
+    let updatedMessages = [...messages, message];
     let jsonMessages;
     setMessages(updatedMessages);
     setLoading(true);
