@@ -93,7 +93,27 @@ export default function Home() {
     setMessages([
       {
         role: "assistant",
-        content: `Hello! I'm the Sanatana Dharma Chatbot, your helpful AI friend. I'm here to provide information and answer your questions about Sanatana Dharma. Feel free to ask me about topics like Vedas, Upanishads, Bhagavad Gita, Manusmriti, Puranas, and even the science in Vedas. How can I assist you today?`
+        content: `Welcome to the Sanatana Dharma Chatbot, your trusted companion for exploring the rich world of Hinduism and its timeless wisdom. I'm here to be your guide, answering questions and providing insights on a wide range of topics. Feel free to ask me about:
+
+        * Vedas: Discover the ancient scriptures that form the foundation of Hindu philosophy.
+        * Upanishads: Explore the profound teachings found within the Upanishads.
+        * Bhagavad Gita: Learn about the epic conversation between Lord Krishna and Arjuna.
+        * Manusmriti: Understand the principles of dharma as outlined in this ancient text.
+        * Puranas: Dive into the captivating stories and mythologies of Hinduism.
+        * Science in Vedas: Uncover the scientific knowledge embedded in the Vedas.
+        * Yoga and Meditation: Explore the practices of physical and mental well-being.
+        * Dharma and Karma: Gain insights into the concepts of duty and karma.
+        * Deities and Worship: Discover the diverse Hindu deities and their significance.
+        * Temples and Pilgrimage: Learn about sacred places and their cultural importance.
+        * Ayurveda: Explore the holistic system of natural healing.
+        * Philosophical Schools: Delve into the various schools of Hindu philosophy.
+        * Rituals and Festivals: Understand the customs and celebrations of Hinduism.
+        * History and Evolution: Trace the historical journey of Sanatana Dharma.
+        * Other Texts: Find information on texts like the Ramayana, Mahabharata, and more.
+        * Modern Interpretations: Learn how Hinduism is practiced and adapted in the modern world.
+        
+        Whether you're a curious seeker or a dedicated practitioner, I'm here to assist you on your journey. What aspect of Sanatana Dharma intrigues you today? Ask away, and let's explore together!"
+        `
       }
     ]);
   };
@@ -106,7 +126,27 @@ export default function Home() {
     setMessages([
       {
         role: "assistant",
-        content: `Hello! I'm the Sanatana Dharma Chatbot, your helpful AI friend. I'm here to provide information and answer your questions about Sanatana Dharma. Feel free to ask me about topics like Vedas, Upanishads, Bhagavad Gita, Manusmriti, Puranas, and even the science in Vedas. How can I assist you today?`
+        content: `Welcome to the Sanatana Dharma Chatbot, your trusted companion for exploring the rich world of Hinduism and its timeless wisdom. I'm here to be your guide, answering questions and providing insights on a wide range of topics. Feel free to ask me about:
+
+        * Vedas: Discover the ancient scriptures that form the foundation of Hindu philosophy.
+        * Upanishads: Explore the profound teachings found within the Upanishads.
+        * Bhagavad Gita: Learn about the epic conversation between Lord Krishna and Arjuna.
+        * Manusmriti: Understand the principles of dharma as outlined in this ancient text.
+        * Puranas: Dive into the captivating stories and mythologies of Hinduism.
+        * Science in Vedas: Uncover the scientific knowledge embedded in the Vedas.
+        * Yoga and Meditation: Explore the practices of physical and mental well-being.
+        * Dharma and Karma: Gain insights into the concepts of duty and karma.
+        * Deities and Worship: Discover the diverse Hindu deities and their significance.
+        * Temples and Pilgrimage: Learn about sacred places and their cultural importance.
+        * Ayurveda: Explore the holistic system of natural healing.
+        * Philosophical Schools: Delve into the various schools of Hindu philosophy.
+        * Rituals and Festivals: Understand the customs and celebrations of Hinduism.
+        * History and Evolution: Trace the historical journey of Sanatana Dharma.
+        * Other Texts: Find information on texts like the Ramayana, Mahabharata, and more.
+        * Modern Interpretations: Learn how Hinduism is practiced and adapted in the modern world.
+        
+        Whether you're a curious seeker or a dedicated practitioner, I'm here to assist you on your journey. What aspect of Sanatana Dharma intrigues you today? Ask away, and let's explore together!"
+        `
       }
     ]);
   }, []);
