@@ -24,7 +24,7 @@ export default function Home() {
     jsonMessages = JSON.stringify({
       messages: [...messages, message, {
         role: "system",
-        content: `Restrict the topic only to Vedas: Discover the ancient scriptures that form the foundation of Hindu philosophy.
+        content: `Restrict the topic only to Vedas: Discover the ancient scriptures that form the foundation of Sanatana Dharma philosophy.
         Upanishads: Explore the profound teachings found within the Upanishads.
         Bhagavad Gita: Learn about the epic conversation between Lord Krishna and Arjuna.
         Manusmriti: Understand the principles of dharma as outlined in this ancient text.
