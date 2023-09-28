@@ -93,7 +93,7 @@ export default function Home() {
     setMessages([
       {
         role: "assistant",
-        content: `Hello! I'm Sanatana Dharma Chatbot, your friendly AI assistant. I'm here to help you by answering questions and providing information about Sanatana Dharma. How can I assist you today?`
+        content: `Hello! I'm the Sanatana Dharma Chatbot, your helpful AI friend. I'm here to provide information and answer your questions about Sanatana Dharma. Feel free to ask me about topics like Vedas, Upanishads, Bhagavad Gita, Manusmriti, Puranas, and even the science in Vedas. How can I assist you today?`
       }
     ]);
   };
@@ -106,7 +106,7 @@ export default function Home() {
     setMessages([
       {
         role: "assistant",
-        content: `Hello! I'm Sanatana Dharma Chatbot, your friendly AI assistant. I'm here to help you by answering questions and providing information about Sanatana Dharma. How can I assist you today?`
+        content: `Hello! I'm the Sanatana Dharma Chatbot, your helpful AI friend. I'm here to provide information and answer your questions about Sanatana Dharma. Feel free to ask me about topics like Vedas, Upanishads, Bhagavad Gita, Manusmriti, Puranas, and even the science in Vedas. How can I assist you today?`
       }
     ]);
   }, []);
