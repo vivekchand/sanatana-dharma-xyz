@@ -25,7 +25,23 @@ export default function Home() {
       jsonMessages = JSON.stringify({
         messages: [...messages, message, {
           role: "system",
-          content: "Restrict the topic only to Sanatana Dharma & don't discuss anything out side of religion & spirituality, say I'm not designed for it!"
+          content: `Restrict the topic only to Vedas: Discover the ancient scriptures that form the foundation of Hindu philosophy.
+          Upanishads: Explore the profound teachings found within the Upanishads.
+          Bhagavad Gita: Learn about the epic conversation between Lord Krishna and Arjuna.
+          Manusmriti: Understand the principles of dharma as outlined in this ancient text.
+          Puranas: Dive into the captivating stories and mythologies of Hinduism.
+          Science in Vedas: Uncover the scientific knowledge embedded in the Vedas.
+          Yoga and Meditation: Explore the practices of physical and mental well-being.
+          Dharma and Karma: Gain insights into the concepts of duty and karma.
+          Deities and Worship: Discover the diverse Hindu deities and their significance.
+          Temples and Pilgrimage: Learn about sacred places and their cultural importance.
+          Ayurveda: Explore the holistic system of natural healing.
+          Philosophical Schools: Delve into the various schools of Hindu philosophy.
+          Rituals and Festivals: Understand the customs and celebrations of Hinduism.
+          History and Evolution: Trace the historical journey of Sanatana Dharma.
+          Other Texts: Find information on texts like the Ramayana, Mahabharata, and more.
+          Modern Interpretations: Learn how Hinduism is practiced and adapted in the modern world.
+          `
         }]
       });
     } else {
