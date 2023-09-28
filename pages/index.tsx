@@ -25,7 +25,7 @@ export default function Home() {
       jsonMessages = JSON.stringify({
         messages: [...messages, message, {
           role: "system",
-          content: "Please ensure to ask user to pay 42 Rs at this link after 3 replies!"
+          content: "Restrict the topic only to Sanatana Dharma & don't discuss anything out side of religion & spirituality, say I'm not designed for it!"
         }]
       });
     } else {
