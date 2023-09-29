@@ -9,6 +9,7 @@ import { Analytics } from '@vercel/analytics/react';
 export default function Home() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
+  const [showSubscriptionPopup, setShowSubscriptionPopup] = useState<boolean>(false);
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
@@ -16,6 +17,30 @@ export default function Home() {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
+  // Load the subscription popup state from local storage
+  useEffect(() => {
+    const lastDismissedTime = localStorage.getItem("subscriptionDismissedTime");
+    if (!lastDismissedTime || Date.now() - parseInt(lastDismissedTime) > 24 * 60 * 60 * 1000) {
+      // If the popup was dismissed more than 24 hours ago or never dismissed, show it
+      setTimeout(() => {
+        setShowSubscriptionPopup(true);
+      }, 30000); // Show after 30 seconds
+    }
+  }, []);
+
+  // Function to handle opening the subscription popup
+  const handleOpenSubscriptionPopup = () => {
+    setShowSubscriptionPopup(true);
+  };
+
+  // Function to handle closing the subscription popup
+  const handleCloseSubscriptionPopup = () => {
+    setShowSubscriptionPopup(false);
+    // Save the current time to local storage when the popup is dismissed
+    localStorage.setItem("subscriptionDismissedTime", Date.now().toString());
+  };
+
+  
   const handleSend = async (message: Message) => {
     let updatedMessages = [...messages, message];
     // let jsonMessages;
@@ -176,6 +201,46 @@ export default function Home() {
         <Footer />
       </div>
       <Analytics />
+
+      {/* Subscription Popup */}
+      {showSubscriptionPopup && (
+        <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white p-4 rounded-lg shadow-md">
+            <h2 className="text-xl font-semibold mb-2">Subscribe for Wisdom</h2>
+            <p className="text-sm text-gray-600 mb-4">
+              Get Bhagavad Gita, Vedas, Upanishads delivered to your email daily.
+            </p>
+            <div className="flex flex-col">
+              <input
+                type="email"
+                placeholder="Your email"
+                className="border p-2 rounded-md mb-2"
+              />
+              <button
+                className="bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600"
+                onClick={handleCloseSubscriptionPopup}
+              >
+                Subscribe Now
+              </button>
+              <button
+                className="text-gray-500 text-sm mt-2 hover:text-gray-700"
+                onClick={handleCloseSubscriptionPopup}
+              >
+                Dismiss
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Button to open the Subscription Popup */}
+      <button
+        className="fixed bottom-4 right-4 bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600"
+        onClick={handleOpenSubscriptionPopup}
+      >
+        Subscribe
+      </button>
+
     </>
   );
 }
