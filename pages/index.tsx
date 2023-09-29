@@ -204,8 +204,8 @@ export default function Home() {
       {/* Subscription Popup */}
       {showSubscriptionPopup && (
         <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white p-4 rounded-lg shadow-md flex">
-            <div className="pr-4 max-w-[400px]"> {/* Adjust the max-width as needed */}
+          <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
+            <div className="max-w-[400px] text-center"> {/* Adjust the max-width as needed */}
               <h2 className="text-xl font-semibold mb-2">🌞 Journey to Wisdom 📖</h2>
               <p className="text-sm text-gray-600 mb-4">
                 Welcome to a journey of spiritual growth! Subscribe to our newsletter to receive daily Bhagavad Gita verses, ancient wisdom from Vedas, Upanishads, and more, directly in your inbox.
@@ -227,16 +227,14 @@ export default function Home() {
                 placeholder="Email address"
                 className="border p-2 rounded-md mb-2"
               />
-              <br />
               <button
-                className="bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600"
+                className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 mb-2"
                 onClick={handleCloseSubscriptionPopup}
               >
                 Subscribe Now
               </button>
-              <br />
               <button
-                className="text-gray-500 text-sm mt-2 hover:text-gray-700"
+                className="text-gray-500 text-sm hover:text-gray-700"
                 onClick={handleCloseSubscriptionPopup}
               >
                 Dismiss
@@ -245,7 +243,6 @@ export default function Home() {
           </div>
         </div>
       )}
-
       {/* Button to open the Subscription Popup */}
       <button
         className="fixed bottom-4 right-4 bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600"
