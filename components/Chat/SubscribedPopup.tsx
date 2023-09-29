@@ -11,18 +11,7 @@ export const SubscribedPopup: FC<SubscribedPopupProps> = ({ onClose }) => {
       <div className="bg-white p-4 rounded-lg shadow-md text-center">
         <div className="animate-bounce text-green-500 text-4xl mb-2">
           {/* Big checkmark (tick) */}
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-20 w-20" viewBox="0 0 20 20" fill="currentColor">
-            <path
-              fillRule="evenodd"
-              d="M14.293 5.293a1 1 0 011.414 0l1 1a1 1 0 01-1.414 1.414L9 7.414l-2.293 2.293a1 1 0 01-1.414-1.414l3-3a1 1 0 011.414 0z"
-              clipRule="evenodd"
-            />
-            <path
-              fillRule="evenodd"
-              d="M10 19a9 9 0 100-18 9 9 0 000 18zM1 10a9 9 0 1118 0 9 9 0 01-18 0z"
-              clipRule="evenodd"
-            />
-          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="121" height="121" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="green"></circle><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"></path></g></svg>                
         </div>
         <p className="text-lg text-gray-600">
           You would have received an email. Please confirm your email.
