@@ -42,7 +42,7 @@ export const SubscriptionPopup: FC<SubscriptionPopupProps> = ({ onClose, onSubsc
               <div className="flex flex-col sm:flex-row"> {/* Buttons in separate rows */}
                 <button
                   className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 mb-2 sm:mb-0 sm:mr-2"
-                  onClick={onClose}
+                  onClick={handleSubscribe}
                 >
                   Subscribe Now
                 </button>
