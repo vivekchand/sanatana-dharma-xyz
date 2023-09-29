@@ -206,9 +206,9 @@ export default function Home() {
       {showSubscriptionPopup && (
         <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
           <div className="bg-white p-4 rounded-lg shadow-md">
-            <h2 className="text-xl font-semibold mb-2">Subscribe for Wisdom</h2>
+            <h2 className="text-xl font-semibold mb-2">🌞 Journey to Wisdom 📖</h2>
             <p className="text-sm text-gray-600 mb-4">
-              Get Bhagavad Gita, Vedas, Upanishads delivered to your email daily.
+            Welcome to a journey of spiritual growth! Subscribe to our newsletter to receive daily Bhagavad Gita verses, ancient wisdom from Vedas, Upanishads, and more, directly in your inbox.
             </p>
             <div className="flex flex-col">
               <input
