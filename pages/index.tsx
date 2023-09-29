@@ -22,9 +22,9 @@ export default function Home() {
     const lastDismissedTime = localStorage.getItem("subscriptionDismissedTime");
     if (!lastDismissedTime || Date.now() - parseInt(lastDismissedTime) > 24 * 60 * 60 * 1000) {
       // If the popup was dismissed more than 24 hours ago or never dismissed, show it
-      setTimeout(() => {
-        setShowSubscriptionPopup(true);
-      }, 5000); // Show after 5 seconds
+      // setTimeout(() => {
+      //   setShowSubscriptionPopup(true);
+      // }, 5000); // Show after 5 seconds
     }
   }, []);
 
