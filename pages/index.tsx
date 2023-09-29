@@ -222,23 +222,27 @@ export default function Home() {
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="green"></circle><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"></path></g></svg>                
                 <p className="text-black-500">&nbsp;Path to Spiritual Enlightenment</p>
               </div>
-              <input
-                type="email"
-                placeholder="Email address"
-                className="border p-2 rounded-md mb-2"
-              />
-              <button
-                className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 mb-2"
-                onClick={handleCloseSubscriptionPopup}
-              >
-                Subscribe Now
-              </button>
-              <button
-                className="text-gray-500 text-sm hover:text-gray-700"
-                onClick={handleCloseSubscriptionPopup}
-              >
-                Dismiss
-              </button>
+              <div className="w-full mb-2"> {/* Email input takes full width */}
+                <input
+                  type="email"
+                  placeholder="Email address"
+                  className="border p-2 rounded-md w-full"
+                />
+              </div>
+              <div className="flex flex-col sm:flex-row"> {/* Buttons in separate rows */}
+                <button
+                  className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 mb-2 sm:mb-0 sm:mr-2"
+                  onClick={handleCloseSubscriptionPopup}
+                >
+                  Subscribe Now
+                </button>
+                <button
+                  className="text-gray-500 text-sm hover:text-gray-700"
+                  onClick={handleCloseSubscriptionPopup}
+                >
+                  Dismiss
+                </button>
+              </div>
             </div>
           </div>
         </div>
