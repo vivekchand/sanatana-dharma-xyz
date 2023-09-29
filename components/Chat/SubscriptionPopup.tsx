@@ -2,9 +2,16 @@ import { FC } from "react";
 
 interface SubscriptionPopupProps {
   onClose: () => void;
+  onSubscribed: () => void; // Add this callback
 }
-export const SubscriptionPopup: FC<SubscriptionPopupProps> = ({ onClose }) => {
-  return (
+export const SubscriptionPopup: FC<SubscriptionPopupProps> = ({ onClose, onSubscribed }) => {
+    const handleSubscribe = () => {
+        // Perform subscription actions here (e.g., send email)
+        // For now, we'll just trigger the "Subscribed" popup
+        onSubscribed();
+    };
+    
+   return (
     <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
         <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
           <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">

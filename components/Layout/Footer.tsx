@@ -1,10 +1,12 @@
 import { FC} from "react";
 import Link from "next/link";
 import { SubscriptionPopup } from "../Chat/SubscriptionPopup";
+import { SubscribedPopup } from "../Chat/SubscribedPopup";
 import { useState } from "react";
 
 export const Footer: FC = () => {
   const [showSubscriptionPopup, setShowSubscriptionPopup] = useState(false);
+  const [showSubscribedPopup, setShowSubscribedPopup] = useState(false);
 
   const handleOpenSubscriptionPopup = () => {
     setShowSubscriptionPopup(true);
@@ -12,6 +14,16 @@ export const Footer: FC = () => {
 
   const handleCloseSubscriptionPopup = () => {
     setShowSubscriptionPopup(false);
+  };
+
+  const handleSubscribed = () => {
+    // Perform actions after subscription (e.g., send confirmation email)
+    // For now, we'll just show the "Subscribed" popup
+    setShowSubscribedPopup(true);
+  };
+
+  const handleCloseSubscribedPopup = () => {
+    setShowSubscribedPopup(false);
   };
 
   return (
@@ -29,7 +41,10 @@ export const Footer: FC = () => {
         <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=416280&theme=neutral" alt="SanatanaDharma.xyz - Sanatana Dharma Chatbot: Revealing Our Heritage 🕉️ | Product Hunt" style={{ width: '250px', height: '34px' }} width="250" height="54" />
       </Link>
       {showSubscriptionPopup && (
-        <SubscriptionPopup onClose={handleCloseSubscriptionPopup} />
+        <SubscriptionPopup onClose={handleCloseSubscriptionPopup} onSubscribed={handleSubscribed} />
+      )}
+      {showSubscribedPopup && (
+        <SubscribedPopup onClose={handleCloseSubscribedPopup} />
       )}
     </div>
   );
