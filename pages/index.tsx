@@ -24,7 +24,7 @@ export default function Home() {
       // If the popup was dismissed more than 24 hours ago or never dismissed, show it
       setTimeout(() => {
         setShowSubscriptionPopup(true);
-      }, 30000); // Show after 30 seconds
+      }, 5000); // Show after 5 seconds
     }
   }, []);
 
@@ -201,19 +201,36 @@ export default function Home() {
         <Footer />
       </div>
       <Analytics />
-
       {/* Subscription Popup */}
       {showSubscriptionPopup && (
         <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white p-4 rounded-lg shadow-md">
-            <h2 className="text-xl font-semibold mb-2">🌞 Journey to Wisdom 📖</h2>
-            <p className="text-sm text-gray-600 mb-4">
-            Welcome to a journey of spiritual growth! Subscribe to our newsletter to receive daily Bhagavad Gita verses, ancient wisdom from Vedas, Upanishads, and more, directly in your inbox.
-            </p>
-            <div className="flex flex-col">
+          <div className="bg-white p-4 rounded-lg shadow-md flex">
+            <div className="w-2/3 pr-4">
+              <h2 className="text-xl font-semibold mb-2">🌞 Journey to Wisdom 📖</h2>
+              <p className="text-sm text-gray-600 mb-4">
+                Welcome to a journey of spiritual growth! Subscribe to our newsletter to receive daily Bhagavad Gita verses, ancient wisdom from Vedas, Upanishads, and more, directly in your inbox.
+              </p>
+              <div className="flex items-center mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M3.293 9.293a1 1 0 011.414-1.414L9 12.586l6.293-6.293a1 1 0 111.414 1.414l-7 7a1 1 0 01-1.414 0l-7-7a1 1 0 011.414-1.414z" clipRule="evenodd" />
+                </svg>
+                <p className="text-green-500">Daily Inspiration</p>
+              </div>
+              <div className="flex items-center mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M3.293 9.293a1 1 0 011.414-1.414L9 12.586l6.293-6.293a1 1 0 111.414 1.414l-7 7a1 1 0 01-1.414 0l-7-7a1 1 0 011.414-1.414z" clipRule="evenodd" />
+                </svg>
+                <p className="text-green-500">Deeper Cultural Connection</p>
+              </div>
+              <div className="flex items-center mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M3.293 9.293a1 1 0 011.414-1.414L9 12.586l6.293-6.293a1 1 0 111.414 1.414l-7 7a1 1 0 01-1.414 0l-7-7a1 1 0 011.414-1.414z" clipRule="evenodd" />
+                </svg>
+                <p className="text-green-500">Path to Spiritual Enlightenment</p>
+              </div>
               <input
                 type="email"
-                placeholder="Your email"
+                placeholder="Email address"
                 className="border p-2 rounded-md mb-2"
               />
               <button
@@ -228,6 +245,9 @@ export default function Home() {
               >
                 Dismiss
               </button>
+            </div>
+            <div className="w-1/3">
+              <img src="/sanatan-photo.jpg" alt="Sanatan" className="rounded-md" />
             </div>
           </div>
         </div>
