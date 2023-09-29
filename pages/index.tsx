@@ -247,14 +247,6 @@ export default function Home() {
           </div>
         </div>
       )}
-      {/* Button to open the Subscription Popup */}
-      <button
-        className="fixed bottom-4 right-4 bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600"
-        onClick={handleOpenSubscriptionPopup}
-      >
-        Subscribe
-      </button>
-
     </>
   );
 }
