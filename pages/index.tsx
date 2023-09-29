@@ -205,7 +205,7 @@ export default function Home() {
       {showSubscriptionPopup && (
         <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
           <div className="bg-white p-4 rounded-lg shadow-md flex">
-            <div className="w-2/3 pr-4">
+            <div className="pr-4">
               <h2 className="text-xl font-semibold mb-2">🌞 Journey to Wisdom 📖</h2>
               <p className="text-sm text-gray-600 mb-4">
                 Welcome to a journey of spiritual growth! Subscribe to our newsletter to receive daily Bhagavad Gita verses, ancient wisdom from Vedas, Upanishads, and more, directly in your inbox.
@@ -233,21 +233,20 @@ export default function Home() {
                 placeholder="Email address"
                 className="border p-2 rounded-md mb-2"
               />
+              <br/>
               <button
                 className="bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600"
                 onClick={handleCloseSubscriptionPopup}
               >
                 Subscribe Now
               </button>
+              <br/>
               <button
                 className="text-gray-500 text-sm mt-2 hover:text-gray-700"
                 onClick={handleCloseSubscriptionPopup}
               >
                 Dismiss
               </button>
-            </div>
-            <div className="w-1/3">
-              <img src="/sanatan-photo.jpg" alt="Sanatan" className="rounded-md" />
             </div>
           </div>
         </div>
