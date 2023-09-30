@@ -160,7 +160,7 @@ export default function Home() {
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6557627020167681"
           crossOrigin="anonymous"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-916S3MSTVF" />
-        <script async id="google-analytics">
+        {/* <script async id="google-analytics">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -168,7 +168,7 @@ export default function Home() {
   
             gtag('config', 'G-916S3MSTVF');
           `}
-        </script>        
+        </script>         */}
       </Head>
 
       <div className="flex flex-col h-screen">
