@@ -15,6 +15,7 @@
     "@types/react-dom": "18.0.11",
     "@vercel/analytics": "^1.0.2",
     "@vercel/blob": "^0.13.0",
+    "async-mutex": "^0.4.0",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
     "eventsource-parser": "^0.1.0",
