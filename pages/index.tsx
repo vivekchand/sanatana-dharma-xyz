@@ -47,8 +47,14 @@ export default function Home() {
     setMessages(updatedMessages);
     setLoading(true);
 
-    // Generate a requestId as a UUID
-    const requestId = uuidv4();
+
+    // Check if a requestId already exists in session storage
+    let requestId = sessionStorage.getItem('requestId');
+
+    // If requestId doesn't exist, generate a new UUID and store it in session storage
+    if (!requestId) {
+      sessionStorage.setItem('requestId', uuidv4());
+    }
 
     const response = await fetch("/api/chat", {
       method: "POST",
