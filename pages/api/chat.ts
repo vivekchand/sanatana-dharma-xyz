@@ -1,6 +1,6 @@
 import { Message } from "@/types";
 import { OpenAIStream } from "@/utils";
-import { put } from "@vercel/blob";
+import { kv } from "@vercel/kv";
 
 export const config = {
   runtime: "edge"
@@ -30,8 +30,9 @@ const handler = async (req: Request): Promise<Response> => {
     }
     console.log(messagesToSend);
     try {
-      const { url } = await put('articles/blob.txt', requestId, messages);
-      console.log(url);
+      await kv.set(requestId, messages);
+      const session = await kv.get("user_1_session");
+      console.log(session);
       // Handle the successful response here
     } catch (error) {
       console.error("Error during PUT request:", error);
