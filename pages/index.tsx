@@ -149,8 +149,8 @@ export default function Home() {
     setMessages([
       {
         role: "assistant",
-        content: `Namaste 🙏 I'm Sanatana Dharma Chatbot, your guide to Hinduism. I'm here to answer questions about Vedas, Upanishads, Bhagavad Gita, Puranas, Science in Vedas, Yoga, Dharma, Deities, Temples, Ayurveda, Philosophy, Rituals, History, and more. Ask anything, and let's explore Hinduism together!`
-      }
+        content: "I'm Sanatana Dharma Chatbot, an AI assistant. I can help you with things like answering questions and providing information about Sanatana Dharma. Some examples of questions you can ask:\nWhat is the concept of karma and its meaning?\n Can you elaborate on the significance of the Gayatri Mantra?\nWhat health recommendations can be found in the Vedas for maintaining well-being?"
+    }
     ]);
   }, []);
 
@@ -160,8 +160,8 @@ export default function Home() {
         <title>SanatanaDharma.xyz</title>
         <meta
           name="description"
-          content="I'm Sanatana Dharma Chatbot, an AI assistant. I can help you with things like answering questions and providing information about Sanatana Dharma."
-        />
+          content="I'm Sanatana Dharma Chatbot, an AI assistant. I can help you with things like answering questions and providing information about Sanatana Dharma. Some examples of questions you can ask:\nWhat is the concept of karma and its meaning?\n Can you elaborate on the significance of the Gayatri Mantra?\nWhat health recommendations can be found in the Vedas for maintaining well-being?"
+          />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1"
