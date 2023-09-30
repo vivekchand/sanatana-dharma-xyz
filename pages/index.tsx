@@ -39,10 +39,10 @@ export default function Home() {
     if(subscribedTime) {
       return;
     }
-    if (!lastDismissedTime || Date.now() - parseInt(lastDismissedTime) > 24 * 60 * 60 * 1000) {
+    if (!lastDismissedTime || Date.now() - parseInt(lastDismissedTime) > 5 * 60 * 1000) {
       setTimeout(() => {
         setShowSubscriptionPopup(true);
-      }, 1000); // Show after 5 seconds
+      }, 5000); // Show after 5 seconds
     }
   }, []);
 
