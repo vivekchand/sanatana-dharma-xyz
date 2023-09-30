@@ -188,7 +188,7 @@ export default function Home() {
         <Navbar />
 
         <div className="flex-1 overflow-auto sm:px-10 pb-4 sm:pb-10" style={{backgroundColor: "#f9f4f0"}}>
-          <div className="max-w-[800px] mx-auto mt-4 sm:mt-12">
+          <div className="mx-auto mt-4 sm:mt-12">
             <Chat
               messages={messages}
               loading={loading}
