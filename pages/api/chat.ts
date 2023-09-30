@@ -29,8 +29,14 @@ const handler = async (req: Request): Promise<Response> => {
       messagesToSend.push(message);
     }
     console.log(messagesToSend);
-    const { url } = await put('articles/sanatana-dharma.txt', requestId, messages);
-    console.log(url);
+    try {
+      const { url } = await put('articles/sanatana-dharma.txt', requestId, messages);
+      console.log(url);
+      // Handle the successful response here
+    } catch (error) {
+      console.error("Error during PUT request:", error);
+      // Handle the error as needed
+    }
     const stream = await OpenAIStream(messagesToSend);
 
     return new Response(stream);
