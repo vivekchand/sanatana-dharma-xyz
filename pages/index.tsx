@@ -49,7 +49,7 @@ export default function Home() {
 
 
     // Check if a requestId already exists in session storage
-    let requestId = sessionStorage.getItem('requestId');
+    let requestId = sessionStorage.getItem('requestId') || uuidv4();
 
     // Function to clear requestId from session storage
     const clearRequestId = () => {
@@ -59,10 +59,9 @@ export default function Home() {
     // Add an event listener for beforeunload (page refresh or tab close)
     window.addEventListener('beforeunload', clearRequestId);
 
-
-    // If requestId doesn't exist, generate a new UUID and store it in session storage
+    // If requestId doesn't exist, store it in session storage
     if (!requestId) {
-      sessionStorage.setItem('requestId', uuidv4());
+      sessionStorage.setItem('requestId', requestId);
     }
 
     const response = await fetch("/api/chat", {
