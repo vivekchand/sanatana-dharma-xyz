@@ -149,7 +149,7 @@ export default function Home() {
     setMessages([
       {
         role: "assistant",
-        content: "I'm Sanatana Dharma Chatbot, an AI assistant. I can help you with things like answering questions and providing information about Sanatana Dharma. Some examples of questions you can ask:\nWhat is the concept of karma and its meaning?\n Can you elaborate on the significance of the Gayatri Mantra?\nWhat health recommendations can be found in the Vedas for maintaining well-being?"
+        content: "I'm Sanatana Dharma Chatbot, an AI assistant. I can help you with things like answering questions and providing information about Sanatana Dharma.\nSome examples of questions you can ask:\n* What is the concept of karma and its meaning?\n* Can you elaborate on the significance of the Gayatri Mantra?\n* What health recommendations can be found in the Vedas for maintaining well-being?"
     }
     ]);
   }, []);
@@ -160,7 +160,7 @@ export default function Home() {
         <title>SanatanaDharma.xyz</title>
         <meta
           name="description"
-          content="I'm Sanatana Dharma Chatbot, an AI assistant. I can help you with things like answering questions and providing information about Sanatana Dharma. Some examples of questions you can ask:\nWhat is the concept of karma and its meaning?\n Can you elaborate on the significance of the Gayatri Mantra?\nWhat health recommendations can be found in the Vedas for maintaining well-being?"
+          content="I'm Sanatana Dharma Chatbot, an AI assistant. I can help you with things like answering questions and providing information about Sanatana Dharma.\nSome examples of questions you can ask:\n* What is the concept of karma and its meaning?\n* Can you elaborate on the significance of the Gayatri Mantra?\n* What health recommendations can be found in the Vedas for maintaining well-being?"
           />
         <meta
           name="viewport"
