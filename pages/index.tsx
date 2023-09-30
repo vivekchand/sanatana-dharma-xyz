@@ -17,6 +17,7 @@ export default function Home() {
   const handleSubscribed = async () => {
     // Perform actions after subscription (e.g., send confirmation email)
     // For now, we'll just show the "Subscribed" popup
+    localStorage.setItem("subscriptionDismissedTime", Date.now().toString());
     setShowSubscribedPopup(true);
   };
 
