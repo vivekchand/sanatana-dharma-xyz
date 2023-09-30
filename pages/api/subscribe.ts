@@ -19,13 +19,13 @@ const handler = async (req: Request): Promise<Response> => {
 
       try {
         // Get the current list of emails or initialize an empty array
-        const emails = (await kv.get("emails")) || [];
+        const emails: string[] = (await kv.get("emails")) || [];
 
         // Append the new email to the list
         emails.push(email);
 
         // Store the updated list of emails back in the key-value store
-        await kv.put("emails", JSON.stringify(emails));
+        await kv.set("emails", JSON.stringify(emails));
 
         console.log(email);
         // Handle the successful response here
