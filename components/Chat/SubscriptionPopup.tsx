@@ -1,11 +1,22 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 
 interface SubscriptionPopupProps {
   onClose: () => void;
   onSubscribed: () => void; // Add this callback
 }
 export const SubscriptionPopup: FC<SubscriptionPopupProps> = ({ onClose, onSubscribed }) => {
-    const handleSubscribe = () => {
+  const [email, setEmail] = useState(""); // State to capture email input value
+
+  const handleSubscribe = async () => {
+        const response = await fetch("/api/subscribe", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            email: email // Include the captured email value
+          })
+        });
         // Perform subscription actions here (e.g., send email)
         // For now, we'll just trigger the "Subscribed" popup
         onSubscribed();
@@ -37,7 +48,8 @@ export const SubscriptionPopup: FC<SubscriptionPopupProps> = ({ onClose, onSubsc
                   type="email"
                   placeholder="Email address"
                   className="border p-2 rounded-md w-full"
-                />
+                  onChange={(e) => setEmail(e.target.value)} // Capture email input value
+                  />
               </div>
               <div className="flex flex-col sm:flex-row"> {/* Buttons in separate rows */}
                 <button

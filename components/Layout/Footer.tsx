@@ -16,7 +16,7 @@ export const Footer: FC = () => {
     setShowSubscriptionPopup(false);
   };
 
-  const handleSubscribed = () => {
+  const handleSubscribed = async () => {
     // Perform actions after subscription (e.g., send confirmation email)
     // For now, we'll just show the "Subscribed" popup
     setShowSubscribedPopup(true);
