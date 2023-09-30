@@ -15,7 +15,7 @@ export const SubscribedPopup: FC<SubscribedPopupProps> = ({ onClose }) => {
           </div>
         </div>
         <p className="text-lg text-gray-600">
-        Thank you for subscribing! Get ready to embark on a journey of enlightenment with daily Bhagavad Gita verses and profound wisdom delivered to your inbox. Your path to success starts now.
+        Thank you for subscribing!
         </p>
         <button
           className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 mt-4"
