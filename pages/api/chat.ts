@@ -1,5 +1,6 @@
 import { Message } from "@/types";
 import { OpenAIStream } from "@/utils";
+import { put } from "@vercel/blob";
 
 export const config = {
   runtime: "edge"
@@ -7,9 +8,13 @@ export const config = {
 
 const handler = async (req: Request): Promise<Response> => {
   try {
-    const { messages } = (await req.json()) as {
-      messages: Message[];
-    };
+    // Parse the request body to get the messages and requestId
+    const requestBody = await req.json();
+    const { messages, requestId } = requestBody;
+
+    // const { messages } = (await req.json()) as {
+    //   messages: Message[];
+    // };
 
     const charLimit = 12000;
     let charCount = 0;
@@ -24,6 +29,8 @@ const handler = async (req: Request): Promise<Response> => {
       messagesToSend.push(message);
     }
     console.log(messagesToSend);
+    const { url } = await put('articles/sanatana-dharma.txt', requestId, messages);
+    console.log(url);
     const stream = await OpenAIStream(messagesToSend);
 
     return new Response(stream);
