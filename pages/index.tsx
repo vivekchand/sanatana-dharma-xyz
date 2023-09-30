@@ -22,6 +22,7 @@ export default function Home() {
 
   const handleCloseSubscribedPopup = () => {
     setShowSubscribedPopup(false);
+    setShowSubscriptionPopup(false);
   };
 
   const messagesEndRef = useRef<HTMLDivElement>(null);
