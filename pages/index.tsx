@@ -51,6 +51,15 @@ export default function Home() {
     // Check if a requestId already exists in session storage
     let requestId = sessionStorage.getItem('requestId');
 
+    // Function to clear requestId from session storage
+    const clearRequestId = () => {
+      sessionStorage.removeItem('requestId');
+    };
+
+    // Add an event listener for beforeunload (page refresh or tab close)
+    window.addEventListener('beforeunload', clearRequestId);
+
+
     // If requestId doesn't exist, generate a new UUID and store it in session storage
     if (!requestId) {
       sessionStorage.setItem('requestId', uuidv4());
