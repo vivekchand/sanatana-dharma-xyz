@@ -7,7 +7,7 @@ interface Props {
 }
 
 export const ChatInput: FC<Props> = ({ onSend }) => {
-  const [content, setContent] = useState<string>("What is Agama Sastra?");
+  const [content, setContent] = useState<string>();
 
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
