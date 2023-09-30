@@ -8,6 +8,8 @@ export const SubscriptionPopup: FC<SubscriptionPopupProps> = ({ onClose, onSubsc
   const [email, setEmail] = useState(""); // State to capture email input value
 
   const handleSubscribe = async () => {
+        console.log("About to call subscribe endpoint!");
+        console.log("email is "+ email);
         const response = await fetch("/api/subscribe", {
           method: "POST",
           headers: {
