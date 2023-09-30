@@ -28,11 +28,10 @@ const handler = async (req: Request): Promise<Response> => {
       charCount += message.content.length;
       messagesToSend.push(message);
     }
-    console.log(messagesToSend);
     try {
       await kv.set(requestId, messages);
-      const session = await kv.get("user_1_session");
-      console.log(session);
+      await kv.get("user_1_session");
+      console.log(requestId);
       // Handle the successful response here
     } catch (error) {
       console.error("Error during PUT request:", error);
