@@ -30,8 +30,8 @@ const handler = async (req: Request): Promise<Response> => {
     }
     try {
       await kv.set(requestId, messages);
-      await kv.get("user_1_session");
       console.log(requestId);
+      console.log(messages[messages.length-1]);
       // Handle the successful response here
     } catch (error) {
       console.error("Error during PUT request:", error);
