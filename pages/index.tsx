@@ -17,7 +17,7 @@ export default function Home() {
   const handleSubscribed = async () => {
     // Perform actions after subscription (e.g., send confirmation email)
     // For now, we'll just show the "Subscribed" popup
-    localStorage.setItem("subscriptionDismissedTime", Date.now().toString());
+    localStorage.setItem("subscribedTime", Date.now().toString());
     setShowSubscribedPopup(true);
   };
 
@@ -35,6 +35,10 @@ export default function Home() {
   // Load the subscription popup state from local storage
   useEffect(() => {
     const lastDismissedTime = localStorage.getItem("subscriptionDismissedTime");
+    const subscribedTime = localStorage.getItem("subscribedTime");
+    if(subscribedTime) {
+      return;
+    }
     if (!lastDismissedTime || Date.now() - parseInt(lastDismissedTime) > 24 * 60 * 60 * 1000) {
       setTimeout(() => {
         setShowSubscriptionPopup(true);
