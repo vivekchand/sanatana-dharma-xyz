@@ -31,7 +31,7 @@ export const SubscriptionPopup: FC<SubscriptionPopupProps> = ({ onClose, onSubsc
             <div className="max-w-[400px] text-center"> {/* Adjust the max-width as needed */}
               <h2 className="text-xl font-semibold mb-2">🌞 Journey to Wisdom 📖</h2>
               <p className="text-sm text-gray-600 mb-4">
-                Welcome to a journey of spiritual growth! Subscribe to our newsletter to receive daily Bhagavad Gita verses, ancient wisdom from Vedas, Upanishads, and more, directly in your inbox.
+              Begin an enlightening journey! Subscribe to our newsletter for daily Bhagavad Gita verses and profound wisdom in your inbox.
               </p>
               <div className="flex items-center mb-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="green"></circle><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"></path></g></svg>                
