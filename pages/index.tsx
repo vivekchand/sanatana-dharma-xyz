@@ -149,7 +149,7 @@ export default function Home() {
     setMessages([
       {
         role: "assistant",
-        content: "Namaste 🙏 I'm Sanatana Dharma Chatbot, an AI assistant. I'm here to provide you with insights from the Bhagavad Gita, Vedas, Puranas, Yoga, and tips for a healthy life. Whether you seek guidance on mantras, general life advice, or specific Vedic interpretations, feel free to reach out.\n\nSome examples of questions you can ask:\n\n* What is the concept of karma and its meaning?\n* Can you elaborate on the significance of the Gayatri Mantra?\n* What health recommendations can be found in the Vedas for maintaining well-being\n* How is the significance of time described in the Vedas?"
+        content: "Namaste 🙏 I'm Sanatana Dharma Chatbot, an AI assistant. I'm here to provide you with insights from the Bhagavad Gita, Vedas, Puranas, Yoga, and tips for a healthy life. Whether you seek guidance on mantras, general life advice, or specific Vedic interpretations, feel free to reach out.\n\nSome examples of questions you can ask:\n\n*What are the core teachings and philosophical concepts presented in the Bhagavad Gita?\n* What is the concept of karma and its meaning?\n* Can you elaborate on the significance of the Gayatri Mantra?\n* What health recommendations can be found in the Vedas for maintaining well-being\n* How is the significance of time described in the Vedas?"
     }
     ]);
   }, []);
@@ -160,7 +160,7 @@ export default function Home() {
         <title>SanatanaDharma.xyz</title>
         <meta
           name="description"
-          content="Namaste 🙏 I'm Sanatana Dharma Chatbot, an AI assistant. I'm here to provide you with insights from the Bhagavad Gita, Vedas, Puranas, Yoga, and tips for a healthy life. Whether you seek guidance on mantras, general life advice, or specific Vedic interpretations, feel free to reach out\n\nSome examples of questions you can ask:\n\n* What is the concept of karma and its meaning?\n* Can you elaborate on the significance of the Gayatri Mantra?\n* What health recommendations can be found in the Vedas for maintaining well-being?\n* How is the significance of time described in the Vedas?"
+          content="Namaste 🙏 I'm Sanatana Dharma Chatbot, an AI assistant. I'm here to provide you with insights from the Bhagavad Gita, Vedas, Puranas, Yoga, and tips for a healthy life. Whether you seek guidance on mantras, general life advice, or specific Vedic interpretations, feel free to reach out\n\nSome examples of questions you can ask:\n\n*What are the core teachings and philosophical concepts presented in the Bhagavad Gita?\n* What is the concept of karma and its meaning?\n* Can you elaborate on the significance of the Gayatri Mantra?\n* What health recommendations can be found in the Vedas for maintaining well-being?\n* How is the significance of time described in the Vedas?"
           />
         <meta
           name="viewport"
