@@ -30,7 +30,7 @@ const handler = async (req: Request): Promise<Response> => {
     }
     console.log(messagesToSend);
     try {
-      const { url } = await put('articles/sanatana-dharma.txt', requestId, messages);
+      const { url } = await put('articles/blob.txt', requestId, messages);
       console.log(url);
       // Handle the successful response here
     } catch (error) {
