@@ -72,10 +72,7 @@ export default function Home() {
     // Add an event listener for beforeunload (page refresh or tab close)
     window.addEventListener('beforeunload', clearRequestId);
 
-    // If requestId doesn't exist, store it in session storage
-    if (!requestId) {
-      sessionStorage.setItem('requestId', requestId);
-    }
+    sessionStorage.setItem('requestId', requestId);
 
     const response = await fetch("/api/chat", {
       method: "POST",
