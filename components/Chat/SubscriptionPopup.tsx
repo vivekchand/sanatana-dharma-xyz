@@ -53,7 +53,7 @@ export const SubscriptionPopup: FC<SubscriptionPopupProps> = ({ onClose, onSubsc
             <center><img src="https://krishnastore.com/images/cache/1614.jpg" alt="Krishna" className="mb-4 max-h-40 w-auto" /></center>
             <h2 className="text-xl font-semibold mb-2">🌞 Subscribe to Daily Wisdom 📖</h2>
             <p className="text-sm text-gray-600 mb-4">
-            Embark on an enlightening journey! Subscribe to our newsletter to learn one verse a day from the Bhagavad Gita, Vedas, Upanishads, and transform yourself within a year.
+            Embark on an enlightening journey! Subscribe to learn one verse a day from the Bhagavad Gita, Vedas, Upanishads, and transform yourself within a year.
             </p>
             <div className="w-full mb-2"> {/* Email input takes full width */}
               <input
