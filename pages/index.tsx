@@ -198,7 +198,7 @@ export default function Home() {
             <div ref={messagesEndRef} />
           </div>
         </div>
-        {/* <Footer /> */}
+        <Footer />
       </div>
       <Analytics />
       {showSubscriptionPopup && (

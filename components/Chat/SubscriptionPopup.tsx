@@ -45,22 +45,10 @@ export const SubscriptionPopup: FC<SubscriptionPopupProps> = ({ onClose, onSubsc
         <div className="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
           <div className="max-w-[400px] text-center"> {/* Adjust the max-width as needed */}
             <center><img src="https://krishnastore.com/images/cache/1614.jpg" alt="Krishna" className="mb-4 max-h-40 w-auto" /></center>
-            <h2 className="text-xl font-semibold mb-2">🌞 Journey to Wisdom 📖</h2>
+            <h2 className="text-xl font-semibold mb-2">🌞 Subscribe to Daily Wisdom 📖</h2>
             <p className="text-sm text-gray-600 mb-4">
-              Begin an enlightening journey! Subscribe to our newsletter for daily Bhagavad Gita verses and profound wisdom in your inbox.
+            Embark on an enlightening journey! Subscribe to our newsletter to learn one verse a day from the Bhagavad Gita, Vedas, Upanishads, and transform yourself within a year.
             </p>
-            <div className="flex items-center mb-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="green"></circle><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"></path></g></svg>                
-              <p className="text-sm text-gray-600">&nbsp;Daily Inspiration</p>
-            </div>
-            <div className="flex items-center mb-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="green"></circle><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"></path></g></svg>                
-              <p className="text-sm text-gray-600">&nbsp;Deeper Cultural Connection</p>
-            </div>
-            <div className="flex items-center mb-4">
-              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="green"></circle><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"></path></g></svg>                
-              <p className="text-sm text-gray-600">&nbsp;Path to Spiritual Enlightenment</p>
-            </div>
             <div className="w-full mb-2"> {/* Email input takes full width */}
               <input
                 type="email"
