@@ -58,7 +58,7 @@ export const SubscriptionPopup: FC<SubscriptionPopupProps> = ({ onClose, onSubsc
             <div className="w-full mb-2"> {/* Email input takes full width */}
               <input
                 type="email"
-                placeholder="Email address or WhatsApp number"
+                placeholder="Email address or WhatsApp number (+91xxxxxxxxxx)"
                 className={`border p-2 rounded-md w-full ${isEmailInvalid ? 'border-red-500' : ''}`} // Add red border if email is invalid
                 onChange={(e) => {
                   setEmail(e.target.value);
