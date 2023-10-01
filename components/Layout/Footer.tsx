@@ -23,6 +23,7 @@ export const Footer: FC = () => {
   };
 
   const handleCloseSubscribedPopup = () => {
+    setShowSubscriptionPopup(false);
     setShowSubscribedPopup(false);
   };
 
