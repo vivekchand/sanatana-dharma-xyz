@@ -15,8 +15,14 @@ export const SubscriptionPopup: FC<SubscriptionPopupProps> = ({ onClose, onSubsc
     return emailRegex.test(email);
   };
 
+  const isWhatsAppNumberValid = (phoneNumber: string) => {
+    // Regular expression for WhatsApp number validation in E.164 format
+    const whatsappRegex = /^\+(?:\d{1,3})?\d{9,15}$/;
+    return whatsappRegex.test(phoneNumber);
+  };
+  
   const handleSubscribe = async () => {
-    if (typeof email != 'number' && !isEmailValid(email)) {
+    if (!isWhatsAppNumberValid(email) && !isEmailValid(email)) {
       // Email is not valid, set isEmailInvalid state to true
       setIsEmailInvalid(true);
       return;
