@@ -58,7 +58,7 @@ export const SubscriptionPopup: FC<SubscriptionPopupProps> = ({ onClose, onSubsc
             Embark on an enlightening journey! Subscribe to learn one verse a day from the Bhagavad Gita, Vedas, Upanishads, and transform yourself in a year.
             </p>
             <p className="text-sm text-gray-600 mb-2">
-            🔹 Receive daily verses
+            🔹 Receive daily verses with explanation
             </p>
             <p className="text-sm text-gray-600 mb-2">
             🔹 Choose between Email or WhatsApp
