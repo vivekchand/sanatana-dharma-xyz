@@ -82,7 +82,7 @@ export const SubscriptionPopup: FC<SubscriptionPopupProps> = ({ onClose, onSubsc
                 className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 mb-2 sm:mb-0 sm:mr-2"
                 onClick={handleSubscribe}
               >
-                Subscribe Now for ₹49/month
+                <s>Subscribe Now ₹49/month</s>Try for Free for 30 Days
               </button>
               <button
                 className="text-gray-500 text-sm hover:text-gray-700"
