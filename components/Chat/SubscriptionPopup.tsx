@@ -57,13 +57,13 @@ export const SubscriptionPopup: FC<SubscriptionPopupProps> = ({ onClose, onSubsc
             <p className="text-sm text-gray-600 mb-4">
             Embark on an enlightening journey! Subscribe to learn one verse a day from the Bhagavad Gita, Vedas, Upanishads, and transform yourself in a year.
             </p>
-            <p className="text-sm text-gray-600 mb-4">
+            <p className="text-sm text-gray-600 mb-2">
             🔹 Receive daily verses
             </p>
-            <p className="text-sm text-gray-600 mb-4">
+            <p className="text-sm text-gray-600 mb-2">
             🔹 Choose between Email or WhatsApp
             </p>
-            <p className="text-sm text-gray-600 mb-4">
+            <p className="text-sm text-gray-600 mb-2">
             🔹 Begin your transformative journey today!
             </p>
             <div className="w-full mb-2"> {/* Email input takes full width */}
