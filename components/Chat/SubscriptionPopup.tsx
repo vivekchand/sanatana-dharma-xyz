@@ -49,9 +49,11 @@ export const SubscriptionPopup: FC<SubscriptionPopupProps> = ({ onClose, onSubsc
     <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
       <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
         <div className="bg-white p-4 rounded-lg shadow-md flex flex-col">
-          <div className="max-w-[400px] text-center"> {/* Adjust the max-width as needed */}
+          <div className="max-w-[400px]"> {/* Adjust the max-width as needed */}
             <center><img src="https://krishnastore.com/images/cache/1614.jpg" alt="Krishna" className="mb-4 max-h-40 w-auto" /></center>
-            <h2 className="text-xl font-semibold mb-2">🌞 Subscribe to Daily Wisdom 📖</h2>
+            <div className="text-center">
+              <h2 className="text-xl font-semibold mb-2">🌞 Subscribe to Daily Wisdom 📖</h2>
+            </div>
             <p className="text-sm text-gray-600 mb-4">
             Embark on an enlightening journey! Subscribe to learn one verse a day from the Bhagavad Gita, Vedas, Upanishads, and transform yourself in a year.
             </p>
