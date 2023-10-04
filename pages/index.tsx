@@ -147,7 +147,7 @@ export default function Home() {
     setMessages([
       {
         role: "assistant",
-        content: "Hello! I'm Sanatana Dharma Chatbot, your AI assistant for Bhagavad Gita, Vedas, Puranas, Yoga, and healthy living. Ask me about karma, the Gayatri Mantra, Vedic interpretations, and more."
+        content: "Namaste 🙏 I'm Sanatana Dharma Chatbot, your AI assistant for Bhagavad Gita, Vedas, Puranas, Yoga, and healthy living. Ask me about karma, the Gayatri Mantra, Vedic interpretations, and more."
     }
     ]);
   }, []);
@@ -158,7 +158,7 @@ export default function Home() {
         <title>SanatanaDharma.xyz</title>
         <meta
           name="description"
-          content="Hello! I'm Sanatana Dharma Chatbot, your AI assistant for Bhagavad Gita, Vedas, Puranas, Yoga, and healthy living. Ask me about karma, the Gayatri Mantra, Vedic interpretations, and more."
+          content="Namaste 🙏 I'm Sanatana Dharma Chatbot, your AI assistant for Bhagavad Gita, Vedas, Puranas, Yoga, and healthy living. Ask me about karma, the Gayatri Mantra, Vedic interpretations, and more."
           />
         <meta
           name="viewport"
