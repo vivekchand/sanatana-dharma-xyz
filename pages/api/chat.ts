@@ -28,6 +28,10 @@ const handler = async (req: Request): Promise<Response> => {
       charCount += message.content.length;
       messagesToSend.push(message);
     }
+    messagesToSend.push({
+      role: "assistant",
+      content: "please don't reply about topics other than Sanatana Dharma"
+    });
     try {
       await kv.set(requestId, messages);
       console.log(requestId);
