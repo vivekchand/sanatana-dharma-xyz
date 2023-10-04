@@ -30,7 +30,7 @@ const handler = async (req: Request): Promise<Response> => {
     }
     messagesToSend.push({
       role: "assistant",
-      content: "please don't reply about topics other than Sanatana Dharma"
+      content: "please don't reply about topics related coding, programming or common questions people use ChatGPT for"
     });
     try {
       await kv.set(requestId, messages);
