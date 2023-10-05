@@ -39,7 +39,7 @@ export default function Home() {
     if(subscribedTime) {
       return;
     }
-    if(messages.length < 2) {
+    if(messages.length <= 2) {
       return;
     }
     if (!lastDismissedTime || Date.now() - parseInt(lastDismissedTime) > 5 * 60 * 1000) {
