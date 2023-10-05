@@ -33,8 +33,7 @@ export default function Home() {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
-  // Load the subscription popup state from local storage
-  useEffect(() => {
+  const showPopup = () => {
     const lastDismissedTime = localStorage.getItem("subscriptionDismissedTime");
     const subscribedTime = localStorage.getItem("subscribedTime");
     if(subscribedTime) {
@@ -48,6 +47,11 @@ export default function Home() {
         setShowSubscriptionPopup(true);
       }, 5000); // Show after 5 seconds
     }
+  }
+
+  // Load the subscription popup state from local storage
+  useEffect(() => {
+    showPopup();
   }, []);
 
   // Function to handle closing the subscription popup
@@ -131,6 +135,7 @@ export default function Home() {
         });
       }
     }
+    showPopup();
   };
 
   const handleReset = () => {
