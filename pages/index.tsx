@@ -176,24 +176,8 @@ export default function Home() {
           rel="icon"
           href="/favicon.ico"
         />
-        <script>
-        {`
-        // Function to load the AdSense script after a delay
-        function loadAdSenseScript() {
-            // Create a script element
-            var script = document.createElement('script');
-            script.async = true;
-            script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6557627020167681";
-            script.crossOrigin = "anonymous";
-
-            // Add the script element to the document's body
-            document.body.appendChild(script);
-        }
-
-        // Delay loading the AdSense script by 10 seconds (10000 milliseconds)
-        setTimeout(loadAdSenseScript, 10000);
-        `}
-        </script>
+        {/* <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6557627020167681"
+          crossOrigin="anonymous"></script> */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-916S3MSTVF" />
         <script async id="google-analytics">
           {`
