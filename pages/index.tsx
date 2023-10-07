@@ -204,6 +204,16 @@ export default function Home() {
             <div ref={messagesEndRef} />
           </div>
         </div>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6557627020167681"
+          crossOrigin="anonymous"></script>
+        <ins className="adsbygoogle"
+            style={{display:"block"}}
+            data-ad-format="autorelaxed"
+            data-ad-client="ca-pub-6557627020167681"
+            data-ad-slot="3599721315"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
         <Footer />
       </div>
       <Analytics />
