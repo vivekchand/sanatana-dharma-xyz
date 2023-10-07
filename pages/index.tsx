@@ -176,8 +176,6 @@ export default function Home() {
           rel="icon"
           href="/favicon.ico"
         />
-        {/* <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6557627020167681"
-          crossOrigin="anonymous"></script> */}
         {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-916S3MSTVF" />
         <script async id="google-analytics">
           {`
