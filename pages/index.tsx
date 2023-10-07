@@ -198,18 +198,17 @@ export default function Home() {
               onSend={handleSend}
               onReset={handleReset}
             />
-                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6557627020167681"
-     crossOrigin="anonymous"></script>
-        <ins className="adsbygoogle"
-            style={{display:"block"}}
-            data-ad-client="ca-pub-6557627020167681"
-            data-ad-slot="2723993032"
-            data-ad-format="auto"
-            data-full-width-responsive="true"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6557627020167681"
+              crossOrigin="anonymous"></script>
+            <ins className="adsbygoogle"
+                style={{display:"block"}}
+                data-ad-client="ca-pub-6557627020167681"
+                data-ad-layout-key="-gw-3+1f-3d+2z"
+                data-ad-slot="7809100071"
+                data-ad-format="fluid"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
             <div ref={messagesEndRef} />
           </div>
         </div>
