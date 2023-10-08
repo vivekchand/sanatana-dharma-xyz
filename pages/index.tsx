@@ -196,9 +196,9 @@ export default function Home() {
             crossOrigin="anonymous"></script>
           <ins className="adsbygoogle"
               style={{display:"block"}}
-              data-ad-format="autorelaxed"
+              data-ad-format="auto"
               data-ad-client="ca-pub-6557627020167681"
-              data-ad-slot="7556451652"></ins>
+              data-ad-slot="2723993032"></ins>
           <script>
             {`
               (adsbygoogle = window.adsbygoogle || []).push({});
