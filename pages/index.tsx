@@ -200,7 +200,9 @@ export default function Home() {
               data-ad-client="ca-pub-6557627020167681"
               data-ad-slot="7556451652"></ins>
           <script>
+            {`
               (adsbygoogle = window.adsbygoogle || []).push({});
+            `}
           </script>
             <div ref={messagesEndRef} />
           </div>
