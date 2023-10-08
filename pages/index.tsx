@@ -155,7 +155,7 @@ export default function Home() {
     setMessages([
       {
         role: "assistant",
-        content:"🙏 Namaste! I'm Sanatana Dharma Chatbot, your AI assistant for Bhagavad Gita, Vedas, Puranas, Yoga, and healthy living. Discover insights about karma, the Gayatri Mantra, Vedic interpretations, and more.\n\nCurious? Ask questions like:\n🔹 Karma's profound concept.\n🔹 The depth of the Gayatri Mantra.\n🔹 Time's significance in the Vedas.\n🔹 Tips for a balanced life."
+        content:"🙏 Namaste! I'm Sanatana Dharma Chatbot, your AI assistant for Bhagavad Gita, Vedas, Puranas, Yoga, and healthy living. Discover insights about karma, the Gayatri Mantra, Vedic interpretations, and more.\n\nCurious? Ask questions like:\n🔹 Can you explain the concept of dharma in Sanatana Dharma?\n🔹 Tell me about the importance of meditation in the Vedas\n🔹 What are the key principles of Bhakti Yoga?\n🔹 How can I incorporate Ayurvedic principles into my daily life?"
     }
     ]);
   }, []);
