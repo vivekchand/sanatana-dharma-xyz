@@ -16,20 +16,19 @@ export const ChatMessage: FC<Props> = ({ message }) => {
       </div>
       {message.role === "assistant" && (
         <>
-          <script
-            async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6557627020167681"
-            crossOrigin="anonymous"
-          ></script>
-          <ins
-            className="adsbygoogle"
-            style={{ display: "block" }}
-            data-ad-format="fluid"
-            data-ad-layout-key="-gw-3+1f-3d+2z"
-            data-ad-client="ca-pub-6557627020167681"
-            data-ad-slot="9131535004"
-          ></ins>
-          <script>{`(adsbygoogle = window.adsbygoogle || []).push({});`}</script>
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6557627020167681"
+            crossOrigin="anonymous"></script>
+          <ins className="adsbygoogle"
+              style={{display:"block"}}
+              data-ad-format="fluid"
+              data-ad-layout-key="-gw-3+1f-3d+2z"
+              data-ad-client="ca-pub-6557627020167681"
+              data-ad-slot="7809100071"></ins>
+          <script>
+            {`
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            `}
+          </script>
         </>
       )}
     </div>
