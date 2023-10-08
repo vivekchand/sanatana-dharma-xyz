@@ -183,7 +183,7 @@ export default function Home() {
           rel="icon"
           href="/favicon.ico"
         />
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-916S3MSTVF" />
+        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-916S3MSTVF" />
         <script async id="google-analytics">
           {`
             window.dataLayer = window.dataLayer || [];
@@ -192,7 +192,17 @@ export default function Home() {
   
             gtag('config', 'G-916S3MSTVF');
           `}
-        </script>        
+        </script>         */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-916S3MSTVF"></script>
+        <script>
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-916S3MSTVF');
+        `}
+        </script>
       </Head>
 
       <div className="flex flex-col h-screen">
