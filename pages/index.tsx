@@ -142,7 +142,7 @@ export default function Home() {
     setMessages([
       {
         role: "assistant",
-        content: `Namaste 🙏 I'm Sanatana Dharma Chatbot, your guide to Hinduism. I'm here to answer questions about Vedas, Upanishads, Bhagavad Gita, Puranas, Science in Vedas, Yoga, Dharma, Deities, Temples, Ayurveda, Philosophy, Rituals, History, and more. Ask anything, and let's explore Hinduism together!`
+        content:"🙏 Namaste! I'm Sanatana Dharma Chatbot, your AI assistant for Bhagavad Gita, Vedas, Puranas, Yoga, and healthy living. Discover insights about karma, the Gayatri Mantra, Vedic interpretations, and more.\n\nCurious? Ask questions like:\n🔹 Karma's profound concept.\n🔹 The depth of the Gayatri Mantra.\n🔹 Time's significance in the Vedas.\n🔹 Tips for a balanced life."
       }
     ]);
   };
@@ -155,7 +155,7 @@ export default function Home() {
     setMessages([
       {
         role: "assistant",
-        content: "Namaste 🙏 I'm Sanatana Dharma Chatbot, your AI assistant for Bhagavad Gita, Vedas, Puranas, Yoga, and healthy living. Ask me about karma, the Gayatri Mantra, Vedic interpretations, and more."
+        content:"🙏 Namaste! I'm Sanatana Dharma Chatbot, your AI assistant for Bhagavad Gita, Vedas, Puranas, Yoga, and healthy living. Discover insights about karma, the Gayatri Mantra, Vedic interpretations, and more.\n\nCurious? Ask questions like:\n🔹 Karma's profound concept.\n🔹 The depth of the Gayatri Mantra.\n🔹 Time's significance in the Vedas.\n🔹 Tips for a balanced life."
     }
     ]);
   }, []);
@@ -166,7 +166,14 @@ export default function Home() {
         <title>SanatanaDharma.xyz</title>
         <meta
           name="description"
-          content="Namaste 🙏 I'm Sanatana Dharma Chatbot, your AI assistant for Bhagavad Gita, Vedas, Puranas, Yoga, and healthy living. Ask me about karma, the Gayatri Mantra, Vedic interpretations, and more."
+          content="🙏 Namaste! I'm Sanatana Dharma Chatbot, your AI assistant for Bhagavad Gita, Vedas, Puranas, Yoga, and healthy living. Discover insights about karma, the Gayatri Mantra, Vedic interpretations, and more.
+
+          Curious? Ask questions like:
+          🔹 Karma's profound concept.
+          🔹 The depth of the Gayatri Mantra.
+          🔹 Time's significance in the Vedas.
+          🔹 Tips for a balanced life.
+          "
           />
         <meta
           name="viewport"
