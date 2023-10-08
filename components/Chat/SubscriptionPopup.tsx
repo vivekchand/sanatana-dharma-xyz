@@ -50,20 +50,8 @@ export const SubscriptionPopup: FC<SubscriptionPopupProps> = ({ onClose, onSubsc
       <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
         <div className="bg-white p-4 rounded-lg shadow-md flex flex-col">
           <div className="max-w-[400px]"> {/* Adjust the max-width as needed */}
-            {/* <center><img src="https://krishnastore.com/images/cache/1614.jpg" alt="Krishna" className="mb-4 max-h-40 w-auto" /></center> */}
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6557627020167681"
-            crossOrigin="anonymous"></script>
-          <ins className="adsbygoogle"
-              style={{display:"block"}}
-              data-ad-format="autorelaxed"
-              data-ad-client="ca-pub-6557627020167681"
-              data-ad-slot="3599721315"></ins>
-          <script>
-            {`
-              (adsbygoogle = window.adsbygoogle || []).push({});
-            `}
-          </script>
-{/* 
+            <center><img src="https://krishnastore.com/images/cache/1614.jpg" alt="Krishna" className="mb-4 max-h-40 w-auto" /></center>
+
             <div className="text-center">
               <h2 className="text-xl font-semibold mb-2">🌞 Subscribe to Daily Wisdom 📖</h2>
             </div>
@@ -78,8 +66,8 @@ export const SubscriptionPopup: FC<SubscriptionPopupProps> = ({ onClose, onSubsc
             </p>
             <p className="text-sm text-gray-600 mb-2">
             🔹 Begin your transformative journey today!
-            </p> */}
-            {/* <div className="w-full mb-2"> 
+            </p>
+            <div className="w-full mb-2"> 
               <input
                 type="email"
                 placeholder="Email or WhatsApp (+91xxxxxxxxxx)"
@@ -89,13 +77,13 @@ export const SubscriptionPopup: FC<SubscriptionPopupProps> = ({ onClose, onSubsc
                   setIsEmailInvalid(false);
                 }}
               />
-            </div> */}
-            {/* <div className="flex flex-col sm:flex-row"> 
+            </div>
+            <div className="flex flex-col sm:flex-row"> 
               <button
                 className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 mb-2 sm:mb-0 sm:mr-2"
                 onClick={handleSubscribe}
               >
-                Subscribe Now for ₹49/month
+                Subscribe Now
               </button>
               <button
                 className="text-gray-500 text-sm hover:text-gray-700"
@@ -103,7 +91,7 @@ export const SubscriptionPopup: FC<SubscriptionPopupProps> = ({ onClose, onSubsc
               >
                 Dismiss
               </button>
-            </div> */}
+            </div>
           </div>
         </div>
       </div>
