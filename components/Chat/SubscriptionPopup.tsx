@@ -55,10 +55,9 @@ export const SubscriptionPopup: FC<SubscriptionPopupProps> = ({ onClose, onSubsc
             crossOrigin="anonymous"></script>
           <ins className="adsbygoogle"
               style={{display:"block"}}
+              data-ad-format="autorelaxed"
               data-ad-client="ca-pub-6557627020167681"
-              data-ad-slot="2723993032"
-              data-ad-format="auto"
-              data-full-width-responsive="true"></ins>
+              data-ad-slot="3599721315"></ins>
           <script>
             {`
               (adsbygoogle = window.adsbygoogle || []).push({});
