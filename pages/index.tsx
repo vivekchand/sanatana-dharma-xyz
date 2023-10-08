@@ -192,23 +192,16 @@ export default function Home() {
         <Navbar />
         <div className="flex-1 overflow-auto sm:px-10 pb-4 sm:pb-10" style={{backgroundColor: "#f9f4f0"}}>
           <div className="mx-auto mt-4 sm:mt-12">
-            <Chat
-              messages={messages}
-              loading={loading}
-              onSend={handleSend}
-              onReset={handleReset}
-            />
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6557627020167681"
-              crossOrigin="anonymous"></script>
-            <ins className="adsbygoogle"
-                style={{display:"block"}}
-                data-ad-client="ca-pub-6557627020167681"
-                data-ad-layout-key="-gw-3+1f-3d+2z"
-                data-ad-slot="7809100071"
-                data-ad-format="fluid"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6557627020167681"
+            crossOrigin="anonymous"></script>
+          <ins className="adsbygoogle"
+              style={{display:"block"}}
+              data-ad-format="autorelaxed"
+              data-ad-client="ca-pub-6557627020167681"
+              data-ad-slot="7556451652"></ins>
+          <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
             <div ref={messagesEndRef} />
           </div>
         </div>
