@@ -192,6 +192,12 @@ export default function Home() {
         <Navbar />
         <div className="flex-1 overflow-auto sm:px-10 pb-4 sm:pb-10" style={{backgroundColor: "#f9f4f0"}}>
           <div className="mx-auto mt-4 sm:mt-12">
+          <Chat
+              messages={messages}
+              loading={loading}
+              onSend={handleSend}
+              onReset={handleReset}
+            />
           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6557627020167681"
             crossOrigin="anonymous"></script>
           <ins className="adsbygoogle"
