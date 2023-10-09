@@ -58,7 +58,7 @@ const handler = async (req: Request): Promise<Response> => {
       },
       body: new URLSearchParams({
         'From': "whatsapp:+13074486824",
-        'To': "whatsapp:+31622429582",
+        'To': "whatsapp:"+email,
         'Body': "Hello there!",
       }),
     })
