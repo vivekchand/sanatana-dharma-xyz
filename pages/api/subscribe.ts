@@ -1,16 +1,17 @@
 import { OpenAIStream } from "@/utils";
 import { kv } from "@vercel/kv";
 import { Mutex } from "async-mutex";
+import twilio from "twilio";
 
 const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
+const client = twilio(accountSid, authToken);
 
 interface TwilioMessage {
   sid: string;
   // Add other properties as needed
 }
 
-const client = require('twilio')(accountSid, authToken);
 
 export const config = {
   runtime: "edge"
