@@ -5,6 +5,18 @@ interface SubscriptionPopupProps {
   onSubscribed: () => void; // Add this callback
 }
 
+interface TwilioMessage {
+  sid: string;
+  // Add other properties as needed
+}
+
+
+
+const accountSid = process.env.TWILIO_ACCOUNT_SID;
+const authToken = process.env.TWILIO_AUTH_TOKEN;
+
+const client = require('twilio')(accountSid, authToken);
+
 export const SubscriptionPopup: FC<SubscriptionPopupProps> = ({ onClose, onSubscribed }) => {
   const [email, setEmail] = useState(""); // State to capture email input value
   const [isEmailInvalid, setIsEmailInvalid] = useState(false); // State to track email validation
@@ -39,6 +51,13 @@ export const SubscriptionPopup: FC<SubscriptionPopupProps> = ({ onClose, onSubsc
       body: JSON.stringify({
         email: email, // Include the captured email value
       }),
+    }).then(() => {
+      client.messages.create({
+         from: 'whatsapp:+13074486824',
+         body: 'Hello there!',
+         to: 'whatsapp:+31622429582'
+       })
+       .then((msg: TwilioMessage) => console.log(msg.sid));
     });
     // Perform subscription actions here (e.g., send email)
     // For now, we'll just trigger the "Subscribed" popup
