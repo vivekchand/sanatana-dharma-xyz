@@ -8,7 +8,7 @@ import { Analytics } from '@vercel/analytics/react';
 import { v4 as uuidv4 } from 'uuid';
 import { SubscriptionPopup } from "../components/Chat/SubscriptionPopup";
 import { SubscribedPopup } from "../components/Chat/SubscribedPopup";
-import { cron } from "node-cron";
+import cron from "node-cron";
 
 cron.schedule('* * * * *', () => {
   console.log('running a task every minute');

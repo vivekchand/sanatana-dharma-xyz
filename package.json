@@ -28,6 +28,7 @@
     "uuid": "^9.0.1"
   },
   "devDependencies": {
+    "@types/node-cron": "^3.0.9",
     "@types/uuid": "^9.0.4",
     "@vercel/kv": "^0.2.3",
     "async-mutex": "^0.4.0",
