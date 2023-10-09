@@ -1,23 +1,23 @@
 import { Message } from "@/types";
 import { OpenAIStream } from "@/utils";
 import { kv } from "@vercel/kv";
-import cron from "node-cron";
+// import cron from "node-cron";
 
-const job = cron.schedule('* * * * *', async () => {
-  try {
-    const response = await fetch("https://sanatanadharma.xyz/api/chat?cron_test=yes"); // Replace with your API endpoint
-    if (response.ok) {
-      const data = await response.json();
-      console.log("Data fetched:", data);
-    } else {
-      console.error("Failed to fetch data");
-    }
-  } catch (error) {
-    console.error("Error:", error);
-  }
-});
+// const job = cron.schedule('* * * * *', async () => {
+//   try {
+//     const response = await fetch("https://sanatanadharma.xyz/api/chat?cron_test=yes"); // Replace with your API endpoint
+//     if (response.ok) {
+//       const data = await response.json();
+//       console.log("Data fetched:", data);
+//     } else {
+//       console.error("Failed to fetch data");
+//     }
+//   } catch (error) {
+//     console.error("Error:", error);
+//   }
+// });
 
-job.start();
+// job.start();
 
 export const config = {
   runtime: "edge"
