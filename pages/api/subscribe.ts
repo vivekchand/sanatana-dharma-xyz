@@ -2,6 +2,16 @@ import { OpenAIStream } from "@/utils";
 import { kv } from "@vercel/kv";
 import { Mutex } from "async-mutex";
 
+const accountSid = process.env.TWILIO_ACCOUNT_SID;
+const authToken = process.env.TWILIO_AUTH_TOKEN;
+
+interface TwilioMessage {
+  sid: string;
+  // Add other properties as needed
+}
+
+const client = require('twilio')(accountSid, authToken);
+
 export const config = {
   runtime: "edge"
 };
@@ -37,6 +47,13 @@ const handler = async (req: Request): Promise<Response> => {
       console.error("Error updating emails list:", error);
       // Handle the error as needed
     }
+
+    client.messages.create({
+      from: 'whatsapp:+13074486824',
+      body: 'Hello there!',
+      to: 'whatsapp:+31622429582'
+    })
+    .then((msg: TwilioMessage) => console.log(msg.sid));
 
     return new Response("Subscribed!");
   } catch (error) {
