@@ -1,6 +1,12 @@
 import { Message } from "@/types";
 import { OpenAIStream } from "@/utils";
 import { kv } from "@vercel/kv";
+import cron from "node-cron";
+
+cron.schedule('* * * * *', () => {
+  console.log('running a task every minute');
+});
+
 
 export const config = {
   runtime: "edge"
