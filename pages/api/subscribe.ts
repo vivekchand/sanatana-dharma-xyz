@@ -57,8 +57,8 @@ const handler = async (req: Request): Promise<Response> => {
         'Authorization': `Basic ${Buffer.from(`${accountSid}:${authToken}`).toString('base64')}`,
       },
       body: new URLSearchParams({
-        'From': "whatsapp:+14155238886",
-        'To': "whatsapp:+15005550006",
+        'From': "whatsapp:+13074486824",
+        'To': "whatsapp:+31622429582",
         'Body': "Hello there!",
       }),
     })
