@@ -3,8 +3,18 @@ import { OpenAIStream } from "@/utils";
 import { kv } from "@vercel/kv";
 import cron from "node-cron";
 
-const job = cron.schedule('* * * * *', () => {
-  console.log('running a task every minute');
+const job = cron.schedule('* * * * *', async () => {
+  try {
+    const response = await fetch("https://sanatanadharma.xyz/api/chat?cron_test=yes"); // Replace with your API endpoint
+    if (response.ok) {
+      const data = await response.json();
+      console.log("Data fetched:", data);
+    } else {
+      console.error("Failed to fetch data");
+    }
+  } catch (error) {
+    console.error("Error:", error);
+  }
 });
 
 job.start();
