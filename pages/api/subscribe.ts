@@ -77,7 +77,7 @@ const handler = async (req: Request): Promise<Response> => {
       // Handle the error as needed
     }
 
-    sendWhatsappMessage(`https://api.twilio.com/2010-04-01/Accounts/${accountSid}/Messages.json`, email);
+    await sendWhatsappMessage(`https://api.twilio.com/2010-04-01/Accounts/${accountSid}/Messages.json`, email);
 
     return new Response("Subscribed!!!");
   } catch (error) {
