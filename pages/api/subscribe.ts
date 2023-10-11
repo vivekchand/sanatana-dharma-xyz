@@ -34,7 +34,8 @@ async function sendWhatsappMessage(url:string, email:string) {
 
     if (response.ok) {
       const data = await response.json();
-      console.log("data is:" + data);
+      console.log("data is:");
+      console.log(data);
       console.log("test 3");
     } else {
       console.error("Fetch request failed with status " + response.status);
