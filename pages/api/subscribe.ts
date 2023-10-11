@@ -59,13 +59,13 @@ const handler = async (req: Request): Promise<Response> => {
       body: new URLSearchParams({
         'From': "whatsapp:+13074486824",
         'To': "whatsapp:"+email,
-        'Body': "Welcome to the enlightening journey! You're now subscribed with SanatanaDharma.xyz to receive one verse a day from the Bhagavad Gita, Vedas, Upanishads. Let the transformation begin!",
+        'Body': "🙏 Namaste! I'm Sanatana Dharma Chatbot, your AI assistant for Bhagavad Gita, Vedas, Puranas, Yoga, and healthy living. Discover insights about karma, the Gayatri Mantra, Vedic interpretations, and more.\n\nCurious? Ask questions like:\n🔹 Can you explain the concept of dharma in Sanatana Dharma?\n🔹 Tell me about the importance of meditation in the Vedas\n🔹 What are the key principles of Bhakti Yoga?\n🔹 How can I incorporate Ayurvedic principles into my daily life?",
       }),
     })
       .then(response => response.json())
       .then(data => console.log(data))
       .catch(error => console.error('Error:', error));
-
+    
     return new Response("Subscribed!!!");
   } catch (error) {
     console.error(error);
