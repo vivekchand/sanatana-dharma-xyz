@@ -22,6 +22,7 @@ const handler = async (req: Request): Promise<Response> => {
     // Parse the request body to get the email
     const requestBody = await req.json();
     const { email } = requestBody;
+    console.log("test 1");
 
     try {
       // Acquire a lock to ensure exclusive access to the emails list
@@ -49,7 +50,7 @@ const handler = async (req: Request): Promise<Response> => {
     }
 
     const url = `https://api.twilio.com/2010-04-01/Accounts/${accountSid}/Messages.json`;
-
+    console.log("test 2");
     fetch(url, {
       method: 'POST',
       headers: {
@@ -63,9 +64,9 @@ const handler = async (req: Request): Promise<Response> => {
       }),
     })
       .then(response => response.json())
-      .then(data => console.log(data))
-      .catch(error => console.error('Error:', error));
-    
+      .then(data => console.log("data is:"+data));
+      console.log("test 3");
+
     return new Response("Subscribed!!!");
   } catch (error) {
     console.error(error);
