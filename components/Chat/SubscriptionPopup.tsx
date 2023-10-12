@@ -40,13 +40,20 @@ export const SubscriptionPopup: FC<SubscriptionPopupProps> = ({ onClose, onSubsc
         email: email, // Include the captured email value
       }),
     });
-    // Perform subscription actions here (e.g., send email)
-    // For now, we'll just trigger the "Subscribed" popup
     onSubscribed();
   };
 
   return (
     <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
+      <script>
+        {`
+          gtag('event', 'conversion', {
+            'send_to': 'AW-625688952/kLtzCOvnoOsYEPiCraoC',
+            'value': 1.0,
+            'currency': 'INR'
+          });
+        `}
+      </script>
       <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
         <div className="bg-white p-4 rounded-lg shadow-md flex flex-col">
           <div className="max-w-[400px]"> {/* Adjust the max-width as needed */}
