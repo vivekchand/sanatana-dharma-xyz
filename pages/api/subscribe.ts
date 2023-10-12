@@ -19,19 +19,31 @@ const emailMutex = new Mutex();
 
 async function sendWhatsappMessage(url:string, email:string) {
   try {
+    const message = `🙏 Om Gam Ganapataye Namaha 🐘
+
+    On this auspicious day, let us begin our journey by offering our heartfelt prayers to Lord Ganapati, the remover of obstacles and the embodiment of wisdom. May his divine presence guide us on this path of exploration and discovery. 🙏
+    
+    Let's dive into the ocean of knowledge and wisdom that Sanatana Dharma offers. From the Vedas to the Bhagavad Gita, yoga to meditation, there is much to explore.
+    
+    Remember the power of sacred mantras. One such mantra is "ॐ गं गणपतये नमः" (Om Gam Ganapataye Namaha). Chant it with devotion to seek Lord Ganapati's blessings and overcome challenges.
+    
+    Have questions about dharma, rituals, yoga, or anything related to Sanatana Dharma? Ask SanatanaDharma.xyz chatbot for guidance.
+    
+    Embrace this journey with an open mind. May it bring us closer to our true selves and lead us to a life filled with purpose, peace, and spiritual growth.`;
+    
+    const formData = new FormData();
+    formData.append('From', "whatsapp:+13074486824");
+    formData.append('To', "whatsapp:" + email);
+    formData.append('Body', message);
+    
     const response = await fetch(url, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
         'Authorization': `Basic ${Buffer.from(`${accountSid}:${authToken}`).toString('base64')}`,
       },
-      body: new URLSearchParams({
-        'From': "whatsapp:+13074486824",
-        'To': "whatsapp:" + email,
-        'Body': "Welcome to the enlightening journey! You're now subscribed with SanatanaDharma.xyz to receive one verse a day from the Bhagavad Gita, Vedas, Upanishads. Let the transformation begin!",
-      }),
+      body: formData,
     });
-
+    
     if (response.ok) {
       const data = await response.json();
       console.log("data is:");
