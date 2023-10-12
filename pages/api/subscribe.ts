@@ -28,7 +28,7 @@ async function sendWhatsappMessage(url:string, email:string) {
       body: new URLSearchParams({
         'From': "whatsapp:+13074486824",
         'To': "whatsapp:" + email,
-        'Body': "Let's dive into Bhagavad Gita!",
+        'Body': "Welcome to the enlightening journey! You're now subscribed with SanatanaDharma.xyz to receive one verse a day from the Bhagavad Gita, Vedas, Upanishads. Let the transformation begin!",
       }),
     });
 
