@@ -44,16 +44,16 @@ function getMessageForTemplateName(templateName: string): string {
   return templates[templateName] || "Template not found.";
 }
 
-async function sendWhatsappMessage(template:string, email:string) {
+async function sendWhatsappMessage(template:string, phone:string) {
   try {
     const message = getMessageForTemplateName(template);
     console.log("inside sendWhatsappMessage");
-    console.log(email);
+    console.log(phone);
     console.log(template);
     console.log(message);
     const formData = new FormData();
     formData.append('From', "whatsapp:+13074486824");
-    formData.append('To', "whatsapp:+" + email);
+    formData.append('To', "whatsapp:+91" + phone);
     formData.append('Body', message);
     
     const response = await fetch(`https://api.twilio.com/2010-04-01/Accounts/${accountSid}/Messages.json`, {
@@ -70,7 +70,7 @@ async function sendWhatsappMessage(template:string, email:string) {
       console.log(data);
       console.log("test 3");
 
-      const isEmail = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(email);
+      const isEmail = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(phone);
       let insertQuery;
       console.log("test 4");
 
@@ -78,14 +78,14 @@ async function sendWhatsappMessage(template:string, email:string) {
         console.log("test 5");
         insertQuery = sql`
         INSERT INTO subscriber (email, lastSentMessage, lastSentTemplate)
-        VALUES (${email}, ${message}, ${template})
+        VALUES (${phone}, ${message}, ${template})
         RETURNING id;
       `;
       } else {
         console.log("test 6");
         insertQuery = sql`
         INSERT INTO subscriber (phoneNumber, lastSentMessage, lastSentTemplate)
-        VALUES (${email}, ${message}, ${template})
+        VALUES (${phone}, ${message}, ${template})
         RETURNING id;
       `;
       }
