@@ -93,7 +93,7 @@ async function sendWhatsappMessage(template:string, email:string) {
       console.log("subscriber id:"+ insertedSubscriberId);
     } else {
       console.error("Fetch request failed with status " + response.status);
-      console.error("Fetch request failed with body " + response.body);
+      console.error(response.body);
     }
   } catch (error) {
     console.error("An error occurred:", error);
