@@ -34,8 +34,8 @@ const emailMutex = new Mutex();
 
 async function sendWhatsappMessage(url:string, email:string) {
   try {
-    const message = getMessageForTemplateName("ganapati_welcome");
-    const template = "ganapati_welcome";
+    const message = getMessageForTemplateName("bhagavad_gita_chapter_1_verse_1");
+    const template = "bhagavad_gita_chapter_1_verse_1";
     const formData = new FormData();
     formData.append('From', "whatsapp:+13074486824");
     formData.append('To', "whatsapp:" + email);
