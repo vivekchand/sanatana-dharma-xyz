@@ -53,7 +53,7 @@ async function sendWhatsappMessage(template:string, phone:string) {
     console.log(message);
     const formData = new FormData();
     formData.append('From', "whatsapp:+13074486824");
-    formData.append('To', "whatsapp:+91" + phone);
+    formData.append('To', "whatsapp:" + phone);
     formData.append('Body', message);
     
     const response = await fetch(`https://api.twilio.com/2010-04-01/Accounts/${accountSid}/Messages.json`, {
@@ -110,7 +110,7 @@ const handler = async (req: Request): Promise<Response> => {
     // Get query parameters from the request
     const params = new URL(req.url).searchParams;
     const template = params.get('template');
-    const phone = params.get('phone');
+    const phone = "+91"+params.get('phone');
     console.log("phone param: "+phone);
     console.log("template param: "+template);
 
