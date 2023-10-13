@@ -53,7 +53,7 @@ async function sendWhatsappMessage(template:string, email:string) {
     console.log(message);
     const formData = new FormData();
     formData.append('From', "whatsapp:+13074486824");
-    formData.append('To', "whatsapp:" + email);
+    formData.append('To', "whatsapp:+" + email);
     formData.append('Body', message);
     
     const response = await fetch(`https://api.twilio.com/2010-04-01/Accounts/${accountSid}/Messages.json`, {
