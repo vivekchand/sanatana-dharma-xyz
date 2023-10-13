@@ -47,6 +47,10 @@ function getMessageForTemplateName(templateName: string): string {
 async function sendWhatsappMessage(template:string, email:string) {
   try {
     const message = getMessageForTemplateName(template);
+    console.log("inside sendWhatsappMessage");
+    console.log(email);
+    console.log(template);
+    console.log(message);
     const formData = new FormData();
     formData.append('From', "whatsapp:+13074486824");
     formData.append('To', "whatsapp:" + email);
