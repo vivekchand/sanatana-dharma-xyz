@@ -16,7 +16,7 @@ const fs = require('fs');
 
 function getMessageForTemplateFile(templateName: string) {
   try {
-    const filePath = `${templateName}.txt`;
+    const filePath = `templates/${templateName}.txt`;
     const content = fs.readFileSync(filePath, 'utf-8');
     return content;
   } catch (error) {
