@@ -66,6 +66,7 @@ function getNextTemplate(template_name: string) {
     namaste_with_book_intro: "ganapati_welcome",
     reply_first_message: "ganapati_welcome",
     ganapati_welcome: "bhagavad_gita_chapter_1_verse_1",
+    bhagavad_gita_chapter_1_verse_1: "bhagavad_gita_chapter_1_verse_2",
     bhagavad_gita_chapter_1_verse_2: "bhagavad_gita_chapter_1_verse_3",
     bhagavad_gita_chapter_1_verse_3: "bhagavad_gita_chapter_1_verse_4",
     bhagavad_gita_chapter_1_verse_4: "bhagavad_gita_chapter_1_verse_5",
