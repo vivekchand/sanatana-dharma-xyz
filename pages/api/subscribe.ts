@@ -73,7 +73,7 @@ async function sendWhatsappMessage(url:string, email:string) {
         console.log("test 5");
         insertQuery = sql`
         INSERT INTO subscriber (email, lastSentTemplate)
-        VALUES (${email}, ${message}, ${template})
+        VALUES (${email}, ${template})
         ON CONFLICT (email) DO UPDATE
         SET lastSentTemplate = ${template}
         RETURNING id;
@@ -82,7 +82,7 @@ async function sendWhatsappMessage(url:string, email:string) {
         console.log("test 6");
         insertQuery = sql`
         INSERT INTO subscriber (phoneNumber, lastSentTemplate)
-        VALUES (${email}, ${message}, ${template})
+        VALUES (${email}, ${template})
         ON CONFLICT (phoneNumber) DO UPDATE
         SET lastSentTemplate = ${template}
         RETURNING id;
