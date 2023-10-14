@@ -87,6 +87,7 @@ function getNextTemplate(template_name: string) {
     bhagavad_gita_chapter_1_verse_20: "bhagavad_gita_chapter_1_verse_21",
     bhagavad_gita_chapter_1_verse_21: "bhagavad_gita_chapter_1_verse_22",
   };
+  return templates[template_name];
 }
 
 async function sendWhatsappMessage(template:string) {
@@ -175,7 +176,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     console.log("test 1");
 
-    await sendWhatsappMessage(template);
+    await sendWhatsappMessage(getNextTemplate(template));
 
     console.log("Sent!");
 
