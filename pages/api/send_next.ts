@@ -98,6 +98,7 @@ async function sendWhatsappMessage(oldTemplate:string, template:string) {
     `;
     const { rows } = await selectQuery;
     for (const row of rows) {
+      console.log(row);
       const phone = row.phoneNumber;
       console.log("inside sendWhatsappMessage");
       console.log(phone);
