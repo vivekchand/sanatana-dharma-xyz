@@ -90,11 +90,11 @@ function getNextTemplate(template_name: string) {
   return templates[template_name];
 }
 
-async function sendWhatsappMessage(template:string) {
+async function sendWhatsappMessage(oldTemplate:string, template:string) {
   try {
-    const message = getMessageForTemplateName(template);
+    const message = getMessageForTemplateName(oldTemplate);
     const selectQuery = sql`
-      SELECT * FROM subscriber WHERE lastSentTemplate = ${template};
+      SELECT * FROM subscriber WHERE lastSentTemplate = ${oldTemplate};
     `;
     const { rows } = await selectQuery;
     for (const row of rows) {
@@ -176,7 +176,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     console.log("test 1");
 
-    await sendWhatsappMessage(getNextTemplate(template));
+    await sendWhatsappMessage(template, getNextTemplate(template));
 
     console.log("Sent!");
 
