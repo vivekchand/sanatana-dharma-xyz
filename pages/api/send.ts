@@ -12,6 +12,18 @@ interface TwilioMessage {
   // Add other properties as needed
 }
 
+const fs = require('fs');
+
+function getMessageForTemplateFile(templateName: string) {
+  try {
+    const filePath = `${templateName}.txt`;
+    const content = fs.readFileSync(filePath, 'utf-8');
+    return content;
+  } catch (error) {
+    return "Template not found.";
+  }
+}
+
 
 export const config = {
   runtime: "edge"
@@ -46,7 +58,7 @@ function getMessageForTemplateName(templateName: string): string {
 
 async function sendWhatsappMessage(template:string, phone:string) {
   try {
-    const message = getMessageForTemplateName(template);
+    const message = getMessageForTemplateFile(template);
     console.log("inside sendWhatsappMessage");
     console.log(phone);
     console.log(template);
