@@ -20,7 +20,7 @@ function getMessageForTemplateFile(templateName: string) {
     const content = fs.readFileSync(filePath, 'utf-8');
     return content;
   } catch (error) {
-    return "Template not found.";
+    return "Template not found. error:"+error;
   }
 }
 
