@@ -113,7 +113,7 @@ const handler = async (req: Request): Promise<Response> => {
     // Get query parameters from the request
     const params = new URL(req.url).searchParams;
     const template = params.get('template');
-    const phone = "+91"+params.get('phone');
+    const phone = "+"+params.get('phone');
     console.log("phone param: "+phone);
     console.log("template param: "+template);
 
