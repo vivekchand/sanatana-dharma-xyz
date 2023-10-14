@@ -92,7 +92,7 @@ function getNextTemplate(template_name: string) {
 
 async function sendWhatsappMessage(oldTemplate:string, template:string) {
   try {
-    const message = getMessageForTemplateName(oldTemplate);
+    const message = getMessageForTemplateName(template);
     const selectQuery = sql`
       SELECT * FROM subscriber WHERE lastSentTemplate = ${oldTemplate};
     `;
