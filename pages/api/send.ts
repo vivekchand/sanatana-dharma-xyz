@@ -3,6 +3,7 @@ import { kv } from "@vercel/kv";
 import { Mutex } from "async-mutex";
 import twilio from "twilio";
 import { sql } from "@vercel/postgres";
+import { readFileSync } from "fs";
 
 const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
@@ -12,12 +13,10 @@ interface TwilioMessage {
   // Add other properties as needed
 }
 
-const fs = require('fs');
-
 function getMessageForTemplateFile(templateName: string) {
   try {
-    const filePath = `templates/${templateName}.txt`;
-    const content = fs.readFileSync(filePath, 'utf-8');
+    const filePath = `./templates/${templateName}.txt`;
+    const content = readFileSync(filePath, 'utf-8');
     return content;
   } catch (error) {
     return "Template not found. error:"+error;
