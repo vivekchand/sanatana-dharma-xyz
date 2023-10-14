@@ -98,6 +98,8 @@ async function sendWhatsappMessage(oldTemplate:string, template:string) {
       SELECT * FROM subscriber WHERE lastSentTemplate = ${oldTemplate};
     `;
     const { rows } = await selectQuery;
+    console.log("rows:");
+    console.log(rows);
     for (const row of rows) {
       console.log(row);
       const phone = row.phonenumber;
