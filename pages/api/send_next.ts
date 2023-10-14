@@ -113,7 +113,48 @@ async function sendWhatsappMessage(template:string) {
           'Authorization': `Basic ${Buffer.from(`${accountSid}:${authToken}`).toString('base64')}`,
         },
         body: formData,
-      });    }
+      });    
+    
+      if (response.ok) {
+        const data = await response.json();
+        console.log("data is:");
+        console.log(data);
+        console.log("test 3");
+  
+        const isEmail = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(phone);
+        let insertQuery;
+        console.log("test 4");
+  
+        if(isEmail) {
+          console.log("test 5");
+          insertQuery = sql`
+          INSERT INTO subscriber (email, lastSentTemplate)
+          VALUES (${phone}, ${template})
+          ON CONFLICT (email) DO UPDATE
+          SET lastSentTemplate = ${template}
+          RETURNING id;
+        `;
+        } else {
+          console.log("test 6");
+          insertQuery = sql`
+          INSERT INTO subscriber (phoneNumber, lastSentTemplate)
+          VALUES (${phone},  ${template})
+          ON CONFLICT (phoneNumber) DO UPDATE
+          SET lastSentTemplate = ${template}
+          RETURNING id;
+        `;
+        }
+        console.log("test 7");
+        const { rows } = await insertQuery;
+        console.log("test 8");
+        const insertedSubscriberId = rows[0].id;
+        console.log("test 9");
+        console.log("subscriber id:"+ insertedSubscriberId);
+      } else {
+        console.error("Fetch request failed with status " + response.status);
+        console.error(response.body);
+      }
+    }
 
   } catch (error) {
     console.error("An error occurred:", error);
