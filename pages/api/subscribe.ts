@@ -72,19 +72,19 @@ async function sendWhatsappMessage(url:string, email:string) {
       if(isEmail) {
         console.log("test 5");
         insertQuery = sql`
-        INSERT INTO subscriber (email, lastSentMessage, lastSentTemplate)
+        INSERT INTO subscriber (email, lastSentTemplate)
         VALUES (${email}, ${message}, ${template})
         ON CONFLICT (email) DO UPDATE
-        SET lastSentMessage = ${message}, lastSentTemplate = ${template}
+        SET lastSentTemplate = ${template}
         RETURNING id;
       `;
       } else {
         console.log("test 6");
         insertQuery = sql`
-        INSERT INTO subscriber (phoneNumber, lastSentMessage, lastSentTemplate)
+        INSERT INTO subscriber (phoneNumber, lastSentTemplate)
         VALUES (${email}, ${message}, ${template})
         ON CONFLICT (phoneNumber) DO UPDATE
-        SET lastSentMessage = ${message}, lastSentTemplate = ${template}
+        SET lastSentTemplate = ${template}
         RETURNING id;
       `;
       }
