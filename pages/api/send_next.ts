@@ -46,8 +46,9 @@ Mamakah Pandavaschaiva Kimakurvata Sanjaya ||`,
 async function sendWhatsappMessage(template:string) {
   try {
     const message = getMessageForTemplateName(template);
-    const fetchPhoneNumbersWithLastSentTemplate = await sql` SELECT phoneNumber FROM subscriber WHERE lastSentTemplate = '${template}'; `;
-    console.log(fetchPhoneNumbersWithLastSentTemplate);
+    const selectQuery = sql` SELECT phoneNumber FROM subscriber WHERE lastSentTemplate = '${template}'; `;
+    const { rows } = await selectQuery;
+    console.log(rows);
     // console.log("inside sendWhatsappMessage");
     // console.log(phone);
     // console.log(template);
