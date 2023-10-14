@@ -20,14 +20,15 @@ Dhritarashtra Uvacha |
 Dharmakshetre Kurukshetre Samaveta Yuyutsavah |
 Mamakah Pandavaschaiva Kimakurvata Sanjaya ||`,
     bhagavad_gita_chapter_1_verse_2: `Bhagavad Gita Chapter 1, Verse 2 continues the conversation between Dhritarashtra and Sanjaya. Sanjaya informs Dhritarashtra that after seeing the Pandava army in battle formation, King Duryodhana approaches his teacher, Dronacharya, seeking guidance. This verse sets the stage for the subsequent events in the Bhagavad Gita, where Duryodhana's actions and mindset are contrasted with Arjuna's dilemma and Lord Krishna's teachings on duty, righteousness, and the path to spiritual enlightenment.
-    
+
 सञ्जय उवाच |
 दृष्ट्वा तु पाण्डवानीकं व्यूढं दुर्योधनस्तदा |
-आचार्यमुपसङगम्य राजा वचनमब्रवीत् ||
-
+आचार्यमुपसङ्गम्य राजा वचनमब्रवीत् ||
+    
 Transliteration:
 Sanjaya Uvacha |
-Drishtva tu Pandavanikam vyudham Duryodhanas tada |Acharyam upasangamya raja vachanamabravit ||`,
+Drishtva tu Pandavanikam vyudham Duryodhanas tada |
+Acharyam upasangamya raja vachanamabravit ||`,
     bhagavad_gita_chapter_1_verse_3: `Bhagavad Gita Chapter 1, Verse 3:
     
 In this verse, Duryodhana addresses his teacher, Dronacharya, and draws attention to the mighty army of the Pandavas, led by their intelligent disciple, Dhrishtadyumna, the son of Drupada. Duryodhana acknowledges the strength and organization of the Pandava army, highlighting their formidable presence on the battlefield.
