@@ -76,11 +76,9 @@ const handler = async (req: Request): Promise<Response> => {
     // Get query parameters from the request
     const params = new URL(req.url).searchParams;
     const template = params.get('template');
-    const phone = "+"+params.get('phone');
-    console.log("phone param: "+phone);
     console.log("template param: "+template);
 
-    if (!template || !phone) {
+    if (!template) {
       return new Response("Missing required parameters", { status: 400 });
     }
 
