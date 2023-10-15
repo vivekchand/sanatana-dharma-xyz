@@ -40,6 +40,50 @@ This verse sets the stage for the subsequent chapters, where the dialogue betwee
 Transliteration:
 Pashyaitam Pandu-putranam Acharya mahatim chamoom |
 Vyudham drupada-putrena tava shishyena dheemata ||`,
+    bhagavad_gita_chapter_1_verse_4: `Bhagavad Gita Chapter 1, Verse 4:
+
+In this verse, Sanjaya describes the Pandava army, led by their valiant warriors, marching forward with great enthusiasm and determination. The army is divinely protected and compared to a great military formation. Dhrishtadyumna, the wise disciple of Dronacharya and son of King Drupada, leads the army.
+
+This verse sets the stage for the epic battle between the Pandavas and the Kauravas. It highlights the strength and determination of the Pandava army, which plays a significant role in the subsequent teachings and discussions presented in the Bhagavad Gita.
+
+पाण्डवानीकं दैवतेष्वतीव सेनं पाण्डुपुत्राणामाचार्य महतीं चमूम् |
+व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता ||
+
+Transliteration:
+Pandavanikam daivateshvati va senam Panduputranam acharya mahatim chamum |
+Vyudham drupadaputrena tava shishyena dheemata ||`,
+    bhagavad_gita_chapter_1_verse_3_tamil: `பகவத் கீதை அத்யாயம் 1, பாடம் 3:
+
+இந்த பாடத்தில், துர்யோதனன் தன் ஆசார்யரான த்ரோணாசார்யருக்கு பேசி, பாண்டவர்களின் பலமும், அவர்களால் தரிசனம் செய்யப்படும் திரிஷ்டத்யும்னன் என்ற விவேகியான மடிப்பாளரான திருபதன் மகனான திரிஷ்டத்யும்னன் ஆகியோரை குறிப்பிடுகிறார். துர்யோதனன் பாண்டவர்களின் படையின் வலிமையையும், அவர்களின் அமைப்பையும் உணர்ந்து, அவர்களின் போர்வையை மிகுந்தமாக குறிப்பிடுகிறார்.
+
+இந்த பாடம் பின்னர் வந்த அதிகாரங்களில், கிருஷ்ணா அர்ஜுனனுடன் நடக்கும் உரைப்பாட்டின் மூலம், ஆன்மீக மற்றும் தத்துவ பாடங்களைப் பற்றி ஆராய்ந்து கொண்டு வருகின்றது. பகவத் கீதை மனித வாழ்க்கையின் வேறுபாடுகள், கடமைகள்
+
+पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम् |
+व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता ||
+
+Transliteration:
+Pashyaitam Pandu-putranam Acharya mahatim chamoom |
+Vyudham drupada-putrena tava shishyena dheemata ||`,
+    bhagavad_gita_chapter_1_verse_4_tamil: `பகவத் கீதை அத்யாயம் 1, பாடம் 4:
+
+இந்த பதிகம் சஞ்சயா பாண்டவ சேனையைக் குறிப்பிடுகிறார். அவர்கள் தைவத்தால் பாதுகாக்கப்பட்ட மஹாசேனையாக இருக்கின்றது. த்ரிஷ்டத்யும்னா, த்ரோணாசார்யரின் ஞானமான மட்டுமே அல்லது ராஜா த்ருபதன் மகனான த்ருபதபுத்ரனானவரால் இந்த சேனை தலைமையாக நடந்துகொள்ளுகின்றது.
+
+पाण्डवानीकं दैवतेष्वतीव सेनं पाण्डुपुत्राणामाचार्य महतीं चमूम् |
+व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता ||
+
+ஒலிபெயர்ப்பு:
+பாண்டவானீகம் தைவதேஷ்வதீவ சேனம் பாண்டுபுத்ராணாமாசார்ய மஹதீம் சமூம் |
+வ்யூதாம் த்ருபதபுத்ரேண தவ சிஷ்யேண தீமதா ||`,
+    bhagavad_gita_chapter_1_verse_5: `Bhagavad Gita Chapter 1, Verse 5
+
+In this verse, Sanjaya describes the Pandava army, divinely protected and led by valiant warriors. The formation, called "Pandavanikam," is compared to a great army. Dhrishtadyumna, the wise disciple of Dronacharya and son of King Drupada, leads the army. This verse sets the stage for the epic battle between the Pandavas and Kauravas, highlighting the strength and determination of the Pandava army. It signifies the beginning of the moral dilemmas faced by Arjuna, leading to Lord Krishna's teachings in the subsequent chapters of the Bhagavad Gita.
+
+पाण्डवानीकं दैवतेष्वतीव सेनं पाण्डुपुत्राणामाचार्य महतीं चमूम् |
+व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता ||
+
+Transliteration:
+Pāṇḍavānīkaṁ daivateṣvatīva senaṁ pāṇḍuputrāṇām ācārya mahatīṁ chamūm |
+Vyūḍhāṁ drupadaputreṇa tava śiṣyeṇa dhīmatā ||`,
     ganapati_welcome: `🙏 Om Gam Ganapataye Namaha 🐘
     
 On this auspicious day, let us begin our journey by offering our heartfelt prayers to Lord Ganapati, the remover of obstacles and the embodiment of wisdom. May his divine presence guide us on this path of exploration and discovery. 🙏
