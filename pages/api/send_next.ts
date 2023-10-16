@@ -144,7 +144,7 @@ function getNextTemplate(template_name: string, lang:string) {
     }
     return templates[template_name];
   }
-  
+  return "";
 }
 
 async function sendWhatsappMessage(oldTemplate:string, template:string, lang:string) {
