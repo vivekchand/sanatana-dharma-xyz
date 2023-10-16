@@ -29,17 +29,20 @@ Transliteration:
 Sanjaya Uvacha |
 Drishtva tu Pandavanikam vyudham Duryodhanas tada |
 Acharyam upasangamya raja vachanamabravit ||`,
-    bhagavad_gita_chapter_1_verse_3: `Bhagavad Gita Chapter 1, Verse 3:
-    
+    bhagavad_gita_chapter_1_verse_3: `Bhagavad Gita Chapter 1, Verse 3:  
+
 In this verse, Duryodhana addresses his teacher, Dronacharya, and draws attention to the mighty army of the Pandavas, led by their intelligent disciple, Dhrishtadyumna, the son of Drupada. Duryodhana acknowledges the strength and organization of the Pandava army, highlighting their formidable presence on the battlefield.
 
 This verse sets the stage for the subsequent chapters, where the dialogue between Lord Krishna and Arjuna unfolds, delving into profound philosophical and spiritual teachings. The Bhagavad Gita explores various aspects of life, duty, righteousness, and the path to self-realization.
 
 पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम् |
 व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता ||
+
 Transliteration:
 Pashyaitam Pandu-putranam Acharya mahatim chamoom |
-Vyudham drupada-putrena tava shishyena dheemata ||`,
+Vyudham drupada-putrena tava shishyena dheemata ||
+
+Have questions about dharma, rituals, yoga, or anything related to Sanatana Dharma? Ask SanatanaDharma.xyz chatbot for guidance.`,
     bhagavad_gita_chapter_1_verse_4: `Bhagavad Gita Chapter 1, Verse 4:
 
 In this verse, Sanjaya describes the Pandava army, led by their valiant warriors, marching forward with great enthusiasm and determination. The army is divinely protected and compared to a great military formation. Dhrishtadyumna, the wise disciple of Dronacharya and son of King Drupada, leads the army.
