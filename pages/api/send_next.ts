@@ -231,7 +231,7 @@ const handler = async (req: Request): Promise<Response> => {
     const lang = params.get('lang');
     console.log("template param: "+template);
 
-    if (!template) {
+    if (!template || !lang) {
       return new Response("Missing required parameters", { status: 400 });
     }
 
