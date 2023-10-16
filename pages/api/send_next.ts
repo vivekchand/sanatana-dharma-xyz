@@ -107,43 +107,51 @@ Embrace this journey with an open mind. May it bring us closer to our true selve
   return templates[templateName] || "Template not found.";
 }
 
-function getNextTemplate(template_name: string) {
-  const templates: Record<string, string> = {
-    first_message_on_subscription: "ganapati_welcome",
-    namaste_first_message: "ganapati_welcome",
-    namaste_with_book_intro: "ganapati_welcome",
-    reply_first_message: "ganapati_welcome",
-    ganapati_welcome: "bhagavad_gita_chapter_1_verse_1",
-    bhagavad_gita_chapter_1_verse_1: "bhagavad_gita_chapter_1_verse_2",
-    bhagavad_gita_chapter_1_verse_2: "bhagavad_gita_chapter_1_verse_3",
-    bhagavad_gita_chapter_1_verse_3: "bhagavad_gita_chapter_1_verse_4",
-    bhagavad_gita_chapter_1_verse_4: "bhagavad_gita_chapter_1_verse_5",
-    bhagavad_gita_chapter_1_verse_5: "bhagavad_gita_chapter_1_verse_6",
-    bhagavad_gita_chapter_1_verse_6: "bhagavad_gita_chapter_1_verse_7",
-    bhagavad_gita_chapter_1_verse_7: "bhagavad_gita_chapter_1_verse_8",
-    bhagavad_gita_chapter_1_verse_8: "bhagavad_gita_chapter_1_verse_9",
-    bhagavad_gita_chapter_1_verse_9: "bhagavad_gita_chapter_1_verse_10",
-    bhagavad_gita_chapter_1_verse_10: "bhagavad_gita_chapter_1_verse_11",
-    bhagavad_gita_chapter_1_verse_11: "bhagavad_gita_chapter_1_verse_12",
-    bhagavad_gita_chapter_1_verse_12: "bhagavad_gita_chapter_1_verse_13",
-    bhagavad_gita_chapter_1_verse_13: "bhagavad_gita_chapter_1_verse_14",
-    bhagavad_gita_chapter_1_verse_14: "bhagavad_gita_chapter_1_verse_15",
-    bhagavad_gita_chapter_1_verse_15: "bhagavad_gita_chapter_1_verse_16",
-    bhagavad_gita_chapter_1_verse_16: "bhagavad_gita_chapter_1_verse_17",
-    bhagavad_gita_chapter_1_verse_17: "bhagavad_gita_chapter_1_verse_18",
-    bhagavad_gita_chapter_1_verse_18: "bhagavad_gita_chapter_1_verse_19",
-    bhagavad_gita_chapter_1_verse_19: "bhagavad_gita_chapter_1_verse_20",
-    bhagavad_gita_chapter_1_verse_20: "bhagavad_gita_chapter_1_verse_21",
-    bhagavad_gita_chapter_1_verse_21: "bhagavad_gita_chapter_1_verse_22",
-  };
-  return templates[template_name];
+function getNextTemplate(template_name: string, lang:string) {
+  if(lang == 'en') {
+    const templates: Record<string, string> = {
+      first_message_on_subscription: "ganapati_welcome",
+      namaste_first_message: "ganapati_welcome",
+      namaste_with_book_intro: "ganapati_welcome",
+      reply_first_message: "ganapati_welcome",
+      ganapati_welcome: "bhagavad_gita_chapter_1_verse_1",
+      bhagavad_gita_chapter_1_verse_1: "bhagavad_gita_chapter_1_verse_2",
+      bhagavad_gita_chapter_1_verse_2: "bhagavad_gita_chapter_1_verse_3",
+      bhagavad_gita_chapter_1_verse_3: "bhagavad_gita_chapter_1_verse_4",
+      bhagavad_gita_chapter_1_verse_4: "bhagavad_gita_chapter_1_verse_5",
+      bhagavad_gita_chapter_1_verse_5: "bhagavad_gita_chapter_1_verse_6",
+      bhagavad_gita_chapter_1_verse_6: "bhagavad_gita_chapter_1_verse_7",
+      bhagavad_gita_chapter_1_verse_7: "bhagavad_gita_chapter_1_verse_8",
+      bhagavad_gita_chapter_1_verse_8: "bhagavad_gita_chapter_1_verse_9",
+      bhagavad_gita_chapter_1_verse_9: "bhagavad_gita_chapter_1_verse_10",
+      bhagavad_gita_chapter_1_verse_10: "bhagavad_gita_chapter_1_verse_11",
+      bhagavad_gita_chapter_1_verse_11: "bhagavad_gita_chapter_1_verse_12",
+      bhagavad_gita_chapter_1_verse_12: "bhagavad_gita_chapter_1_verse_13",
+      bhagavad_gita_chapter_1_verse_13: "bhagavad_gita_chapter_1_verse_14",
+      bhagavad_gita_chapter_1_verse_14: "bhagavad_gita_chapter_1_verse_15",
+      bhagavad_gita_chapter_1_verse_15: "bhagavad_gita_chapter_1_verse_16",
+      bhagavad_gita_chapter_1_verse_16: "bhagavad_gita_chapter_1_verse_17",
+      bhagavad_gita_chapter_1_verse_17: "bhagavad_gita_chapter_1_verse_18",
+      bhagavad_gita_chapter_1_verse_18: "bhagavad_gita_chapter_1_verse_19",
+      bhagavad_gita_chapter_1_verse_19: "bhagavad_gita_chapter_1_verse_20",
+      bhagavad_gita_chapter_1_verse_20: "bhagavad_gita_chapter_1_verse_21",
+      bhagavad_gita_chapter_1_verse_21: "bhagavad_gita_chapter_1_verse_22",
+    };
+    return templates[template_name];
+  } else if(lang == 'ta') {
+    const templates: Record<string, string> = {
+      bhagavad_gita_chapter_1_verse_2: "bhagavad_gita_chapter_1_verse_3_tamil",
+    }
+    return templates[template_name];
+  }
+  
 }
 
-async function sendWhatsappMessage(oldTemplate:string, template:string) {
+async function sendWhatsappMessage(oldTemplate:string, template:string, lang:string) {
   try {
     const message = getMessageForTemplateName(template);
     const selectQuery = sql`
-      SELECT * FROM subscriber WHERE lastSentTemplate = ${oldTemplate};
+      SELECT * FROM subscriber WHERE lastSentTemplate = ${oldTemplate} AND preferred_language = ${lang};
     `;
     const { rows } = await selectQuery;
     console.log("rows:");
@@ -220,6 +228,7 @@ const handler = async (req: Request): Promise<Response> => {
     // Get query parameters from the request
     const params = new URL(req.url).searchParams;
     const template = params.get('template');
+    const lang = params.get('lang');
     console.log("template param: "+template);
 
     if (!template) {
@@ -228,7 +237,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     console.log("test 1");
 
-    await sendWhatsappMessage(template, getNextTemplate(template));
+    await sendWhatsappMessage(template, getNextTemplate(template, lang), lang);
 
     console.log("Sent!");
 
