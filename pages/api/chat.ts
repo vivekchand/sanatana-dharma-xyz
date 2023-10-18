@@ -47,11 +47,11 @@ const handler = async (req: Request): Promise<Response> => {
     }
     messagesToSend.push({
       role: "assistant",
-      content: "please don't reply about topics related coding, programming or common questions people use ChatGPT for.
+      content: `please don't reply about topics related coding, programming or common questions people use ChatGPT for.
         Mention the following in your response:
         **Sources**: * {source1} {confidence score about source1, 1 to 10} * {source2} {confidence score about source2, 1 to 10} * {...}
         **Confidence**: {score 1 to 10 to indicate that the overall answer is real and not an hallucination}
-        "
+        `
     });
     try {
       await kv.set(requestId, messages);
