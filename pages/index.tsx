@@ -42,7 +42,7 @@ export default function Home() {
     // if(messages.length < 1) {
     //   return;
     // }
-    if (!lastDismissedTime || Date.now() - parseInt(lastDismissedTime) > 5 * 60 * 1000) {
+    if (!lastDismissedTime || Date.now() - parseInt(lastDismissedTime) > 5 * 60 * 1000 || messages.length > 1) {
       setTimeout(() => {
         setShowSubscriptionPopup(true);
       }, 5000); // Show after 5 seconds
