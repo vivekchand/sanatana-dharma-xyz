@@ -40,6 +40,9 @@ export default function Home() {
     if(subscribedTime) {
       return;
     }
+    if(!dismissCount) {
+      dismissCount = 0;
+    }
     // if(messages.length < 1) {
     //   return;
     // }
