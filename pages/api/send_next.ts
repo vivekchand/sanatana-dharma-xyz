@@ -141,7 +141,8 @@ function getNextTemplate(template_name: string, lang:string) {
   } else if(lang == 'ta') {
     const templates: Record<string, string> = {
       bhagavad_gita_chapter_1_verse_2: "bhagavad_gita_chapter_1_verse_3_tamil",
-      bhagavad_gita_chapter_1_verse_3_tamil: "bhagavad_gita_chapter_1_verse_4_tamil"
+      bhagavad_gita_chapter_1_verse_3_tamil: "bhagavad_gita_chapter_1_verse_4_tamil",
+      bhagavad_gita_chapter_1_verse_4_tamil: "bhagavad_gita_chapter_1_verse_5"
     }
     return templates[template_name];
   }
