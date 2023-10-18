@@ -36,7 +36,7 @@ export default function Home() {
   const showPopup = () => {
     const lastDismissedTime = localStorage.getItem("subscriptionDismissedTime");
     const subscribedTime = localStorage.getItem("subscribedTime");
-    let dismissCount = parseInt(localStorage.getItem("dismissCount")) || 0;
+    let dismissCount = parseInt(localStorage.getItem("dismissCount") || 0);
     if(subscribedTime) {
       return;
     }
@@ -58,7 +58,7 @@ export default function Home() {
   // Function to handle closing the subscription popup
   const handleCloseSubscriptionPopup = () => {
     setShowSubscriptionPopup(false);
-    const dismissCount = parseInt(localStorage.getItem("dismissCount")) || 0;
+    const dismissCount = parseInt(localStorage.getItem("dismissCount") || 0);
     localStorage.setItem("dismissCount", (dismissCount + 1).toString());
     // Save the current time to local storage when the popup is dismissed
     localStorage.setItem("subscriptionDismissedTime", Date.now().toString());
