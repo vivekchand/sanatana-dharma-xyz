@@ -51,8 +51,8 @@ export default function Home() {
   }
 
   // Load the subscription popup state from local storage
-  useEffect(() => {
-     localStorage.setItem("dismissCount", 0);
+  useEffect(async () => {
+     await localStorage.setItem("dismissCount", 0);
     showPopup();
   }, []);
 
