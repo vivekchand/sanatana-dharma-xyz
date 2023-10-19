@@ -342,7 +342,21 @@ function getNextTemplate(template_name: string, lang:string) {
     const templates: Record<string, string> = {
       bhagavad_gita_chapter_1_verse_2: "bhagavad_gita_chapter_1_verse_3_tamil",
       bhagavad_gita_chapter_1_verse_3_tamil: "bhagavad_gita_chapter_1_verse_4_tamil",
-      bhagavad_gita_chapter_1_verse_4_tamil: "bhagavad_gita_chapter_1_verse_5"
+      bhagavad_gita_chapter_1_verse_4_tamil: "bhagavad_gita_chapter_1_verse_5",
+      bhagavad_gita_chapter_1_verse_5: "bhagavad_gita_chapter_1_verse_6",
+      bhagavad_gita_chapter_1_verse_7: "bhagavad_gita_chapter_1_verse_8",
+      bhagavad_gita_chapter_1_verse_8: "bhagavad_gita_chapter_1_verse_9",
+      bhagavad_gita_chapter_1_verse_9: "bhagavad_gita_chapter_1_verse_10",
+      bhagavad_gita_chapter_1_verse_10: "bhagavad_gita_chapter_1_verse_11",
+      bhagavad_gita_chapter_1_verse_11: "bhagavad_gita_chapter_1_verse_12",
+      bhagavad_gita_chapter_1_verse_12: "bhagavad_gita_chapter_1_verse_13",
+      bhagavad_gita_chapter_1_verse_13: "bhagavad_gita_chapter_1_verse_14",
+      bhagavad_gita_chapter_1_verse_14: "bhagavad_gita_chapter_1_verse_15",
+      bhagavad_gita_chapter_1_verse_15: "bhagavad_gita_chapter_1_verse_16",
+      bhagavad_gita_chapter_1_verse_16: "bhagavad_gita_chapter_1_verse_17",
+      bhagavad_gita_chapter_1_verse_17: "bhagavad_gita_chapter_1_verse_18",
+      bhagavad_gita_chapter_1_verse_18: "bhagavad_gita_chapter_1_verse_19",
+      bhagavad_gita_chapter_1_verse_19: "bhagavad_gita_chapter_1_verse_20",
     }
     return templates[template_name];
   }
