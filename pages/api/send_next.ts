@@ -101,7 +101,207 @@ Embrace this journey with an open mind. May it bring us closer to our true selve
     reply_first_message: "Namaste 🙏 Welcome to the sacred journey with SanatanaDharma.xyz. You're now subscribed to receive one verse a day from the Bhagavad Gita, Vedas, Upanishads. Let the transformation begin! Please reply with \"yes\" or \"subscribe\" to receive daily messages.",
     namaste_with_book_intro: "Welcome to the enlightening journey! You're now subscribed to receive one verse a day from the Bhagavad Gita, Vedas, Upanishads. Let the transformation begin! 🙏📖✨",
     namaste_first_message: "Namaste 🙏 Welcome to the sacred journey with SanatanaDharma.xyz. You're now subscribed to receive one verse a day from the Bhagavad Gita, Vedas, Upanishads. Let the transformation begin!",
-    first_message_on_subscription: "Welcome to the enlightening journey! You're now subscribed with SanatanaDharma.xyz to receive one verse a day from the Bhagavad Gita, Vedas, Upanishads. Let the transformation begin!"
+    first_message_on_subscription: "Welcome to the enlightening journey! You're now subscribed with SanatanaDharma.xyz to receive one verse a day from the Bhagavad Gita, Vedas, Upanishads. Let the transformation begin!",
+    bhagavad_gita_chapter_1_verse_6	: `Bhagavad Gita Chapter 1, Verse 6:
+
+युधामन्युश्च विक्रान्त उत्तमौजाश्च वीर्यवान्। 
+सौभद्रो द्रौपदेयाश्च सर्व एव महारथाः।।1.6।।
+
+saubhadro draupadeyāśhcha sarva eva mahā-rathāḥ
+
+saubhadraḥ—the son of Subhadra; draupadeyāḥ—the sons of Draupadi; cha—and; sarve—all; eva—indeed; mahā-rathāḥ—warriors who could single handedly match the strength of ten thousand ordinary warriors
+
+Translation:
+The strong Yudhamanyu and the brave Uttamaujas, the son of Subhadra (Abhimanyu, the son of Subhadra and Arjuna), and the sons of Draupadi, all of them are great charioteers (great heroes).
+`,
+    bhagavad_gita_chapter_1_verse_7: `Bhagavad Gita Chapter 1 v7
+अस्माकं तु विशिष्टा ये तान्निबोध द्विजोत्तम। 
+नायका मम सैन्यस्य संज्ञार्थं तान्ब्रवीमि ते।
+
+asmākaṁ tu viśhiṣhṭā ye tānnibodha dwijottama nāyakā 
+mama sainyasya sanjñārthaṁ tānbravīmi te
+
+In this verse, Sanjaya describes the actions of Dronacharya, the preeminent teacher and commander of the Kaurava army. Dronacharya is leading the Kaurava formation, which is compared to a mighty army formation, much like the one described in the previous verse for the Pandavas. He is being guided and supported by his wise disciple, Dhrishtadyumna, who is the son of King Drupada.
+
+The verse highlights the pivotal role of Dronacharya as a teacher and commander. His expertise in warfare and his strategic skills are emphasized as he prepares the Kaurava forces for battle. The term "mātparaṁ" suggests that Dronacharya was dedicated to achieving the welfare and victory of the Kauravas. The verse serves to underscore the significance of the respective commanders and their roles in the impending conflict.
+`,
+    bhagavad_gita_chapter_1_verse_8: `Bhagavad Gita Chapter 1, Verse 8:
+
+Verse (Sanskrit):
+भवान्भीष्मश्च कर्णश्च कृपश्च समितिञ्जयः। 
+अश्वत्थामा विकर्णश्च सौमदत्तिस्तथैव च।।1.8।।
+
+bhavānbhīṣhmaśhcha karṇaśhcha kṛipaśhcha samitiñjayaḥ 
+aśhvatthāmā vikarṇaśhcha saumadattis tathaiva cha
+
+bhavān—yourself; bhīṣhmaḥ—Bheeshma; cha—and; karṇaḥ—Karna; cha—and; kṛipaḥ—Kripa; cha—and; samitim-jayaḥ—victorious in battle; aśhvatthāmā—Ashvatthama; vikarṇaḥ—Vikarna; cha—and; saumadattiḥ—Bhurishrava; tathā—thus; eva—even; cha—also
+
+Translation
+"Thou thyself, Bhishma, Karna, Kripa, the victorious in war, Asvatthama, Vikarna, and Bhurisrava, the son of Somadatta—all these are ready for battle."
+`,
+    bhagavad_gita_chapter_1_verse_9: `Bhagavad Gita Chapter 1, Verse 9:
+
+अन्ये च बहवः शूरा मदर्थे त्यक्तजीविताः। 
+नानाशस्त्रप्रहरणाः सर्वे युद्धविशारदाः।।1.9।।
+
+anye cha bahavaḥ śhūrā madarthe tyaktajīvitāḥ nānā-śhastra-praharaṇāḥ sarve yuddha-viśhāradāḥ
+
+anye—others; cha—also; bahavaḥ—many; śhūrāḥ—heroic warriors; mat-arthe—for my sake; tyakta-jīvitāḥ—prepared to lay down their lives; nānā-śhastra-praharaṇāḥ—equipped with various kinds of weapons; sarve—all; yuddha-viśhāradāḥ—skilled in the art of warfare
+
+Translation
+And also many other heroes, ready to give up their lives for my sake, armed with various weapons and missiles, all well-skilled in battle.
+`,
+    bhagavad_gita_chapter_1_verse_10: `Bhagavad Gita Chapter 1, Verse 10:
+
+अपर्याप्तं तदस्माकं बलं भीष्माभिरक्षितम्। 
+पर्याप्तं त्विदमेतेषां बलं भीमाभिरक्षितम्।।1.10।।
+
+aparyāptaṁ tadasmākaṁ balaṁ bhīṣhmābhirakṣhitam 
+paryāptaṁ tvidameteṣhāṁ balaṁ bhīmābhirakṣhitam
+
+aparyāptam—unlimited; tat—that; asmākam—ours; balam—strength; bhīṣhma—by Grandsire Bheeshma; abhirakṣhitam—safely marshalled; paryāptam—limited; tu—but; idam—this; eteṣhām—their; balam—strength; bhīma—Bheem; abhirakṣhitam—carefully marshalled
+
+Translation
+Our army, marshalled by Bhishma, is insufficient, whereas theirs, marshalled by Bhima, is sufficient.
+`,
+    bhagavad_gita_chapter_1_verse_11: `Bhagavad Gita Chapter 1, Verse 11:
+
+अयनेषु च सर्वेषु यथाभागमवस्थिताः। 
+भीष्ममेवाभिरक्षन्तु भवन्तः सर्व एव हि।।1.11।।
+
+ayaneṣhu cha sarveṣhu yathā-bhāgamavasthitāḥ 
+bhīṣhmamevābhirakṣhantu bhavantaḥ sarva eva hi
+
+ayaneṣhu—at the strategic points; cha—also; sarveṣhu—all; yathā-bhāgam—in respective position; avasthitāḥ—situated; bhīṣhmam—to Grandsire Bheeshma; eva—only; abhirakṣhantu—defend; bhavantaḥ—you; sarve—all; eva hi—even as
+
+Translation
+Therefore, do all of you, stationed in your respective positions in the several divisions of the army, protect Bhishma alone.
+`,
+    bhagavad_gita_chapter_1_verse_12: `Bhagavad Gita Chapter 1, Verse 12:
+
+तस्य संजनयन्हर्षं कुरुवृद्धः पितामहः। सिंहनादं विनद्योच्चैः शङ्खं दध्मौ प्रतापवान्।।1.12।।
+
+tasya sañjanayan harṣhaṁ kuru-vṛiddhaḥ pitāmahaḥ siṁha-nādaṁ vinadyochchaiḥ śhaṅkhaṁ dadhmau pratāpavān
+
+tasya—his; sañjanayan—causing; harṣham—joy; kuru-vṛiddhaḥ—the grand old man of the Kuru dynasty (Bheeshma); pitāmahaḥ—grandfather; sinha-nādam—lion’s roar; vinadya—sounding; uchchaiḥ—very loudly; śhaṅkham—conch shell; dadhmau—blew; pratāpa-vān—the glorious
+
+Translation
+His glorious grandsire, the oldest of the Kauravas, roared like a lion to cheer Duryodhana and blew his conch.
+`,
+    bhagavad_gita_chapter_1_verse_13: `Bhagavad Gita Chapter 1, Verse 13:
+
+ततः शङ्खाश्च भेर्यश्च पणवानकगोमुखाः। 
+सहसैवाभ्यहन्यन्त स शब्दस्तुमुलोऽभवत्।।1.13।।
+
+tataḥ śhaṅkhāśhcha bheryaśhcha paṇavānaka-gomukhāḥ 
+sahasaivābhyahanyanta sa śhabdastumulo ’bhavat
+
+tataḥ—thereafter; śhaṅkhāḥ—conches; cha—and; bheryaḥ—bugles; cha—and; paṇava-ānaka—drums and kettledrums; go-mukhāḥ—trumpets; sahasā—suddenly; eva—indeed; abhyahanyanta—blared forth; saḥ—that; śhabdaḥ—sound; tumulaḥ—overwhelming; abhavat—was
+
+Translation
+Then, suddenly, conches, kettledrums, tabors, drums, and cow horns blared forth from the Kaurava side, and the sound was tremendous.
+`,
+    bhagavad_gita_chapter_1_verse_14: `Bhagavad Gita Chapter 1, Verse 14:
+
+ततः श्वेतैर्हयैर्युक्ते महति स्यन्दने स्थितौ। 
+माधवः पाण्डवश्चैव दिव्यौ शङ्खौ प्रदध्मतुः।।1.14।।
+
+tataḥ śhvetairhayairyukte mahati syandane sthitau mādhavaḥ pāṇḍavaśhchaiva divyau śhaṅkhau pradadhmatuḥ
+
+tataḥ—then; śhvetaiḥ—by white; hayaiḥ—horses; yukte—yoked; mahati—glorious; syandane—chariot; sthitau—seated; mādhavaḥ—Shree Krishna, the husband of the goddess of fortune, Lakshmi; pāṇḍavaḥ—Arjun; cha—and; eva—also; divyau—Divine; śhaṅkhau—conch shells; pradadhmatuḥ—blew
+
+Translation
+Then, Madhava (Krishna) and the son of Pandu (Arjuna), seated in the magnificent chariot yoked with white horses, blew divine conches.
+`,
+    bhagavad_gita_chapter_1_verse_15	: `Bhagavad Gita Chapter 1, Verse 15:
+
+पाञ्चजन्यं हृषीकेशो देवदत्तं धनंजयः। 
+पौण्ड्रं दध्मौ महाशङ्खं भीमकर्मा वृकोदरः।।1.15।।
+
+pāñchajanyaṁ hṛiṣhīkeśho devadattaṁ dhanañjayaḥ 
+pauṇḍraṁ dadhmau mahā-śhaṅkhaṁ bhīma-karmā vṛikodaraḥ
+
+pāñchajanyam—the conch shell named Panchajanya; hṛiṣhīka-īśhaḥ—Shree Krishna, the Lord of the mind and senses; devadattam—the conch shell named Devadutta; dhanam-jayaḥ—Arjun, the winner of wealth; pauṇḍram—the conch named Paundra; dadhmau—blew; mahā-śhaṅkham—mighty conch; bhīma-karmā—one who performs herculean tasks; vṛika-udaraḥ—Bheem, the voracious eater
+
+Translation
+Hrishikesha blew the Panchajanya, Arjuna blew the Devadatta, and Bhima, the wolf-bellied doer of terrible deeds, blew the great conch Paundra.
+`,
+    bhagavad_gita_chapter_1_verse_16: `Bhagavad Gita Chapter 1, Verse 16:
+
+अनन्तविजयं राजा कुन्तीपुत्रो युधिष्ठिरः। नकुलः सहदेवश्च सुघोषमणिपुष्पकौ।।1.16।।
+
+anantavijayaṁ rājā kuntī-putro yudhiṣhṭhiraḥ nakulaḥ sahadevaśhcha sughoṣha-maṇipuṣhpakau
+
+ananta-vijayam—the conch named Anantavijay; rājā—king; kuntī-putraḥ—son of Kunti; yudhiṣhṭhiraḥ—Yudhishthir; nakulaḥ—Nakul; sahadevaḥ—Sahadev; cha—and; sughoṣha-maṇipuṣhpakau—the conche shells named Sughosh and Manipushpak;
+
+Translation
+King Yudhishthira, the son of Kunti, blew the Anantavijaya; Nakula and Sahadeva blew the Sughosha and the Manipushpaka.
+`,
+    bhagavad_gita_chapter_1_verse_17: `Bhagavad Gita Chapter 1, Verse 17:
+
+काश्यश्च परमेष्वासः शिखण्डी च महारथः। 
+धृष्टद्युम्नो विराटश्च सात्यकिश्चापराजितः।।1.17।।
+
+kāśhyaśhcha parameṣhvāsaḥ śhikhaṇḍī cha mahā-rathaḥ dhṛiṣhṭadyumno virāṭaśhcha sātyakiśh chāparājitaḥ
+
+kāśhyaḥ—King of Kashi; cha—and; parama-iṣhu-āsaḥ—the excellent archer; śhikhaṇḍī—Shikhandi; cha—also; mahā-rathaḥ—warriors who could single handedly match the strength of ten thousand ordinary warriors; dhṛiṣhṭadyumnaḥ—Dhrishtadyumna; virāṭaḥ—Virat; cha—and; sātyakiḥ—Satyaki; cha—and; aparājitaḥ—invincible;
+
+Translation
+The king of Kasi, an excellent archer, Sikhandi, the mighty car-warrior, Dhrishtadyumna, Virata, and Satyaki, the unconquered.
+`,
+    bhagavad_gita_chapter_1_verse_18: `Bhagavad Gita Chapter 1, Verse 18:
+
+द्रुपदो द्रौपदेयाश्च सर्वशः पृथिवीपते। 
+सौभद्रश्च महाबाहुः शङ्खान्दध्मुः पृथक्पृथक्।।1.18।।
+
+drupado draupadeyāśhcha sarvaśhaḥ pṛithivī-pate saubhadraśhcha mahā-bāhuḥ śhaṅkhāndadhmuḥ pṛithak pṛithak
+
+drupadaḥ—Drupad; draupadeyāḥ—the five sons of Draupadi; cha—and; sarvaśhaḥ—all; pṛithivī-pate—Ruler of the earth; saubhadraḥ—Abhimanyu, the son of Subhadra; cha—also; mahā-bāhuḥ—the mighty-armed; śhaṅkhān—conch shells; dadhmuḥ—blew; pṛithak pṛithak—individually
+
+Translation
+Drupada and the sons of Draupadi, O Lord of the Earth, and the son of Subhadra, the mighty-armed, blew their conches each separately.
+`,
+    bhagavad_gita_chapter_1_verse_19: `Bhagavad Gita Chapter 1, Verse 19:
+
+स घोषो धार्तराष्ट्राणां हृदयानि व्यदारयत्। 
+नभश्च पृथिवीं चैव तुमुलो व्यनुनादयन्।।1.19।।
+
+sa ghoṣho dhārtarāṣhṭrāṇāṁ hṛidayāni vyadārayat 
+nabhaśhcha pṛithivīṁ chaiva tumulo nunādayan
+
+saḥ—that; ghoṣhaḥ—sound; dhārtarāṣhṭrāṇām—of Dhritarashtra’s sons; hṛidayāni—hearts; vyadārayat—shattered; nabhaḥ—the sky; cha—and; pṛithivīm—the earth; cha—and; eva—certainly; tumulaḥ—terrific sound; abhyanunādayan—thundering
+
+Translation
+The tumultuous sound rent the hearts of Dhritarashtra's party, reverberating through both heaven and earth.
+`,
+    bhagavad_gita_chapter_1_verse_20: `Bhagavad Gita Chapter 1, Verse 20:
+
+अथ व्यवस्थितान्दृष्ट्वा धार्तराष्ट्रान् कपिध्वज: |
+प्रवृत्ते शस्त्रसम्पाते धनुरुद्यम्य पाण्डव: ||20||
+हृषीकेशं तदा वाक्यमिदमाह महीपते |
+
+atha vyavasthitān dṛiṣhṭvā dhārtarāṣhṭrān kapi-dhwajaḥ 
+pravṛitte śhastra-sampāte dhanurudyamya pāṇḍavaḥ 
+hṛiṣhīkeśhaṁ tadā vākyam idam āha mahī-pate
+
+atha—thereupon; vyavasthitān—arrayed; dṛiṣhṭvā—seeing; dhārtarāṣhṭrān—Dhritarashtra’s sons; kapi-dwajaḥ—the Monkey Bannered; pravṛitte—about to commence; śhastra-sampāte—to use the weapons; dhanuḥ—bow; udyamya—taking up; pāṇḍavaḥ—Arjun, the son of Pandu; hṛiṣhīkeśham—to Shree Krishna; tadā—at that time; vākyam—words; idam—these; āha—said; mahī-pate—King
+
+Translation
+Then, seeing the people of Dhritarashtra's party standing arrayed and the discharge of weapons about to begin, Arjuna, the son of Pandu whose ensign was a monkey, took up his bow and said the following to Krishna, O Lord of the Earth.
+`	
+
+
+
+
+
+
+
+
+
+
+
+
+
   };
 
   return templates[templateName] || "Template not found.";
