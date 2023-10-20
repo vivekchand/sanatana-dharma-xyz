@@ -7,20 +7,20 @@ const mailerSend = new MailerSend({
 });
 
 const handler = async (req) => {
-    const emailHtml = render(<Email url="https://sanatanadharma.xyz" />);
+    // const emailHtml = render(<Email url="https://sanatanadharma.xyz" />);
 
-    const sentFrom = new Sender("namaste@sanatanadharma.xyz", "SanatanaDharma.xyz");
-    const recipients = [
-        new Recipient("vivekchand19@gmail.com", "Vivek Chand")
-    ];
+    // const sentFrom = new Sender("namaste@sanatanadharma.xyz", "SanatanaDharma.xyz");
+    // const recipients = [
+    //     new Recipient("vivekchand19@gmail.com", "Vivek Chand")
+    // ];
 
-    const emailParams = new EmailParams()
-        .setFrom(sentFrom)
-        .setTo(recipients)
-        .setSubject("Namaskaram!")
-        .setHtml(emailHtml)
+    // const emailParams = new EmailParams()
+    //     .setFrom(sentFrom)
+    //     .setTo(recipients)
+    //     .setSubject("Namaskaram!")
+    //     .setHtml(emailHtml)
 
-    await mailerSend.email.send(emailParams);
+    // await mailerSend.email.send(emailParams);
     return new Response("Email Sent!!!");
 }
 
