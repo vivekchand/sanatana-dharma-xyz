@@ -365,7 +365,8 @@ function getMessageForTemplateName(templateName) {
 
 const handler = async (req, res) => {
     console.log("req");
-    console.log(req);
+    const { searchParams } = request.nextUrl;
+    console.log(searchParams);
     // const params = new URL(req.url).searchParams;
     // const email = params.get('email');
     // const template = params.get('template');
