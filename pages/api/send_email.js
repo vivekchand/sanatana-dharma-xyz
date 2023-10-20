@@ -21,6 +21,7 @@ const handler = async (req) => {
         .setHtml(emailHtml)
 
     mailerSend.email.send(emailParams);
+    return new Response("Email Sent!!!");
 }
 
 export default handler;
