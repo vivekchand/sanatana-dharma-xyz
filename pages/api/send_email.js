@@ -1,4 +1,4 @@
-import { Email } from '../email';
+import { Email } from './email';
 import { render } from '@react-email/render';
 import { MailerSend, EmailParams, Sender, Recipient } from "mailersend";
 
