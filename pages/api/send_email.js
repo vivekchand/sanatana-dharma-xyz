@@ -20,7 +20,7 @@ const handler = async (req) => {
         .setSubject("Namaskaram!")
         .setHtml(emailHtml)
 
-    mailerSend.email.send(emailParams);
+    await mailerSend.email.send(emailParams);
     return new Response("Email Sent!!!");
 }
 
