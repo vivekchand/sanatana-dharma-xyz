@@ -368,25 +368,24 @@ const handler = async (req, res) => {
     console.log(req.query.email);
     console.log(req.query.template);
     console.log(req.query.lang);
-    // const params = new URL(req.url).searchParams;
-    // const email = params.get('email');
-    // const template = params.get('template');
-    // const lang = params.get('lang');
-    // const message = getMessageForTemplateName(template);
-    // const emailHtml = render(<Email message={message} />);
+    const email = req.query.email;
+    const template = req.query.template;
+    const lang = req.query.lang;
+    const message = getMessageForTemplateName(template);
+    const emailHtml = render(<Email message={message} />);
 
-    // const sentFrom = new Sender("namaste@sanatanadharma.xyz", "SanatanaDharma.xyz");
-    // const recipients = [
-    //     new Recipient(email, "")
-    // ];
+    const sentFrom = new Sender("namaste@sanatanadharma.xyz", "SanatanaDharma.xyz");
+    const recipients = [
+        new Recipient(email, "")
+    ];
 
-    // const emailParams = new EmailParams()
-    //     .setFrom(sentFrom)
-    //     .setTo(recipients)
-    //     .setSubject("Namaskaram!")
-    //     .setHtml(emailHtml)
+    const emailParams = new EmailParams()
+        .setFrom(sentFrom)
+        .setTo(recipients)
+        .setSubject("Namaskaram!")
+        .setHtml(emailHtml)
 
-    // await mailerSend.email.send(emailParams);
+    await mailerSend.email.send(emailParams);
     return res.status(200).send("Email Sent!!!");
 }
 
