@@ -6,7 +6,7 @@ const mailerSend = new MailerSend({
   apiKey: process.env.MAILERSEND_API_KEY || '',
 });
 
-const handler = async (req) => {
+const handler = async (req, res) => {
     // const emailHtml = render(<Email url="https://sanatanadharma.xyz" />);
 
     // const sentFrom = new Sender("namaste@sanatanadharma.xyz", "SanatanaDharma.xyz");
@@ -21,7 +21,7 @@ const handler = async (req) => {
     //     .setHtml(emailHtml)
 
     // await mailerSend.email.send(emailParams);
-    return new Response("Email Sent!!!");
+    return res.status(200).send("Email Sent!!!");
 }
 
 export default handler;
