@@ -13,6 +13,7 @@ function getSubjectFromTemplateName(templateName) {
         bhagavad_gita_chapter_1_verse_1: "Diving into the Bhagavad Gita: Chapter 1, Verse 1 – A Gateway to Spiritual Wisdom",
         bhagavad_gita_chapter_1_verse_2: "Unveiling the Bhagavad Gita: Chapter 1, Verse 2 - Duryodhana's Fateful Decision",
     };
+    return templates[templateName] || "Template not found.";
 }
 
 function getMessageForTemplateName(templateName) {
