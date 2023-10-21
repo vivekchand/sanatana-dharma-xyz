@@ -52,7 +52,7 @@ async function sendEmail(email:string) {
       INSERT INTO subscriber (email, lastSentTemplate, Preferred_language, lastSentTime)
       VALUES (${email}, 'namaste_first_message', 'en', timezone('CET', NOW()))
       ON CONFLICT (email) DO UPDATE
-      SET lastSentTemplate = 'namaste_first_message'
+      SET lastSentTemplate = 'namaste_first_message',
           lastSentTime = timezone('CET', NOW())
       RETURNING id;
     `;
