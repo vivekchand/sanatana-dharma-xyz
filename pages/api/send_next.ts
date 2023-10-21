@@ -397,7 +397,7 @@ async function sendWhatsappMessage() {
       const current_time = new Date();
       const twelveHoursAgo: Date = new Date(current_time.getTime() - 12 * 60 * 60 * 1000);
 
-      if (!row.lastsenttime || lastSentTime > twelveHoursAgo) {
+      if (!row.lastsenttime || lastSentTime < twelveHoursAgo) {
         console.log('Need to send message now!');
         // const oldTemplate = row.lastsenttemplate.trim();
         // console.log(oldTemplate);
