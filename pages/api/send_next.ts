@@ -391,17 +391,17 @@ async function sendWhatsappMessage() {
     console.log("rows:");
     console.log(rows);
     for (const row of rows) {
-      console.log(row.lastSentTemplate);
+      console.log(row);
       const template = getNextTemplate(row.lastSentTemplate, row.lang);
+      const message = getMessageForTemplateName(template);
+      if(message.includes("Template not found") || template.includes("Template not found")) {
+        console.log("Template not found!!!");
+        continue;
+      }
+
       if(row.email) {
         // email
         sendNextEmail(row.email, template);
-        continue;
-      }
-      const message = getMessageForTemplateName(template);
-
-      if(message.includes("Template not found") || template.includes("Template not found")) {
-        console.log("Template not found!!!");
         continue;
       }
 
