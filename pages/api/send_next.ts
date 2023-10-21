@@ -486,12 +486,7 @@ async function sendWhatsappMessage() {
 const handler = async (req: Request): Promise<Response> => {
   try {
     // Get query parameters from the request
-    console.log("test 1");
-
     await sendWhatsappMessage();
-
-    console.log("Sent!");
-
     return new Response("Sent!!!");
   } catch (error) {
     console.error(error);
