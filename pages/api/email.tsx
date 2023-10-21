@@ -52,12 +52,12 @@ const main = {
 const container = {
   backgroundColor: '#f9f4f0',
   margin: '0 auto',
-  padding: '20px 0 20px',
+  padding: '10px 0 10px',
   marginBottom: '64px',
 };
 
 const box = {
-  padding: '0 0',
+  padding: '0 48px',
 };
 
 const hr = {
