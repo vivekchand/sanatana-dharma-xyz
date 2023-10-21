@@ -389,10 +389,7 @@ async function sendWhatsappMessage() {
       SELECT * FROM subscriber;
     `;
     const { rows } = await selectQuery;
-    console.log("rows:");
-    console.log(rows);
     for (const row of rows) {
-      console.log(row);
       const lastSentTime = new Date(row.lastsenttime);
       const current_time = new Date();
       const twelveHoursAgo: Date = new Date(current_time.getTime() - 12 * 60 * 60 * 1000);
@@ -476,7 +473,6 @@ async function sendWhatsappMessage() {
           console.error(response.body);
         }
       } else {
-        console.log('No need to send, we just sent the message!');
       }
 
     }
