@@ -16,9 +16,9 @@ import {
     message: string;
   }
   
-  const baseUrl = process.env.VERCEL_URL
-    ? `https://${process.env.VERCEL_URL}`
-    : '';
+  // const baseUrl = process.env.VERCEL_URL
+  //   ? `https://${process.env.VERCEL_URL}`
+  //   : '';
   
   export const KoalaWelcomeEmail = ({
     message = 'Zeno',
@@ -30,13 +30,13 @@ import {
       </Preview>
       <Body style={main}>
         <Container style={container}>
-          <Img
+          {/* <Img
             src={`${baseUrl}/static/koala-logo.png`}
             width="170"
             height="50"
             alt="Koala"
             style={logo}
-          />
+          /> */}
           {/* <Text style={paragraph}>Hi {userFirstname},</Text> */}
           <Text style={paragraph}>
             {message}
