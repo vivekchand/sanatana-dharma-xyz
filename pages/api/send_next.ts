@@ -392,7 +392,8 @@ async function sendWhatsappMessage() {
     console.log(rows);
     for (const row of rows) {
       console.log(row);
-      const template = getNextTemplate(row.lastSentTemplate, row.lang);
+      console.log(row.lastsenttemplate);
+      const template = getNextTemplate(row.lastsenttemplate, row.lang);
       const message = getMessageForTemplateName(template);
       if(message.includes("Template not found") || template.includes("Template not found")) {
         console.log("Template not found!!!");
