@@ -3,8 +3,8 @@ import { sql } from "@vercel/postgres";
 const handler = async (req: Request): Promise<Response> => {
   try {
     // Parse the request body to get the email
-    const requestBody = await req.json();
-    const { email } = requestBody;
+    const params = new URL(req.url).searchParams;
+    const email = params.get('email');
     console.log("test 1");
 
     const unsubscribeQuery = sql`
