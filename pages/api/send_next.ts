@@ -391,6 +391,7 @@ async function sendWhatsappMessage() {
     console.log("rows:");
     console.log(rows);
     for (const row of rows) {
+      console.log(row.lastSentTemplate);
       const template = getNextTemplate(row.lastSentTemplate, row.lang);
       if(row.email) {
         // email
@@ -398,6 +399,12 @@ async function sendWhatsappMessage() {
         continue;
       }
       const message = getMessageForTemplateName(template);
+
+      if(message.includes("Template not found") || template.includes("Template not found")) {
+        console.log("Template not found!!!");
+        continue;
+      }
+
       console.log(row);
       const phone = row.phonenumber;
       console.log("inside sendWhatsappMessage");

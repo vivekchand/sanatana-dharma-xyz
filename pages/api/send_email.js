@@ -422,6 +422,10 @@ const handler = async (req, res) => {
         new Recipient(email, "")
     ];
 
+    if(message.includes("Template not found") || template.includes("Template not found")) {
+        return res.status(400).send("Template not found!!");
+    }
+
     const emailParams = new EmailParams()
         .setFrom(sentFrom)
         .setTo(recipients)
