@@ -1,100 +1,98 @@
 import {
-    Body,
-    Button,
-    Container,
-    Head,
-    Hr,
-    Html,
-    Img,
-    Preview,
-    Section,
-    Text,
-  } from '@react-email/components';
-  import * as React from 'react';
-  
-  interface EmailProps {
-    message: string;
-  }
-  
-  // const baseUrl = process.env.VERCEL_URL
-  //   ? `https://${process.env.VERCEL_URL}`
-  //   : '';
-  
-  export const Email = ({
-    message = 'Zeno',
-  }: EmailProps) => (
-    <Html>
-      <Head />
-      <Preview>
-        {message}
-      </Preview>
-      <Body style={main}>
-        <Container style={container}>
-          {/* <Img
-            src={`${baseUrl}/static/koala-logo.png`}
-            width="170"
-            height="50"
-            alt="Koala"
-            style={logo}
-          /> */}
-          {/* <Text style={paragraph}>Hi {userFirstname},</Text> */}
+  Body,
+  Button,
+  Container,
+  Head,
+  Hr,
+  Html,
+  Img,
+  Link,
+  Preview,
+  Section,
+  Text,
+} from '@react-email/components';
+import * as React from 'react';
+
+interface EmailProps {
+  message: string;
+}
+
+export const Email = ({
+  message = 'Zeno',
+}: EmailProps) => (
+  <Html>
+    <Head />
+    <Preview>{message}</Preview>
+    <Body style={main}>
+      <Container style={container}>
+        <Section style={box}>
+          <Hr style={hr} />
           <div
             style={paragraph}
             dangerouslySetInnerHTML={{ __html: message }}
           />
-        </Container>
-      </Body>
-    </Html>
-  );
-  
-  export default Email;
-  
-  const main = {
-    backgroundColor: '#ffffff',
-    fontFamily:
-      '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif',
-  };
-  
-  const container = {
-    margin: '10px auto',
-    width: '600px',
-    border: '1px solid #E5E5E5',
-  };
-  
-  // const container = {
-  //   margin: '0 auto',
-  //   padding: '20px 0 48px',
-  // };
-  
-  const logo = {
-    margin: '0 auto',
-  };
-  
-  const paragraph = {
-    fontSize: '16px',
-    lineHeight: '26px',
-  };
-  
-  const btnContainer = {
-    textAlign: 'center' as const,
-  };
-  
-  const button = {
-    backgroundColor: '#5F51E8',
-    borderRadius: '3px',
-    color: '#fff',
-    fontSize: '16px',
-    textDecoration: 'none',
-    textAlign: 'center' as const,
-    display: 'block',
-  };
-  
-  const hr = {
-    borderColor: '#cccccc',
-    margin: '20px 0',
-  };
-  
-  const footer = {
-    color: '#8898aa',
-    fontSize: '12px',
-  };
+          <Hr style={hr} />
+          <Text style={paragraph}>— The SanatanaDharma.xyz team</Text>
+          <Hr style={hr} />
+          <Text style={footer}>
+            SanatanaDharma.xyz
+          </Text>
+        </Section>
+      </Container>
+    </Body>
+  </Html>
+);
+
+export default Email;
+
+const main = {
+  backgroundColor: '#f6f9fc',
+  fontFamily:
+    '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif',
+};
+
+const container = {
+  backgroundColor: '#ffffff',
+  margin: '0 auto',
+  padding: '20px 0 48px',
+  marginBottom: '64px',
+};
+
+const box = {
+  padding: '0 48px',
+};
+
+const hr = {
+  borderColor: '#e6ebf1',
+  margin: '20px 0',
+};
+
+const paragraph = {
+  color: '#525f7f',
+
+  fontSize: '16px',
+  lineHeight: '24px',
+  textAlign: 'left' as const,
+};
+
+const anchor = {
+  color: '#556cd6',
+};
+
+const button = {
+  backgroundColor: '#656ee8',
+  borderRadius: '5px',
+  color: '#fff',
+  fontSize: '16px',
+  fontWeight: 'bold',
+  textDecoration: 'none',
+  textAlign: 'center' as const,
+  display: 'block',
+  width: '100%',
+};
+
+const footer = {
+  color: '#8898aa',
+  fontSize: '12px',
+  lineHeight: '16px',
+};
