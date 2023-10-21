@@ -38,9 +38,10 @@ import {
             style={logo}
           /> */}
           {/* <Text style={paragraph}>Hi {userFirstname},</Text> */}
-          <Text style={paragraph}>
-              {message}
-          </Text>
+          <div
+            style={paragraph}
+            dangerouslySetInnerHTML={{ __html: message }}
+          />
         </Container>
       </Body>
     </Html>

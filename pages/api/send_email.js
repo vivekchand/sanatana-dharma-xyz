@@ -382,7 +382,7 @@ const handler = async (req, res) => {
     const template = req.query.template;
     const lang = req.query.lang;
     const message = getMessageForTemplateName(template);
-    var htmlContent = message.replace(/\n/g, "<br>");
+    var htmlContent = message.replace(/\n/g, "<br/>");
     const emailHtml = render(<Email message={htmlContent} />);
 
     const sentFrom = new Sender("namaste@sanatanadharma.xyz", "SanatanaDharma.xyz");
