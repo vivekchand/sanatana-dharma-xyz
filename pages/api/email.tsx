@@ -46,7 +46,7 @@ export const Email = ({
 export default Email;
 
 const main = {
-  backgroundColor: '#f6f9fc',
+  backgroundColor: '#f9f4f0',
   fontFamily:
     '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif',
 };
@@ -54,7 +54,7 @@ const main = {
 const container = {
   backgroundColor: '#ffffff',
   margin: '0 auto',
-  padding: '20px 0 48px',
+  padding: '20px 0 20px',
   marginBottom: '64px',
 };
 
