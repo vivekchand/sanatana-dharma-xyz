@@ -16,11 +16,13 @@ import * as React from 'react';
 interface EmailProps {
   message: string;
   preview: string;
+  email: string
 }
 
 export const Email = ({
   message = 'the message',
   preview = 'the preview',
+  email = "email",
 }: EmailProps) => (
   <Html>
     <Head />
@@ -36,6 +38,8 @@ export const Email = ({
           <Hr style={hr} />
           <Text style={footer}>
             SanatanaDharma.xyz
+
+            <Link href="https://sanatanadharma.xyz/api/unsubscribe?email={email}" style={footerLink} target="_blank">Unsubscribe</Link>
           </Text>
         </Section>
       </Container>
@@ -44,6 +48,11 @@ export const Email = ({
 );
 
 export default Email;
+
+const footerLink = {
+  color: '#b7b7b7',
+  textDecoration: 'underline',
+};
 
 const main = {
   backgroundColor: '#f9f4f0',
