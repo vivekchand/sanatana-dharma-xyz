@@ -6,6 +6,15 @@ const mailerSend = new MailerSend({
   apiKey: process.env.MAILERSEND_API_KEY || '',
 });
 
+function getSubjectFromTemplateName(templateName) {
+    const templates = {
+        namaste_first_message: "Discover Ancient Wisdom: Your Daily Verse Subscription",
+        ganapati_welcome: "Exploring Sanatana Dharma: A Journey Guided by Lord Ganapati's Grace 🌟",
+        bhagavad_gita_chapter_1_verse_1: "Diving into the Bhagavad Gita: Chapter 1, Verse 1 – A Gateway to Spiritual Wisdom",
+        bhagavad_gita_chapter_1_verse_2: "Unveiling the Bhagavad Gita: Chapter 1, Verse 2 - Duryodhana's Fateful Decision",
+    };
+}
+
 function getMessageForTemplateName(templateName) {
     const templates = {
       bhagavad_gita_chapter_1_verse_1: `Bhagavad Gita Chapter 1, Verse 1 sets the stage for the epic conversation between Lord Krishna and Arjuna on the battlefield of Kurukshetra. Dhritarashtra, the blind king, asks his charioteer Sanjaya about the events on the battlefield. He wants to know what his sons, the Kauravas, and the Pandavas, the sons of Pandu, are doing as they prepare for battle. This verse serves as an introduction to the subsequent chapters where Lord Krishna imparts wisdom and guidance to Arjuna, who is torn by moral dilemmas. The dialogue between Lord Krishna and Arjuna forms the essence of the Bhagavad Gita, offering insights into life, duty, righteousness, and spirituality.
@@ -382,7 +391,7 @@ const handler = async (req, res) => {
     const emailParams = new EmailParams()
         .setFrom(sentFrom)
         .setTo(recipients)
-        .setSubject("Discover Ancient Wisdom: Your Daily Verse Subscription")
+        .setSubject(getSubjectFromTemplateName(template))
         .setHtml(emailHtml)
 
     await mailerSend.email.send(emailParams);
