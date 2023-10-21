@@ -39,9 +39,7 @@ import {
           /> */}
           {/* <Text style={paragraph}>Hi {userFirstname},</Text> */}
           <Text style={paragraph}>
-            <pre>
               {message}
-            </pre>
           </Text>
         </Container>
       </Body>
