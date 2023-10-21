@@ -382,7 +382,7 @@ const handler = async (req, res) => {
     const emailParams = new EmailParams()
         .setFrom(sentFrom)
         .setTo(recipients)
-        .setSubject("Namaskaram!")
+        .setSubject("Discover Ancient Wisdom: Your Daily Verse Subscription")
         .setHtml(emailHtml)
 
     await mailerSend.email.send(emailParams);
