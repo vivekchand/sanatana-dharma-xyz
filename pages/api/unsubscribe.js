@@ -1,3 +1,4 @@
+import { sql } from "@vercel/postgres";
 
 const handler = async (req, res) => {
     console.log("req");
