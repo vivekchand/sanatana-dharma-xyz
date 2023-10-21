@@ -397,85 +397,85 @@ async function sendWhatsappMessage() {
       const twelveHoursAgo: Date = new Date(current_time.getTime() - 12 * 60 * 60 * 1000);
 
       if (!lastSentTime || lastSentTime > twelveHoursAgo) {
-        console.log('subscriber.lastsenttime is greater than 12 hours ago');
-      } else {
-        console.log('subscriber.lastsenttime is lesser than 12 hours ago');
-      }
-      
-      // const oldTemplate = row.lastsenttemplate.trim();
-      // console.log(oldTemplate);
-      // const template = getNextTemplate(oldTemplate, row.preferred_language);
-      // console.log(template);
-      // const message = getMessageForTemplateName(template);
-      // if(message.includes("Template not found") || template.includes("Template not found")) {
-      //   console.log("Template not found!!!");
-      //   continue;
-      // }
+        console.log('Need to send message now!');
+        const oldTemplate = row.lastsenttemplate.trim();
+        console.log(oldTemplate);
+        const template = getNextTemplate(oldTemplate, row.preferred_language);
+        console.log(template);
+        const message = getMessageForTemplateName(template);
+        if(message.includes("Template not found") || template.includes("Template not found")) {
+          console.log("Template not found!!!");
+          continue;
+        }
 
-      // if(row.email) {
-      //   // email
-      //   sendNextEmail(row.email, template);
-      //   continue;
-      // }
+        if(row.email) {
+          // email
+          sendNextEmail(row.email, template);
+          continue;
+        }
 
-      // console.log(row);
-      // const phone = row.phonenumber;
-      // console.log("inside sendWhatsappMessage");
-      // console.log(phone);
-      // console.log(template);
-      // console.log(message);
-      // const formData = new FormData();
-      // formData.append('From', "whatsapp:+13074486824");
-      // formData.append('To', "whatsapp:" + phone);
-      // formData.append('Body', message);
+        console.log(row);
+        const phone = row.phonenumber;
+        console.log("inside sendWhatsappMessage");
+        console.log(phone);
+        console.log(template);
+        console.log(message);
+        const formData = new FormData();
+        formData.append('From', "whatsapp:+13074486824");
+        formData.append('To', "whatsapp:" + phone);
+        formData.append('Body', message);
+        
+        const response = await fetch(`https://api.twilio.com/2010-04-01/Accounts/${accountSid}/Messages.json`, {
+          method: 'POST',
+          headers: {
+            'Authorization': `Basic ${Buffer.from(`${accountSid}:${authToken}`).toString('base64')}`,
+          },
+          body: formData,
+        });    
       
-      // const response = await fetch(`https://api.twilio.com/2010-04-01/Accounts/${accountSid}/Messages.json`, {
-      //   method: 'POST',
-      //   headers: {
-      //     'Authorization': `Basic ${Buffer.from(`${accountSid}:${authToken}`).toString('base64')}`,
-      //   },
-      //   body: formData,
-      // });    
+        if (response.ok) {
+          const data = await response.json();
+          console.log("data is:");
+          console.log(data);
+          console.log("test 3");
     
-      // if (response.ok) {
-      //   const data = await response.json();
-      //   console.log("data is:");
-      //   console.log(data);
-      //   console.log("test 3");
-  
-      //   const isEmail = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(phone);
-      //   let insertQuery;
-      //   console.log("test 4");
-  
-      //   if(isEmail) {
-      //     console.log("test 5");
-      //     insertQuery = sql`
-      //     INSERT INTO subscriber (email, lastSentTemplate)
-      //     VALUES (${phone}, ${template})
-      //     ON CONFLICT (email) DO UPDATE
-      //     SET lastSentTemplate = ${template}
-      //     RETURNING id;
-      //   `;
-      //   } else {
-      //     console.log("test 6");
-      //     insertQuery = sql`
-      //     INSERT INTO subscriber (phoneNumber, lastSentTemplate)
-      //     VALUES (${phone},  ${template})
-      //     ON CONFLICT (phoneNumber) DO UPDATE
-      //     SET lastSentTemplate = ${template}
-      //     RETURNING id;
-      //   `;
-      //   }
-      //   console.log("test 7");
-      //   const { rows } = await insertQuery;
-      //   console.log("test 8");
-      //   const insertedSubscriberId = rows[0].id;
-      //   console.log("test 9");
-      //   console.log("subscriber id:"+ insertedSubscriberId);
-      // } else {
-      //   console.error("Fetch request failed with status " + response.status);
-      //   console.error(response.body);
-      // }
+          const isEmail = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(phone);
+          let insertQuery;
+          console.log("test 4");
+    
+          if(isEmail) {
+            console.log("test 5");
+            insertQuery = sql`
+            INSERT INTO subscriber (email, lastSentTemplate)
+            VALUES (${phone}, ${template})
+            ON CONFLICT (email) DO UPDATE
+            SET lastSentTemplate = ${template}
+            RETURNING id;
+          `;
+          } else {
+            console.log("test 6");
+            insertQuery = sql`
+            INSERT INTO subscriber (phoneNumber, lastSentTemplate)
+            VALUES (${phone},  ${template})
+            ON CONFLICT (phoneNumber) DO UPDATE
+            SET lastSentTemplate = ${template}
+            RETURNING id;
+          `;
+          }
+          console.log("test 7");
+          const { rows } = await insertQuery;
+          console.log("test 8");
+          const insertedSubscriberId = rows[0].id;
+          console.log("test 9");
+          console.log("subscriber id:"+ insertedSubscriberId);
+        } else {
+          console.error("Fetch request failed with status " + response.status);
+          console.error(response.body);
+        }
+      } else {
+        console.log('No need to send, we just sent the message!');
+      }
+
     }
 
   } catch (error) {
