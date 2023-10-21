@@ -42,6 +42,13 @@ export const config = {
 };
 const emailMutex = new Mutex();
 
+async function sendEmail(email:string) {
+  const response = await fetch("https://sanatanadharma.xyz/api/send_email?template=namaste_first_message&lang=en&email="+email, {
+    method: 'GET'
+  });
+  console.log(response);
+}
+
 async function sendWhatsappMessage(url:string, email:string) {
   try {
     const message = getMessageForTemplateName("namaste_first_message");
@@ -135,7 +142,12 @@ const handler = async (req: Request): Promise<Response> => {
       // Handle the error as needed
     }
 
-    await sendWhatsappMessage(`https://api.twilio.com/2010-04-01/Accounts/${accountSid}/Messages.json`, email);
+    const isEmail = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(email);
+    if(isEmail) {
+      await sendEmail(email);
+    } else{
+      await sendWhatsappMessage(`https://api.twilio.com/2010-04-01/Accounts/${accountSid}/Messages.json`, email);
+    }
 
     return new Response("Subscribed!!!");
   } catch (error) {
