@@ -13,7 +13,7 @@ import {
   import * as React from 'react';
   
   interface KoalaWelcomeEmailProps {
-    userFirstname: string;
+    message: string;
   }
   
   const baseUrl = process.env.VERCEL_URL
@@ -21,7 +21,7 @@ import {
     : '';
   
   export const KoalaWelcomeEmail = ({
-    userFirstname = 'Zeno',
+    message = 'Zeno',
   }: KoalaWelcomeEmailProps) => (
     <Html>
       <Head />
@@ -37,10 +37,9 @@ import {
             alt="Koala"
             style={logo}
           />
-          <Text style={paragraph}>Hi {userFirstname},</Text>
+          {/* <Text style={paragraph}>Hi {userFirstname},</Text> */}
           <Text style={paragraph}>
-            Welcome to Koala, the sales intelligence platform that helps you
-            uncover qualified leads and close deals faster.
+            {message}
           </Text>
           <Section style={btnContainer}>
             <Button pX={12} pY={12} style={button} href="https://getkoala.com">
