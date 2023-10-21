@@ -16,13 +16,13 @@ import * as React from 'react';
 interface EmailProps {
   message: string;
   preview: string;
-  email: string
+  unsubscribe_link: string
 }
 
 export const Email = ({
   message = 'the message',
   preview = 'the preview',
-  email = "email",
+  unsubscribe_link = "unsubscribe link",
 }: EmailProps) => (
   <Html>
     <Head />
@@ -39,7 +39,7 @@ export const Email = ({
           <Text style={footer}>
             SanatanaDharma.xyz
             <br/>
-            <Link href="https://sanatanadharma.xyz/api/unsubscribe?email={email}" style={footerLink} target="_blank">Unsubscribe</Link>
+            <Link href={unsubscribe_link} style={footerLink} target="_blank">Unsubscribe</Link>
           </Text>
         </Section>
       </Container>
