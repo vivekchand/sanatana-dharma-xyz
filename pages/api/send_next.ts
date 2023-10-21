@@ -363,16 +363,41 @@ function getNextTemplate(template_name: string, lang:string) {
   return "";
 }
 
-async function sendWhatsappMessage(oldTemplate:string, template:string, lang:string) {
+async function sendNextEmail(email:string, template:string) {
+  const response = await fetch("https://sanatanadharma.xyz/api/send_email?template="+template+"&lang=en&email="+email, {
+    method: 'GET'
+  });
+  console.log(response);
+  if(response.ok) {
+    const insertQuery = sql`
+      INSERT INTO subscriber (email, lastSentTemplate, Preferred_language)
+      VALUES (${email}, 'namaste_first_message', 'en')
+      ON CONFLICT (email) DO UPDATE
+      SET lastSentTemplate = ${template}
+      RETURNING id;
+    `;
+    const { rows } = await insertQuery;
+    console.log(rows);
+  }
+}
+
+
+async function sendWhatsappMessage() {
   try {
-    const message = getMessageForTemplateName(template);
     const selectQuery = sql`
-      SELECT * FROM subscriber WHERE lastSentTemplate = ${oldTemplate} AND preferred_language = ${lang};
+      SELECT * FROM subscriber;
     `;
     const { rows } = await selectQuery;
     console.log("rows:");
     console.log(rows);
     for (const row of rows) {
+      const template = getNextTemplate(row.lastSentTemplate, row.lang);
+      if(row.email) {
+        // email
+        sendNextEmail(row.email, template);
+        continue;
+      }
+      const message = getMessageForTemplateName(template);
       console.log(row);
       const phone = row.phonenumber;
       console.log("inside sendWhatsappMessage");
@@ -442,18 +467,9 @@ async function sendWhatsappMessage(oldTemplate:string, template:string, lang:str
 const handler = async (req: Request): Promise<Response> => {
   try {
     // Get query parameters from the request
-    const params = new URL(req.url).searchParams;
-    const template = params.get('template');
-    const lang = params.get('lang');
-    console.log("template param: "+template);
-
-    if (!template || !lang) {
-      return new Response("Missing required parameters", { status: 400 });
-    }
-
     console.log("test 1");
 
-    await sendWhatsappMessage(template, getNextTemplate(template, lang), lang);
+    await sendWhatsappMessage();
 
     console.log("Sent!");
 
