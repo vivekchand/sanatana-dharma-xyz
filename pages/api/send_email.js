@@ -109,7 +109,7 @@ function getMessageForTemplateName(templateName) {
   Embrace this journey with an open mind. May it bring us closer to our true selves and lead us to a life filled with purpose, peace, and spiritual growth.`,
       reply_first_message: "Namaste 🙏 Welcome to the sacred journey with SanatanaDharma.xyz. You're now subscribed to receive one verse a day from the Bhagavad Gita, Vedas, Upanishads. Let the transformation begin! Please reply with \"yes\" or \"subscribe\" to receive daily messages.",
       namaste_with_book_intro: "Welcome to the enlightening journey! You're now subscribed to receive one verse a day from the Bhagavad Gita, Vedas, Upanishads. Let the transformation begin! 🙏📖✨",
-      namaste_first_message: `Namaste 🙏,
+      namaste_first_message: `Namaste 🙏
 
 Welcome to the sacred journey with SanatanaDharma.xyz. We are thrilled to have you as part of our spiritual community, and your subscription means that you will now receive a daily dose of wisdom from the Bhagavad Gita, Vedas, and Upanishads. These ancient texts are profound sources of spiritual insight and guidance, and we believe that by immersing yourself in their timeless teachings, you are embarking on a transformative journey. Each verse you receive will be a nugget of ancient wisdom that can help you navigate life's challenges, find inner peace, and explore the depths of your own spirituality.
       
