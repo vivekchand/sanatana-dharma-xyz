@@ -42,6 +42,7 @@ import {
             style={paragraph}
             dangerouslySetInnerHTML={{ __html: message }}
           />
+          <hr/>
         </Container>
       </Body>
     </Html>
