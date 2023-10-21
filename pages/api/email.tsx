@@ -56,9 +56,15 @@ import {
   };
   
   const container = {
-    margin: '0 auto',
-    padding: '20px 0 48px',
+    margin: '10px auto',
+    width: '600px',
+    border: '1px solid #E5E5E5',
   };
+  
+  // const container = {
+  //   margin: '0 auto',
+  //   padding: '20px 0 48px',
+  // };
   
   const logo = {
     margin: '0 auto',
