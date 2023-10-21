@@ -370,10 +370,11 @@ async function sendNextEmail(email:string, template:string) {
   console.log(response);
   if(response.ok) {
     const insertQuery = sql`
-      INSERT INTO subscriber (email, lastSentTemplate, Preferred_language)
-      VALUES (${email}, 'namaste_first_message', 'en')
+      INSERT INTO subscriber (email, lastSentTemplate, Preferred_language, lastSentTime)
+      VALUES (${email}, ${template}, 'en', timezone('CET', NOW()))
       ON CONFLICT (email) DO UPDATE
-      SET lastSentTemplate = ${template}
+      SET lastSentTemplate = ${template},
+          lastSentTime = timezone('CET', NOW())
       RETURNING id;
     `;
     const { rows } = await insertQuery;
@@ -446,20 +447,22 @@ async function sendWhatsappMessage() {
           if(isEmail) {
             console.log("test 5");
             insertQuery = sql`
-            INSERT INTO subscriber (email, lastSentTemplate)
-            VALUES (${phone}, ${template})
+            INSERT INTO subscriber (email, lastSentTemplate, lastSentTime)
+            VALUES (${phone}, ${template}, timezone('CET', NOW()))
             ON CONFLICT (email) DO UPDATE
-            SET lastSentTemplate = ${template}
-            RETURNING id;
+            SET lastSentTemplate = ${template},
+            lastSentTime = timezone('CET', NOW())
+              RETURNING id;
           `;
           } else {
             console.log("test 6");
             insertQuery = sql`
-            INSERT INTO subscriber (phoneNumber, lastSentTemplate)
-            VALUES (${phone},  ${template})
+            INSERT INTO subscriber (phoneNumber, lastSentTemplate, lastSentTime)
+            VALUES (${phone},  ${template}, timezone('CET', NOW()))
             ON CONFLICT (phoneNumber) DO UPDATE
-            SET lastSentTemplate = ${template}
-            RETURNING id;
+            SET lastSentTemplate = ${template},
+            lastSentTime = timezone('CET', NOW())
+              RETURNING id;
           `;
           }
           console.log("test 7");
