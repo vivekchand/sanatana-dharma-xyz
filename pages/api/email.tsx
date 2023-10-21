@@ -32,8 +32,6 @@ export const Email = ({
             dangerouslySetInnerHTML={{ __html: message }}
           />
           <Hr style={hr} />
-          <Text style={paragraph}>— The SanatanaDharma.xyz team</Text>
-          <Hr style={hr} />
           <Text style={footer}>
             SanatanaDharma.xyz
           </Text>
