@@ -38,7 +38,7 @@ export const Email = ({
           <Hr style={hr} />
           <Text style={footer}>
             SanatanaDharma.xyz
-
+            <br/>
             <Link href="https://sanatanadharma.xyz/api/unsubscribe?email={email}" style={footerLink} target="_blank">Unsubscribe</Link>
           </Text>
         </Section>
