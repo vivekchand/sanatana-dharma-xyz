@@ -49,10 +49,10 @@ async function sendEmail(email:string) {
   console.log(response);
   if(response.ok) {
     const insertQuery = sql`
-      INSERT INTO subscriber (phoneNumber, lastSentTemplate, Preferred_language)
-      VALUES (${email}, "namaste_first_message", 'en')
-      ON CONFLICT (phoneNumber) DO UPDATE
-      SET lastSentTemplate = "namaste_first_message"
+      INSERT INTO subscriber (email, lastSentTemplate, Preferred_language)
+      VALUES (${email}, 'namaste_first_message', 'en')
+      ON CONFLICT (email) DO UPDATE
+      SET lastSentTemplate = 'namaste_first_message'
       RETURNING id;
     `;
     const { rows } = await insertQuery;
