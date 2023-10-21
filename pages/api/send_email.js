@@ -383,7 +383,11 @@ const handler = async (req, res) => {
     const lang = req.query.lang;
     const message = getMessageForTemplateName(template);
     var htmlContent = message.replace(/\n/g, "<br/>");
-    const emailHtml = render(<Email message={htmlContent} />);
+    const messageWithLink = htmlContent.replace(
+        /SanatanaDharma\.xyz/g,
+        '<a href="https://SanatanaDharma.xyz" target="_blank">SanatanaDharma.xyz</a>'
+      );
+    const emailHtml = render(<Email message={messageWithLink} />);
 
     const sentFrom = new Sender("namaste@sanatanadharma.xyz", "SanatanaDharma.xyz");
     const recipients = [
