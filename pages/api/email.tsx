@@ -15,14 +15,16 @@ import * as React from 'react';
 
 interface EmailProps {
   message: string;
+  preview: string;
 }
 
 export const Email = ({
-  message = 'Zeno',
+  message = 'the message',
+  preview = 'the preview',
 }: EmailProps) => (
   <Html>
     <Head />
-    <Preview>{message}</Preview>
+    <Preview>{preview}</Preview>
     <Body style={main}>
       <Container style={container}>
         <Section style={box}>

@@ -415,7 +415,7 @@ const handler = async (req, res) => {
         /SanatanaDharma\.xyz/g,
         '<a href="https://SanatanaDharma.xyz" target="_blank">SanatanaDharma.xyz</a>'
       );
-    const emailHtml = render(<Email message={messageWithLink} />);
+    const emailHtml = render(<Email message={messageWithLink} preview={message} />);
 
     const sentFrom = new Sender("namaste@sanatanadharma.xyz", "SanatanaDharma.xyz");
     const recipients = [
