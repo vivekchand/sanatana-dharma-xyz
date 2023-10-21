@@ -26,7 +26,7 @@ import {
     <Html>
       <Head />
       <Preview>
-        The sales intelligence platform that helps you uncover qualified leads.
+        {message}
       </Preview>
       <Body style={main}>
         <Container style={container}>
