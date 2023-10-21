@@ -41,18 +41,6 @@ import {
           <Text style={paragraph}>
             {message}
           </Text>
-          <Section style={btnContainer}>
-            <Button pX={12} pY={12} style={button} href="https://getkoala.com">
-              Get started
-            </Button>
-          </Section>
-          <Text style={paragraph}>
-            Best,
-            <br />
-            The Koala team
-          </Text>
-          <Hr style={hr} />
-          <Text style={footer}>408 Warren Rd - San Mateo, CA 94402</Text>
         </Container>
       </Body>
     </Html>
