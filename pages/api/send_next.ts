@@ -390,8 +390,10 @@ async function sendWhatsappMessage() {
       SELECT * FROM subscriber;
     `;
     const { rows } = await selectQuery;
+    console.log(rows);
     for (const row of rows) {
-      const lastSentTime = new Date(row.lastSentTime);
+      const lastSentTime = new Date(row.lastsenttime);
+      console.log(lastSentTime);
       const current_time = new Date();
       const twelveHoursAgo: Date = new Date(current_time.getTime() - 12 * 60 * 60 * 1000);
 
