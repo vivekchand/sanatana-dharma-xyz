@@ -397,8 +397,6 @@ async function sendWhatsappMessage() {
     console.log(rows);
     for (const row of rows) {
       const lastSentTime = new Date(row.lastsenttime);
-      console.log(row.lastsenttime);
-      console.log(lastSentTime);
       const current_time = new Date();
       const twelveHoursAgo: Date = new Date(current_time.getTime() - 12 * 60 * 60 * 1000);
 
