@@ -367,6 +367,7 @@ async function sendNextEmail(email:string, template:string) {
   const response = await fetch("https://sanatanadharma.xyz/api/send_email?template="+"abc"+"&lang=en&email="+email, {
     method: 'GET'
   });
+  console.log("The response is:");
   console.log(response);
   if(response.ok) {
     const insertQuery = sql`
