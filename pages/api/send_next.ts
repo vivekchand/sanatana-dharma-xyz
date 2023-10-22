@@ -370,6 +370,7 @@ async function sendNextEmail(email:string, template:string) {
   console.log("The response is:");
   console.log(response);
   if(response.ok) {
+    console.log("Response was ok, updating db");
     const insertQuery = sql`
       INSERT INTO subscriber (email, lastSentTemplate, Preferred_language, lastSentTime)
       VALUES (${email}, ${template}, 'en', timezone('CET', NOW()))
@@ -379,7 +380,10 @@ async function sendNextEmail(email:string, template:string) {
       RETURNING id;
     `;
     const { rows } = await insertQuery;
+    console.log("updated db!");
     console.log(rows);
+  } else {
+    console.log("Response was not ok!");
   }
 }
 
