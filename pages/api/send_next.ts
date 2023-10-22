@@ -394,7 +394,6 @@ async function sendWhatsappMessage() {
       SELECT * FROM subscriber;
     `;
     const { rows } = await selectQuery;
-    console.log(rows);
     for (const row of rows) {
       const lastSentTime = new Date(row.lastsenttime);
       const current_time = new Date();
