@@ -391,7 +391,7 @@ async function sendWhatsappMessage() {
     `;
     const { rows } = await selectQuery;
     for (const row of rows) {
-      const lastSentTime = new Date(row.lastsenttime);
+      const lastSentTime = new Date(row.lastSentTime);
       const current_time = new Date();
       const twelveHoursAgo: Date = new Date(current_time.getTime() - 12 * 60 * 60 * 1000);
 
@@ -409,7 +409,7 @@ async function sendWhatsappMessage() {
 
         if(row.email) {
           // email
-          sendNextEmail(row.email, template);
+          await sendNextEmail(row.email, template);
           continue;
         }
 
