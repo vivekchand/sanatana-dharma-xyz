@@ -427,7 +427,6 @@ async function sendWhatsappMessage() {
         formData.append('From', "whatsapp:+13074486824");
         formData.append('To', "whatsapp:" + phone);
         formData.append('Body', message);
-        
         const response = await fetch(`https://api.twilio.com/2010-04-01/Accounts/${accountSid}/Messages.json`, {
           method: 'POST',
           headers: {
@@ -435,7 +434,6 @@ async function sendWhatsappMessage() {
           },
           body: formData,
         });    
-      
         if (response.ok) {
           const data = await response.json();
           console.log("data is:");
@@ -474,8 +472,8 @@ async function sendWhatsappMessage() {
           console.log("test 9");
           console.log("subscriber id:"+ insertedSubscriberId);
         } else {
-          console.error("Fetch request failed with status " + response.status);
-          console.error(response.body);
+          console.log("Fetch request failed with status " + response.status);
+          console.log(response.body);
         }
       } else {
       }
