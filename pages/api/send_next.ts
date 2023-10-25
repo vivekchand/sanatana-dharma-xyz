@@ -472,8 +472,10 @@ async function sendWhatsappMessage() {
           console.log("test 9");
           console.log("subscriber id:"+ insertedSubscriberId);
         } else {
-          console.log("Fetch request failed with status " + response.status);
-          console.log(response.body);
+          console.error("Fetch request failed with status " + response.status);
+          console.error(response.body);
+          console.error(response);
+          console.error(formData);
         }
       } else {
       }
