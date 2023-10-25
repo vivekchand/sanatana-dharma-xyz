@@ -1,26 +1,17 @@
-import { OpenAIStream } from "@/utils";
-import { kv } from "@vercel/kv";
-import { Mutex } from "async-mutex";
-import twilio from "twilio";
 import { sql } from "@vercel/postgres";
 
 const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
 
-interface TwilioMessage {
-  sid: string;
-  // Add other properties as needed
-}
+const client = require('twilio')(accountSid, authToken);
 
 
 export const config = {
   runtime: "edge"
 };
-const emailMutex = new Mutex();
 
-
-function getMessageForTemplateName(templateName: string): string {
-  const templates: Record<string, string> = {
+function getMessageForTemplateName(templateName) {
+  const templates = {
     bhagavad_gita_chapter_1_verse_1: `Bhagavad Gita Chapter 1, Verse 1 sets the stage for the epic conversation between Lord Krishna and Arjuna on the battlefield of Kurukshetra. Dhritarashtra, the blind king, asks his charioteer Sanjaya about the events on the battlefield. He wants to know what his sons, the Kauravas, and the Pandavas, the sons of Pandu, are doing as they prepare for battle. This verse serves as an introduction to the subsequent chapters where Lord Krishna imparts wisdom and guidance to Arjuna, who is torn by moral dilemmas. The dialogue between Lord Krishna and Arjuna forms the essence of the Bhagavad Gita, offering insights into life, duty, righteousness, and spirituality.
 
 धृतराष्ट्र उवाच |
@@ -43,7 +34,7 @@ Mamakah Pandavaschaiva Kimakurvata Sanjaya ||`,
   return templates[templateName] || "Template not found.";
 }
 
-async function sendWhatsappMessage(template:string, phone:string) {
+async function sendWhatsappMessage(template, phone) {
   try {
     const message = getMessageForTemplateName(template);
     console.log("inside sendWhatsappMessage");
@@ -55,13 +46,22 @@ async function sendWhatsappMessage(template:string, phone:string) {
     formData.append('To', "whatsapp:" + phone);
     formData.append('Body', message);
     
-    const response = await fetch(`https://api.twilio.com/2010-04-01/Accounts/${accountSid}/Messages.json`, {
-      method: 'POST',
-      headers: {
-        'Authorization': `Basic ${Buffer.from(`${accountSid}:${authToken}`).toString('base64')}`,
-      },
-      body: formData,
-    });
+    const response = client.messages
+      .create({
+         from: 'whatsapp:+13074486824',
+         body: message,
+         to: 'whatsapp:+'+phone
+       })
+      .then(message => console.log(message.sid));
+
+    console.log(response);
+    // const response = await fetch(`https://api.twilio.com/2010-04-01/Accounts/${accountSid}/Messages.json`, {
+    //   method: 'POST',
+    //   headers: {
+    //     'Authorization': `Basic ${Buffer.from(`${accountSid}:${authToken}`).toString('base64')}`,
+    //   },
+    //   body: formData,
+    // });
     
     if (response.ok) {
       const data = await response.json();
@@ -108,18 +108,13 @@ async function sendWhatsappMessage(template:string, phone:string) {
 }
 
 
-const handler = async (req: Request): Promise<Response> => {
+const handler = async (req, res) => {
   try {
     // Get query parameters from the request
-    const params = new URL(req.url).searchParams;
-    const template = params.get('template');
-    const phone = "+"+params.get('phone');
+    const phone = req.query.phone;
+    const template = req.query.template;
     console.log("phone param: "+phone);
     console.log("template param: "+template);
-
-    if (!template || !phone) {
-      return new Response("Missing required parameters", { status: 400 });
-    }
 
     console.log("test 1");
 
@@ -127,10 +122,10 @@ const handler = async (req: Request): Promise<Response> => {
 
     console.log("Sent!");
 
-    return new Response("Sent!!!");
+    return res.status(200).send("Sent!!!");
   } catch (error) {
     console.error(error);
-    return new Response("Error", { status: 500 });
+    return res.status(500).send("Error!!!");
   }
 };
 
