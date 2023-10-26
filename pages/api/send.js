@@ -145,7 +145,7 @@ const handler = async (req, res) => {
     return res.status(200).send("Sent!!!");
   } catch (error) {
     console.error(error);
-    return res.status(500).send("Error!!!");
+    return res.status(400).send("Error!!!");
   }
 };
 
