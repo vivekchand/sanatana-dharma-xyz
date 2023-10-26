@@ -434,34 +434,39 @@ async function sendWhatsappMessage() {
         console.log(formData);
         console.log("To: "+phone);
         console.log("Message: "+message);
-        const resp = await fetch(`https://nest.messagebird.com/workspaces/e911edd7-3d66-48b4-9230-01bb55168b90/channels/d1a947d3-9330-427d-a686-17c0203101fe/messages`, {
-          method: 'POST',
-          headers: {
-            'Authorization': `AccessKey a6fnhhjJNFZFWUmtfgn8jo7Ie6l0wzvXhKQQ`,
-          },
-          body: JSON.stringify({
-            "receiver": {
-              "contacts": [
-                {
-                  "identifierValue": "+31622429582",
-                  "identifierKey": "phonenumber"
-                }
-              ]
-            },
-            "template": {
-              "projectId": "7b3f9b21-a814-43c1-8d87-947fba583307",
-              "version": "3957de57-4dab-462d-abf7-cd54bb6465bd",
-              "locale": "en"
-            }
-          })
+        const url = "https://nest.messagebird.com/workspaces/e911edd7-3d66-48b4-9230-01bb55168b90/channels/d1a947d3-9330-427d-a686-17c0203101fe/messages";
+        const headers = new Headers({
+          'Authorization': 'AccessKey a6fnhhjJNFZFWUmtfgn8jo7Ie6l0wzvXhKQQ',
+          'Content-Type': 'application/json',
         });
-        console.log("The response is:");
-        console.log(resp);
-        if(resp.ok) {
-          console.log("Response was success!");
-        } else {
-          console.log("Response was failure!");
-        }
+        
+        const body = JSON.stringify({
+          "receiver": {
+            "contacts": [
+              {
+                "identifierValue": "+919739788820",
+                "identifierKey": "phonenumber"
+              }
+            ]
+          },
+          "template": {
+            "projectId": "7b3f9b21-a814-43c1-8d87-947fba583307",
+            "version": "3957de57-4dab-462d-abf7-cd54bb6465bd",
+            "locale": "en"
+          }
+        });
+        
+        const options: RequestInit = {
+          method: 'POST',
+          headers: headers,
+          body: body,
+        };
+        
+        fetch(url, options)
+          .then(response => response.json())
+          .then(data => console.log(data))
+          .catch(error => console.error('Error:', error));
+        
         // const response = await fetch(`https://api.twilio.com/2010-04-01/Accounts/${accountSid}/Messages.json`, {
         //   method: 'POST',
         //   headers: {
