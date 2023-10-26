@@ -46,13 +46,13 @@ async function sendWhatsappMessage(template, phone) {
     formData.append('To', "whatsapp:" + phone);
     formData.append('Body', message);
     
-    const response = client.messages
-      .create({
-         from: 'whatsapp:+13074486824',
-         body: message,
-         to: 'whatsapp:+'+phone
-       })
-      .then(message => console.log(message.sid));
+    // const response = client.messages
+    //   .create({
+    //      from: 'whatsapp:+13074486824',
+    //      body: message,
+    //      to: 'whatsapp:+'+phone
+    //    })
+    //   .then(message => console.log(message.sid));
 
     console.log(response);
     // const response = await fetch(`https://api.twilio.com/2010-04-01/Accounts/${accountSid}/Messages.json`, {
@@ -62,7 +62,29 @@ async function sendWhatsappMessage(template, phone) {
     //   },
     //   body: formData,
     // });
-    
+
+    const response = await fetch(`https://nest.messagebird.com/workspaces/e911edd7-3d66-48b4-9230-01bb55168b90/channels/d1a947d3-9330-427d-a686-17c0203101fe/messages`, {
+      method: 'POST',
+      headers: {
+        'Authorization': `AccessKey a6fnhhjJNFZFWUmtfgn8jo7Ie6l0wzvXhKQQ`,
+      },
+      body: {
+          "receiver": {
+            "contacts": [
+              {
+                "identifierValue": "+31622429582",
+                "identifierKey": "phonenumber"
+              }
+            ]
+          },
+          "template": {
+            "projectId": "7b3f9b21-a814-43c1-8d87-947fba583307",
+            "version": "3957de57-4dab-462d-abf7-cd54bb6465bd",
+            "locale": "en"
+          }
+        },
+    });
+
     if (response.ok) {
       const data = await response.json();
       console.log("data is:");
