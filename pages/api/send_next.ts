@@ -455,57 +455,58 @@ async function sendWhatsappMessage() {
             }
           })
         });
+        console.log("The response is:");
         console.log(resp);
-        const response = await fetch(`https://api.twilio.com/2010-04-01/Accounts/${accountSid}/Messages.json`, {
-          method: 'POST',
-          headers: {
-            'Authorization': `Basic ${Buffer.from(`${accountSid}:${authToken}`).toString('base64')}`,
-          },
-          body: formData,
-        });    
-        if (response.ok) {
-          const data = await response.json();
-          console.log("data is:");
-          console.log(data);
-          console.log("test 3");
+        // const response = await fetch(`https://api.twilio.com/2010-04-01/Accounts/${accountSid}/Messages.json`, {
+        //   method: 'POST',
+        //   headers: {
+        //     'Authorization': `Basic ${Buffer.from(`${accountSid}:${authToken}`).toString('base64')}`,
+        //   },
+        //   body: formData,
+        // });    
+        // if (response.ok) {
+        //   const data = await response.json();
+        //   console.log("data is:");
+        //   console.log(data);
+        //   console.log("test 3");
     
-          const isEmail = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(phone);
-          let insertQuery;
-          console.log("test 4");
+        //   const isEmail = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(phone);
+        //   let insertQuery;
+        //   console.log("test 4");
     
-          if(isEmail) {
-            console.log("test 5");
-            insertQuery = sql`
-            INSERT INTO subscriber (email, lastSentTemplate, lastSentTime)
-            VALUES (${phone}, ${template}, timezone('CET', NOW()))
-            ON CONFLICT (email) DO UPDATE
-            SET lastSentTemplate = ${template},
-            lastSentTime = timezone('CET', NOW())
-              RETURNING id;
-          `;
-          } else {
-            console.log("test 6");
-            insertQuery = sql`
-            INSERT INTO subscriber (phoneNumber, lastSentTemplate, lastSentTime)
-            VALUES (${phone},  ${template}, timezone('CET', NOW()))
-            ON CONFLICT (phoneNumber) DO UPDATE
-            SET lastSentTemplate = ${template},
-            lastSentTime = timezone('CET', NOW())
-              RETURNING id;
-          `;
-          }
-          console.log("test 7");
-          const { rows } = await insertQuery;
-          console.log("test 8");
-          const insertedSubscriberId = rows[0].id;
-          console.log("test 9");
-          console.log("subscriber id:"+ insertedSubscriberId);
-        } else {
-          console.error("Fetch request failed with status " + response.status);
-          console.error(response.body);
-          console.error(response);
-          console.error(formData);
-        }
+        //   if(isEmail) {
+        //     console.log("test 5");
+        //     insertQuery = sql`
+        //     INSERT INTO subscriber (email, lastSentTemplate, lastSentTime)
+        //     VALUES (${phone}, ${template}, timezone('CET', NOW()))
+        //     ON CONFLICT (email) DO UPDATE
+        //     SET lastSentTemplate = ${template},
+        //     lastSentTime = timezone('CET', NOW())
+        //       RETURNING id;
+        //   `;
+        //   } else {
+        //     console.log("test 6");
+        //     insertQuery = sql`
+        //     INSERT INTO subscriber (phoneNumber, lastSentTemplate, lastSentTime)
+        //     VALUES (${phone},  ${template}, timezone('CET', NOW()))
+        //     ON CONFLICT (phoneNumber) DO UPDATE
+        //     SET lastSentTemplate = ${template},
+        //     lastSentTime = timezone('CET', NOW())
+        //       RETURNING id;
+        //   `;
+        //   }
+        //   console.log("test 7");
+        //   const { rows } = await insertQuery;
+        //   console.log("test 8");
+        //   const insertedSubscriberId = rows[0].id;
+        //   console.log("test 9");
+        //   console.log("subscriber id:"+ insertedSubscriberId);
+        // } else {
+        //   console.error("Fetch request failed with status " + response.status);
+        //   console.error(response.body);
+        //   console.error(response);
+        //   console.error(formData);
+        // }
       } else {
       }
 
