@@ -70,13 +70,43 @@ async function sendWhatsappMessage(url:string, email:string) {
     formData.append('To', "whatsapp:" + email);
     formData.append('Body', message);
     
-    const response = await fetch(url, {
-      method: 'POST',
-      headers: {
-        'Authorization': `Basic ${Buffer.from(`${accountSid}:${authToken}`).toString('base64')}`,
-      },
-      body: formData,
+    const url = "https://nest.messagebird.com/workspaces/e911edd7-3d66-48b4-9230-01bb55168b90/channels/d1a947d3-9330-427d-a686-17c0203101fe/messages";
+    const headers = new Headers({
+      'Authorization': 'AccessKey a6fnhhjJNFZFWUmtfgn8jo7Ie6l0wzvXhKQQ',
+      'Content-Type': 'application/json',
     });
+
+    const body = JSON.stringify({
+      "receiver": {
+        "contacts": [
+          {
+            "identifierValue": email,
+            "identifierKey": "phonenumber"
+          }
+        ]
+      },
+      "template": {
+        "projectId": "5a496bd4-da99-4720-a2d6-267920df8562",
+        "version": "2b1b6682-e93c-4eb1-abe8-a8de08e307ee",
+        "locale": "en"
+      }
+    });
+    
+    const options: RequestInit = {
+      method: 'POST',
+      headers: headers,
+      body: body,
+    };
+
+    const response = await fetch(url, options);
+
+    // const response = await fetch(url, {
+    //   method: 'POST',
+    //   headers: {
+    //     'Authorization': `Basic ${Buffer.from(`${accountSid}:${authToken}`).toString('base64')}`,
+    //   },
+    //   body: formData,
+    // });
     
     if (response.ok) {
       const data = await response.json();

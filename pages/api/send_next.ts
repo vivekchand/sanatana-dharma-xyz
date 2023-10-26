@@ -551,8 +551,6 @@ async function sendWhatsappMessage() {
           'Authorization': 'AccessKey a6fnhhjJNFZFWUmtfgn8jo7Ie6l0wzvXhKQQ',
           'Content-Type': 'application/json',
         });
-        
-
 
         const templateInfo: TemplateInfo = templateMap[template];
         if(templateInfo) {
