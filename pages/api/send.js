@@ -147,6 +147,6 @@ const handler = async (req, res) => {
     console.error(error);
     return res.status(400).send("Error!!!");
   }
-};
+}
 
 export default handler;
