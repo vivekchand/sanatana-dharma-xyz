@@ -457,6 +457,11 @@ async function sendWhatsappMessage() {
         });
         console.log("The response is:");
         console.log(resp);
+        if(resp.ok) {
+          console.log("Response was success!");
+        } else {
+          console.log("Response was failure!");
+        }
         // const response = await fetch(`https://api.twilio.com/2010-04-01/Accounts/${accountSid}/Messages.json`, {
         //   method: 'POST',
         //   headers: {
