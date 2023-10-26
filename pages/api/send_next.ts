@@ -7,6 +7,118 @@ export const config = {
   runtime: "edge"
 };
 
+type TemplateInfo = {
+  projectId: string;
+  version: string;
+};
+
+const templateMap: Record<string, TemplateInfo> = {
+  "namaste_first_message": {
+    projectId: "5a496bd4-da99-4720-a2d6-267920df8562",
+    version: "2b1b6682-e93c-4eb1-abe8-a8de08e307ee",
+  },
+  "ganapati_welcome": {
+    projectId: "9a4267f2-c83d-4ccb-b320-e003c6ab809a",
+    version: "0ab86a8a-05d0-4b2d-9568-d83ed2a8c41f",
+  },
+  "bhagavad_gita_chapter_1_verse_1": {
+    projectId: "3c464709-c611-4ef0-b0cc-046cd4382bfe",
+    version: "8ffc55f5-d654-4180-a01d-7436395197aa",
+  },
+  "bhagavad_gita_chapter_1_verse_2": {
+    projectId: "50b10d35-a0ae-4254-9cb5-43d143344434",
+    version: "8fe7f144-00f8-4521-8b77-25384014e1df",
+  },
+  "bhagavad_gita_chapter_1_verse_3": {
+    projectId: "ca561c36-5292-4800-bc5a-d354430a422c",
+    version: "93c32a85-ce8d-4026-b250-80b96e4e150e",
+  },
+  "bhagavad_gita_chapter_1_verse_4": {
+    projectId: "a62d505c-f849-4829-bbe1-e2263b0ba442",
+    version: "b5335128-3201-4402-9b46-399b64951f62",
+  },
+  "bhagavad_gita_chapter_1_verse_5": {
+    projectId: "622ae003-369c-4ab9-8fe1-c5645f705f9b",
+    version: "debb5003-5ed0-44da-9426-ef0072917fc0",
+  },
+  "bhagavad_gita_chapter_1_verse_6": {
+    projectId: "e1ab1d3f-1904-476e-8ae6-cd5d3f9b121c",
+    version: "97dbccba-fa46-466f-8987-1092e194047e",
+  },
+  "bhagavad_gita_chapter_1_verse_7": {
+    projectId: "f10eb775-b8ea-4d53-bead-98172a0caa41",
+    version: "3c0deb9d-b329-4efb-8fbb-fbf1df41ffdc",
+  },
+  "bhagavad_gita_chapter_1_verse_8": {
+    projectId: "5bd19aff-e328-4f33-8193-9a2c7095a39e",
+    version: "0f49131d-3dda-43f0-9247-cd41c1f92519",
+  },
+  "bhagavad_gita_chapter_1_verse_9": {
+    projectId: "4da9396d-8b80-438a-9a8b-9d5400dd0814",
+    version: "7205fdb9-56b6-47b8-9ab4-bc40eae1273a",
+  },
+  "bhagavad_gita_chapter_1_verse_10": {
+    projectId: "d46f6d66-b59f-40de-b038-c8ae041604a0",
+    version: "a23522ca-c88a-4c7b-8859-191648dd365e",
+  },
+  "bhagavad_gita_chapter_1_verse_11": {
+    projectId: "0492435f-060d-4fbf-a2ef-3ad3c1624b4f",
+    version: "f1c0e625-996a-4021-8acb-08356ccf8430",
+  },
+  "bhagavad_gita_chapter_1_verse_12": {
+    projectId: "43e4d80d-9f61-4320-862b-a0e6097b68d0",
+    version: "ea004c49-ac7e-403c-8751-c9983bb8077c",
+  },
+  "bhagavad_gita_chapter_1_verse_13": {
+    projectId: "c4d4ca51-df46-425a-b9e3-8c7b960f0af8",
+    version: "cc987a1c-a846-4e03-a96a-80de400e2c5b",
+  },
+  "bhagavad_gita_chapter_1_verse_14": {
+    projectId: "2a210fe5-1ad5-43db-bd9c-0a73e3f27612",
+    version: "093b98f2-4800-461c-8fb3-b724ae141803",
+  },
+  "bhagavad_gita_chapter_1_verse_15": {
+    projectId: "69fc9f7a-1cd5-4932-8117-a429f188362a",
+    version: "529f3307-ac0e-4dd2-b153-360a5efd050f",
+  },
+  "bhagavad_gita_chapter_1_verse_16": {
+    projectId: "6efb321f-ad3c-4b88-9480-536637b6d2d1",
+    version: "a584eb4f-2a8d-4f4e-9a58-550f75a71a90",
+  },
+  "bhagavad_gita_chapter_1_verse_17": {
+    projectId: "892d9945-5c0f-41a1-b2d9-397dea7c960d",
+    version: "3e18d4b3-c533-4e16-8f04-9b389e48b30e",
+  },
+  "bhagavad_gita_chapter_1_verse_18": {
+    projectId: "a5dd8a89-583b-47a5-ac66-00a656ffab0f",
+    version: "40f411c9-eff9-4c18-86e7-8fd39bd4a77d",
+  },
+  "bhagavad_gita_chapter_1_verse_19": {
+    projectId: "049fca2c-bb90-45b3-8da5-2322ae3445e8",
+    version: "a7f90b28-1a30-46d1-8fb1-c333a440619b",
+  },
+  "bhagavad_gita_chapter_1_verse_20": {
+    projectId: "5c3d08d8-61e9-4dd3-8397-48267ac7d1b9",
+    version: "aa86a5fd-d604-4c02-8307-4eb3e63472e7",
+  },
+  "bhagavad_gita_chapter_1_verse_21": {
+    projectId: "d6dfcb0c-25f1-4eba-8a43-1c28f9cf6e8d",
+    version: "534a4882-b6fe-4e04-a151-dc8a1c3c57a8",
+  },
+  "bhagavad_gita_chapter_1_verse_22": {
+    projectId: "bdd67783-efd3-4b9a-a0ec-7495402c3a13",
+    version: "035a90d3-a5fa-4d2a-b052-a777bd72142f",
+  },
+  "bhagavad_gita_chapter_1_verse_23": {
+    projectId: "d4cad5bb-cdd2-48c2-902d-218d18887e8e",
+    version: "03d1afc7-c6fa-4693-b009-4890f192ab02",
+  },
+  "bhagavad_gita_chapter_1_verse_24": {
+    projectId: "7b3f9b21-a814-43c1-8d87-947fba583307",
+    version: "3957de57-4dab-462d-abf7-cd54bb6465bd",
+  },
+};
+
 function getMessageForTemplateName(templateName: string): string {
   const templates: Record<string, string> = {
     bhagavad_gita_chapter_1_verse_1: `Bhagavad Gita Chapter 1, Verse 1 sets the stage for the epic conversation between Lord Krishna and Arjuna on the battlefield of Kurukshetra. Dhritarashtra, the blind king, asks his charioteer Sanjaya about the events on the battlefield. He wants to know what his sons, the Kauravas, and the Pandavas, the sons of Pandu, are doing as they prepare for battle. This verse serves as an introduction to the subsequent chapters where Lord Krishna imparts wisdom and guidance to Arjuna, who is torn by moral dilemmas. The dialogue between Lord Krishna and Arjuna forms the essence of the Bhagavad Gita, offering insights into life, duty, righteousness, and spirituality.
@@ -440,32 +552,38 @@ async function sendWhatsappMessage() {
           'Content-Type': 'application/json',
         });
         
-        const body = JSON.stringify({
-          "receiver": {
-            "contacts": [
-              {
-                "identifierValue": "+919739788820",
-                "identifierKey": "phonenumber"
-              }
-            ]
-          },
-          "template": {
-            "projectId": "7b3f9b21-a814-43c1-8d87-947fba583307",
-            "version": "3957de57-4dab-462d-abf7-cd54bb6465bd",
-            "locale": "en"
-          }
-        });
+
+
+        const templateInfo: TemplateInfo = templateMap[template];
+        if(templateInfo) {
+          const body = JSON.stringify({
+            "receiver": {
+              "contacts": [
+                {
+                  "identifierValue": "+919739788820",
+                  "identifierKey": "phonenumber"
+                }
+              ]
+            },
+            "template": {
+              "projectId": templateInfo["projectId"],
+              "version": templateInfo["version"],
+              "locale": "en"
+            }
+          });
+          
+          const options: RequestInit = {
+            method: 'POST',
+            headers: headers,
+            body: body,
+          };
+
+          fetch(url, options)
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch(error => console.error('Error:', error));
+        }
         
-        const options: RequestInit = {
-          method: 'POST',
-          headers: headers,
-          body: body,
-        };
-        
-        // fetch(url, options)
-        //   .then(response => response.json())
-        //   .then(data => console.log(data))
-        //   .catch(error => console.error('Error:', error));
         
         // const response = await fetch(`https://api.twilio.com/2010-04-01/Accounts/${accountSid}/Messages.json`, {
         //   method: 'POST',
