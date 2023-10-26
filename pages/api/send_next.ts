@@ -560,7 +560,7 @@ async function sendWhatsappMessage() {
             "receiver": {
               "contacts": [
                 {
-                  "identifierValue": "+919739788820",
+                  "identifierValue": phone,
                   "identifierKey": "phonenumber"
                 }
               ]
@@ -579,46 +579,44 @@ async function sendWhatsappMessage() {
           };
 
           const response = await fetch(url, options);
-            // .then(response => response.json())
-            // .then(data => console.log(data))
-            // .catch(error => console.error('Error:', error));
+
           if (response.ok) {
             const data = await response.json();
             console.log("data is:");
             console.log(data);
             console.log("test 3");
       
-            // const isEmail = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(phone);
-            // let insertQuery;
-            // console.log("test 4");
+            const isEmail = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(phone);
+            let insertQuery;
+            console.log("test 4");
       
-            // if(isEmail) {
-            //   console.log("test 5");
-            //   insertQuery = sql`
-            //   INSERT INTO subscriber (email, lastSentTemplate, lastSentTime)
-            //   VALUES (${phone}, ${template}, timezone('CET', NOW()))
-            //   ON CONFLICT (email) DO UPDATE
-            //   SET lastSentTemplate = ${template},
-            //   lastSentTime = timezone('CET', NOW())
-            //     RETURNING id;
-            // `;
-            // } else {
-            //   console.log("test 6");
-            //   insertQuery = sql`
-            //   INSERT INTO subscriber (phoneNumber, lastSentTemplate, lastSentTime)
-            //   VALUES (${phone},  ${template}, timezone('CET', NOW()))
-            //   ON CONFLICT (phoneNumber) DO UPDATE
-            //   SET lastSentTemplate = ${template},
-            //   lastSentTime = timezone('CET', NOW())
-            //     RETURNING id;
-            // `;
-            // }
-            // console.log("test 7");
-            // const { rows } = await insertQuery;
-            // console.log("test 8");
-            // const insertedSubscriberId = rows[0].id;
-            // console.log("test 9");
-            // console.log("subscriber id:"+ insertedSubscriberId);
+            if(isEmail) {
+              console.log("test 5");
+              insertQuery = sql`
+              INSERT INTO subscriber (email, lastSentTemplate, lastSentTime)
+              VALUES (${phone}, ${template}, timezone('CET', NOW()))
+              ON CONFLICT (email) DO UPDATE
+              SET lastSentTemplate = ${template},
+              lastSentTime = timezone('CET', NOW())
+                RETURNING id;
+            `;
+            } else {
+              console.log("test 6");
+              insertQuery = sql`
+              INSERT INTO subscriber (phoneNumber, lastSentTemplate, lastSentTime)
+              VALUES (${phone},  ${template}, timezone('CET', NOW()))
+              ON CONFLICT (phoneNumber) DO UPDATE
+              SET lastSentTemplate = ${template},
+              lastSentTime = timezone('CET', NOW())
+                RETURNING id;
+            `;
+            }
+            console.log("test 7");
+            const { rows } = await insertQuery;
+            console.log("test 8");
+            const insertedSubscriberId = rows[0].id;
+            console.log("test 9");
+            console.log("subscriber id:"+ insertedSubscriberId);
           } else {
             console.error("Fetch request failed with status " + response.status);
             console.error(response.body);
