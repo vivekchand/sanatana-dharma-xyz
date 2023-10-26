@@ -1,7 +1,6 @@
 import { OpenAIStream } from "@/utils";
 import { kv } from "@vercel/kv";
 import { Mutex } from "async-mutex";
-import twilio from "twilio";
 import { sql } from "@vercel/postgres";
 
 const accountSid = process.env.TWILIO_ACCOUNT_SID;
