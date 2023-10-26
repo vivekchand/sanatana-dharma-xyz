@@ -462,10 +462,10 @@ async function sendWhatsappMessage() {
           body: body,
         };
         
-        fetch(url, options)
-          .then(response => response.json())
-          .then(data => console.log(data))
-          .catch(error => console.error('Error:', error));
+        // fetch(url, options)
+        //   .then(response => response.json())
+        //   .then(data => console.log(data))
+        //   .catch(error => console.error('Error:', error));
         
         // const response = await fetch(`https://api.twilio.com/2010-04-01/Accounts/${accountSid}/Messages.json`, {
         //   method: 'POST',
