@@ -50,7 +50,7 @@ export const SubscriptionPopup = ({ onClose, onSubscribed }) => {
       <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
         <div className="bg-white p-4 rounded-lg shadow-md flex flex-col">
           <div className="max-w-[400px]"> {/* Adjust the max-width as needed */}
-            <center><img src="https://krishnastore.com/images/cache/1614.jpg" alt="Krishna" className="mb-4 max-h-40 w-auto" /></center>
+            <center><img src="https://miro.medium.com/v2/resize:fit:602/1*IwlN7l8uBnXltYxOFfAiFQ.jpeg" alt="Krishna" className="mb-4 max-h-40 w-auto" /></center>
 
             <div className="text-center">
               <h2 className="text-xl font-semibold mb-2">🌞 Subscribe to Daily Wisdom 📖</h2>
@@ -70,7 +70,7 @@ export const SubscriptionPopup = ({ onClose, onSubscribed }) => {
             <div className="w-full mb-2"> 
               <input
                 type="email"
-                placeholder="Email or WhatsApp (+91xxxxxxxxxx)"
+                placeholder="Email"
                 className={`border p-2 rounded-md w-full ${isEmailInvalid ? 'border-red-500' : ''}`} // Add red border if email is invalid
                 onChange={(e) => {
                   setEmail(e.target.value);
