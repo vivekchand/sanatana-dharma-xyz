@@ -61,9 +61,9 @@ export const SubscriptionPopup = ({ onClose, onSubscribed }) => {
             <p className="text-sm text-gray-600 mb-2">
             🔹 Receive daily verses with explanation
             </p>
-            <p className="text-sm text-gray-600 mb-2">
+            {/* <p className="text-sm text-gray-600 mb-2">
             🔹 Choose between Email or WhatsApp
-            </p>
+            </p> */}
             <p className="text-sm text-gray-600 mb-2">
             🔹 Begin your transformative journey today!
             </p>
