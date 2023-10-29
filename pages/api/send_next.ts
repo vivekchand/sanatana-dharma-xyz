@@ -546,7 +546,7 @@ async function sendWhatsappMessage() {
         console.log(formData);
         console.log("To: "+phone);
         console.log("Message: "+message);
-        const url = "https://nest.messagebird.com/workspaces/e911edd7-3d66-48b4-9230-01bb55168b90/channels/d1a947d3-9330-427d-a686-17c0203101fe/messages";
+        const url = "https://nest.messagebird.com/workspaces/e911edd7-3d66-48b4-9230-01bb55168b90/channels/3e56e945-c566-4527-a247-743f42ec4abe/messages";
         const headers = new Headers({
           'Authorization': 'AccessKey a6fnhhjJNFZFWUmtfgn8jo7Ie6l0wzvXhKQQ',
           'Content-Type': 'application/json',
