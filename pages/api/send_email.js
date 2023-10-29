@@ -30,6 +30,10 @@ function getSubjectFromTemplateName(templateName) {
         bhagavad_gita_chapter_1_verse_18: "Bhagavad Gita Chapter 1, Verse 18 – The Distinct Conch Blasts of Drupada, Draupadi's Sons, and Abhimanyu",
         bhagavad_gita_chapter_1_verse_19: "Bhagavad Gita Chapter 1, Verse 19 – The Resounding Roar That Shook the Heavens and Earth",
         bhagavad_gita_chapter_1_verse_20: "Bhagavad Gita Chapter 1, Verse 20 – Arjuna's Opening Words on the Battlefield",
+        bhagavad_gita_chapter_1_verse_21: "Arjuna's Request in Bhagavad Gita Chapter 1, Verse 21: A Moment of Decision",
+        bhagavad_gita_chapter_1_verse_22: "Arjuna's Contemplation in Bhagavad Gita Chapter 1, Verse 22: Preparing for the Battle",
+        bhagavad_gita_chapter_1_verse_23: "Arjuna's Resolve in Bhagavad Gita Chapter 1, Verse 23: Seeking to Understand the Opposition",
+        bhagavad_gita_chapter_1_verse_24: "Bhagavad Gita Chapter 1, Verse 24 – A Message from Sanjaya",
     };
     return templates[templateName] || "Template not found.";
 }
@@ -325,18 +329,59 @@ Team SanatanaDharma.xyz
   
   Translation
   Then, seeing the people of Dhritarashtra's party standing arrayed and the discharge of weapons about to begin, Arjuna, the son of Pandu whose ensign was a monkey, took up his bow and said the following to Krishna, O Lord of the Earth.
-  `	
+  `,
+  bhagavad_gita_chapter_1_verse_21: `Bhagavad Gita Chapter 1, Verse 21:
+
+  "अर्जुन उवाच |
+  सेनयोरुभयोर्मध्ये रथं स्थापय मेऽच्युत || 1.21 ||"
   
+  arjuna uvācha 
+  senayor ubhayor madhye rathaṁ sthāpaya me ’chyuta
   
+  In English, it can be translated as:
   
+  Arjuna said, "O Krishna, place my chariot in the middle between the two armies, so that I may behold those who stand here, desirous to fight, and know with whom I must fight when the battle is about to commence."  
+  `	,
+  bhagavad_gita_chapter_1_verse_22: `Bhagavad Gita Chapter 1, Verse 22:
+
+  यावदेतान्निरीक्षेऽहं योद्धुकामानवस्थितान्। 
+  कैर्मया सह योद्धव्यमस्मिन्रणसमुद्यमे।।1.22।।
   
+  yāvadetān nirīkṣhe ’haṁ yoddhu-kāmān avasthitān 
+  kairmayā saha yoddhavyam asmin raṇa-samudyame
   
+  yāvat—as many as; etān—these; nirīkṣhe—look; aham—I; yoddhu-kāmān—for the battle; avasthitān—arrayed; kaiḥ—with whom; mayā—by me; saha—together; yoddhavyam—must fight; asmin—in this; raṇa-samudyame—great combat
   
+  Translation
+  Arjuna said, "O Krishna, place my chariot in the middle between the two armies, so that I may behold those who stand here, desirous to fight, and know with whom I must fight when the battle is about to commence."
+  `	,
+  bhagavad_gita_chapter_1_verse_23: `Bhagavad Gita Chapter 1, Verse 23:
+
+  योत्स्यमानानवेक्षेऽहं य एतेऽत्र समागताः। 
+  धार्तराष्ट्रस्य दुर्बुद्धेर्युद्धे प्रियचिकीर्षवः।।1.23।।
   
+  yotsyamānān avekṣhe ’haṁ ya ete ’tra samāgatāḥ 
+  dhārtarāṣhṭrasya durbuddher yuddhe priya-chikīrṣhavaḥ
   
+  yotsyamānān—those who have come to fight; avekṣhe aham—I desire to see; ye—who; ete—those; atra—here; samāgatāḥ—assembled; dhārtarāṣhṭrasya—of Dhritarashtra’s son; durbuddheḥ—evil-minded; yuddhe—in the fight; priya-chikīrṣhavaḥ—wishing to please
   
+  Translation:
   
+  For I desire to observe those who are assembled here to fight, wishing to please in battle the evil-minded Duryodhana—the son of Dhritarashtra.
+  `	,
+  bhagavad_gita_chapter_1_verse_24: `Bhagavad Gita Chapter 1, Verse 24:
+
+  संजय उवाच एवमुक्तो हृषीकेशो गुडाकेशेन भारत। 
+  सेनयोरुभयोर्मध्ये स्थापयित्वा रथोत्तमम्।।1.24।।
   
+  sañjaya uvācha evam ukto hṛiṣhīkeśho guḍākeśhena bhārata 
+  senayor ubhayor madhye sthāpayitvā rathottamam
+  
+  sañjayaḥ uvācha—Sanjay said; evam—thus; uktaḥ—addressed; hṛiṣhīkeśhaḥ—Shree Krishna, the Lord of the senses; guḍākeśhena—by Arjun, the conqueror of sleep; bhārata—descendant of Bharat; senayoḥ—armies; ubhayoḥ—the two; madhye—between; sthāpayitvā—having drawn; ratha-uttamam—magnificent chariot
+  
+  Translation
+  Sanjaya said, Thus addressed by Arjuna, Krishna stationed the best of chariots, O Dhritarashtra, in the midst of the two armies.
+  `	,
   
   
     };
