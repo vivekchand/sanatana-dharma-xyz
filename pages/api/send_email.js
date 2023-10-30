@@ -771,34 +771,18 @@ Commentary
   
   function getNextTemplate(template_name, lang) {
     if(lang == 'en') {
-      const templates = {
+      let templates = {
         first_message_on_subscription: "ganapati_welcome",
         namaste_first_message: "ganapati_welcome",
         namaste_with_book_intro: "ganapati_welcome",
         reply_first_message: "ganapati_welcome",
         ganapati_welcome: "bhagavad_gita_chapter_1_verse_1",
-        bhagavad_gita_chapter_1_verse_1: "bhagavad_gita_chapter_1_verse_2",
-        bhagavad_gita_chapter_1_verse_2: "bhagavad_gita_chapter_1_verse_3",
-        bhagavad_gita_chapter_1_verse_3: "bhagavad_gita_chapter_1_verse_4",
-        bhagavad_gita_chapter_1_verse_4: "bhagavad_gita_chapter_1_verse_5",
-        bhagavad_gita_chapter_1_verse_5: "bhagavad_gita_chapter_1_verse_6",
-        bhagavad_gita_chapter_1_verse_6: "bhagavad_gita_chapter_1_verse_7",
-        bhagavad_gita_chapter_1_verse_7: "bhagavad_gita_chapter_1_verse_8",
-        bhagavad_gita_chapter_1_verse_8: "bhagavad_gita_chapter_1_verse_9",
-        bhagavad_gita_chapter_1_verse_9: "bhagavad_gita_chapter_1_verse_10",
-        bhagavad_gita_chapter_1_verse_10: "bhagavad_gita_chapter_1_verse_11",
-        bhagavad_gita_chapter_1_verse_11: "bhagavad_gita_chapter_1_verse_12",
-        bhagavad_gita_chapter_1_verse_12: "bhagavad_gita_chapter_1_verse_13",
-        bhagavad_gita_chapter_1_verse_13: "bhagavad_gita_chapter_1_verse_14",
-        bhagavad_gita_chapter_1_verse_14: "bhagavad_gita_chapter_1_verse_15",
-        bhagavad_gita_chapter_1_verse_15: "bhagavad_gita_chapter_1_verse_16",
-        bhagavad_gita_chapter_1_verse_16: "bhagavad_gita_chapter_1_verse_17",
-        bhagavad_gita_chapter_1_verse_17: "bhagavad_gita_chapter_1_verse_18",
-        bhagavad_gita_chapter_1_verse_18: "bhagavad_gita_chapter_1_verse_19",
-        bhagavad_gita_chapter_1_verse_19: "bhagavad_gita_chapter_1_verse_20",
-        bhagavad_gita_chapter_1_verse_20: "bhagavad_gita_chapter_1_verse_21",
-        bhagavad_gita_chapter_1_verse_21: "bhagavad_gita_chapter_1_verse_22",
       };
+      for (let i = 1; i <= 47; i++) {
+          const currentVerse = `bhagavad_gita_chapter_1_verse_${i}`;
+          const nextVerse = `bhagavad_gita_chapter_1_verse_${i + 1}`;
+          templates[currentVerse] = nextVerse;
+      }
       return templates[template_name];
     } else if(lang == 'ta') {
       const templates = {
