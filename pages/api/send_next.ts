@@ -904,6 +904,9 @@ async function sendWhatsappMessage() {
       const lastSentTime = new Date(row.lastsenttime);
       const current_time = new Date();
       const dayAgo: Date = new Date(current_time.getTime() - 24 * 60 * 60 * 1000);
+      if(row.phoneNumber) {
+        continue;
+      }
 
       if (!row.lastsenttime || lastSentTime < dayAgo) {
         console.log('Need to send message now!');
@@ -920,8 +923,6 @@ async function sendWhatsappMessage() {
         if(row.email) {
           // email
           await sendNextEmail(row.email, template);
-          continue;
-        } else {
           continue;
         }
 
