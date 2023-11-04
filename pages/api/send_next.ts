@@ -903,9 +903,9 @@ async function sendWhatsappMessage() {
     for (const row of rows) {
       const lastSentTime = new Date(row.lastsenttime);
       const current_time = new Date();
-      const twelveHoursAgo: Date = new Date(current_time.getTime() - 12 * 60 * 60 * 1000);
+      const dayAgo: Date = new Date(current_time.getTime() - 24 * 60 * 60 * 1000);
 
-      if (!row.lastsenttime || lastSentTime < twelveHoursAgo) {
+      if (!row.lastsenttime || lastSentTime < dayAgo) {
         console.log('Need to send message now!');
         const oldTemplate = row.lastsenttemplate.trim();
         console.log(oldTemplate);
@@ -920,6 +920,8 @@ async function sendWhatsappMessage() {
         if(row.email) {
           // email
           await sendNextEmail(row.email, template);
+          continue;
+        } else {
           continue;
         }
 
