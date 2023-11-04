@@ -904,7 +904,7 @@ async function sendWhatsappMessage() {
       const lastSentTime = new Date(row.lastsenttime);
       const current_time = new Date();
       const dayAgo: Date = new Date(current_time.getTime() - 24 * 60 * 60 * 1000);
-      if(row.phoneNumber) {
+      if(row.phonenumber) {
         continue;
       }
 
