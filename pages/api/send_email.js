@@ -156,11 +156,11 @@ function getMessageForTemplateName(templateName) {
       namaste_with_book_intro: "Welcome to the enlightening journey! You're now subscribed to receive one verse a day from the Bhagavad Gita, Vedas, Upanishads. Let the transformation begin! 🙏📖✨",
       namaste_first_message: `Namaste 🙏
 
-Welcome to the sacred journey with SanatanaDharma.xyz. We are thrilled to have you as part of our spiritual community, and your subscription means that you will now receive a daily dose of wisdom from the Bhagavad Gita, Vedas, and Upanishads. These ancient texts are profound sources of spiritual insight and guidance, and we believe that by immersing yourself in their timeless teachings, you are embarking on a transformative journey. Each verse you receive will be a nugget of ancient wisdom that can help you navigate life's challenges, find inner peace, and explore the depths of your own spirituality.
+Welcome to SanatanaDharma.xyz! Your subscription ensures daily wisdom from the Bhagavad Gita, Vedas, and Upanishads, guiding you on a transformative journey.
       
-Sanatana Dharma is more than just a philosophy; it's a way of life that has been followed for millennia, encompassing the eternal truths that underpin our existence. As you embark on this sacred journey, we encourage you to reflect on each verse, meditate upon its meaning, and let it resonate with your inner self. We hope that this daily practice becomes a source of inspiration, bringing you closer to the essence of Sanatana Dharma and fostering a deeper connection with your own spiritual path.
+Sanatana Dharma is more than philosophy; it's a way of life. Reflect on each verse, meditate on its meaning, and let it resonate with your inner self. May this daily practice inspire you, drawing you closer to the essence of Sanatana Dharma and your spiritual path.
       
-Thank you for joining us on this enlightening adventure. May each verse you receive be a beacon of light on your spiritual journey. Let the transformation begin, and may your life be enriched by the wisdom of the ages. We look forward to sharing this journey with you.
+Thank you for joining us on this enlightening journey. May each verse be a beacon on your spiritual path, enriching your life with timeless wisdom.
       
 Best wishes,
 Team SanatanaDharma.xyz
