@@ -8,7 +8,7 @@ const mailerSend = new MailerSend({
 
 function getSubjectFromTemplateName(templateName) {
     const templates = {
-        namaste_first_message: "Discover Ancient Wisdom: Your Daily Verse Subscription",
+        namaste_first_message: "Welcome to Daily Wisdom Subscription 🌞",
         ganapati_welcome: "Exploring Sanatana Dharma: A Journey Guided by Lord Ganapati's Grace 🌟",
         "bhagavad_gita_chapter_1_verse_1": "Diving into the Bhagavad Gita: Chapter 1, Verse 1 – A Gateway to Spiritual Wisdom",
         "bhagavad_gita_chapter_1_verse_2": "Unveiling the Bhagavad Gita: Chapter 1, Verse 2 - Duryodhana's Fateful Decision",
