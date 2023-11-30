@@ -946,11 +946,18 @@ Commentary
         reply_first_message: "ganapati_welcome",
         ganapati_welcome: "bhagavad_gita_chapter_1_verse_1",
       };
-      for (let i = 1; i <= 47; i++) {
+      for (let i = 1; i < 47; i++) {
           const currentVerse = `bhagavad_gita_chapter_1_verse_${i}`;
           const nextVerse = `bhagavad_gita_chapter_1_verse_${i + 1}`;
-          templates[currentVerse] = nextVerse;
+          templates["bhagavad_gita_chapter_1_verse_47"] = "bhagavad_gita_chapter_2_verse_1";
       }
+      templates[currentVerse] = nextVerse;
+      for (let i = 1; i < 72; i++) {
+        const currentVerse = `bhagavad_gita_chapter_2_verse_${i}`;
+        const nextVerse = `bhagavad_gita_chapter_2_verse_${i + 1}`;
+        templates[currentVerse] = nextVerse;
+    }
+
       return templates[template_name];
     } else if(lang == 'ta') {
       const templates = {
