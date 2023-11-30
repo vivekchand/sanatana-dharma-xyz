@@ -56,13 +56,181 @@ function getSubjectFromTemplateName(templateName) {
         "bhagavad_gita_chapter_1_verse_44": "Bhagavad Gita Chapter 1, Verse 44 – The Consequences of Destroyed Family Traditions",
         "bhagavad_gita_chapter_1_verse_45": "Bhagavad Gita Chapter 1, Verse 45 – The Sorrow of Choosing Sin Over Kin",
         "bhagavad_gita_chapter_1_verse_46": "Bhagavad Gita Chapter 1, Verse 46 - Arjuna's Dilemma: To Fight or Not to Fight",
-        "bhagavad_gita_chapter_1_verse_47": "Bhagavad Gita Chapter 1, Verse 47 – Arjuna's Descent into Grief and Confusion"
+        "bhagavad_gita_chapter_1_verse_47": "Bhagavad Gita Chapter 1, Verse 47 – Arjuna's Descent into Grief and Confusion",
+        "bhagavad_gita_chapter_2_verse_1": "Bhagavad Gita Chapter 2, Verse 1 – Understanding Arjuna's Inner Turmoil",
+        "bhagavad_gita_chapter_2_verse_2": "Bhagavad Gita Chapter 2, Verse 2 – Unraveling Arjuna's Despondency",
+        "bhagavad_gita_chapter_2_verse_3": "Bhagavad Gita Chapter 2, Verse 3 – Overcoming Weakness: The Call to Arise",
+        "bhagavad_gita_chapter_2_verse_4": "The Ethical Dilemma of Arjuna: Balancing Duty and Reverence in Bhagavad Gita 2.4",
+        "bhagavad_gita_chapter_2_verse_5": "The Moral Dilemma: Arjuna's Conundrum Between Duty and Compassion in Bhagavad Gita 2.5",
+        "bhagavad_gita_chapter_2_verse_6": "Existential Dilemma: Arjuna's Moral Quandary in Bhagavad Gita 2.6",
+        "bhagavad_gita_chapter_2_verse_7": "Navigating Moral Turmoil: Arjuna's Plea for Guidance in Bhagavad Gita 2.7",
+        "bhagavad_gita_chapter_2_verse_8": "The Inescapable Grip of Grief: Arjuna's Realization in Bhagavad Gita 2.8",
+        "bhagavad_gita_chapter_2_verse_9": "Arjuna's Defiance: The Moment of Silence in Bhagavad Gita 2.9",
+        "bhagavad_gita_chapter_2_verse_10": "Divine Intervention: Krishna's Smiling Response to Arjuna's Despair in Bhagavad Gita 2.10",
+        "bhagavad_gita_chapter_2_verse_11": "The Wisdom of Non-Grief: Understanding the Eternal Perspective in Bhagavad Gita 2.11",
+        "bhagavad_gita_chapter_2_verse_12": "Eternal Existence: Unraveling the Immutable Nature of the Self in Bhagavad Gita 2.12",
     };
     return templates[templateName] || "Template not found.";
 }
 
 function getMessageForTemplateName(templateName) {
     const templates = {
+      bhagavad_gita_chapter_2_verse_1: `Bhagavad Gita Chapter 2, Verse 1
+      
+सञ्जय उवाच तं तथा कृपयाऽविष्टमश्रुपूर्णाकुलेक्षणम्। विषीदन्तमिदं वाक्यमुवाच मधुसूदनः।।2.1।।
+
+sañjaya uvācha taṁ tathā kṛipayāviṣhṭamaśhru pūrṇākulekṣhaṇam viṣhīdantamidaṁ vākyam uvācha madhusūdanaḥ
+
+sañjayaḥ uvācha—Sanjay said; tam—to him (Arjun); tathā—thus; kṛipayā—with pity; āviṣhṭam—overwhelmed; aśhru-pūrṇa—full of tears; ākula—distressed; īkṣhaṇam—eyes; viṣhīdantam—grief-stricken; idam—these; vākyam—words; uvācha—said; madhusūdanaḥ—Shree Krishn, slayer of the Madhu demon
+
+Translation
+Sanjaya said: To him, who was thus overcome with pity, despondent, with eyes full of tears and agitated, Madhusudana (the destroyer of Madhu) or Krishna spoke these words.
+
+Commentary
+2.1 तम् to him? तथा thus? कृपया with pity? आविष्टम् overcome? अश्रुपूर्णाकुलेक्षणम् with eyes filled with tears and agitated? विषीदन्तम् despondent? इदम् this? वाक्यम् speech? उवाच spoke? मघुसूदनः Madhusudana.No commentary.`,
+      bhagavad_gita_chapter_2_verse_2: `BG 2.2
+      
+श्री भगवानुवाच कुतस्त्वा कश्मलमिदं विषमे समुपस्थितम्। अनार्यजुष्टमस्वर्ग्यमकीर्तिकरमर्जुन।।2.2।।
+
+śhrī bhagavān uvācha kutastvā kaśhmalamidaṁ viṣhame samupasthitam anārya-juṣhṭamaswargyam akīrti-karam arjuna
+
+śhrī-bhagavān uvācha—the Supreme Lord said; kutaḥ—wherefrom; tvā—to you; kaśhmalam—delusion; idam—this; viṣhame—in this hour of peril; samupasthitam—overcome; anārya—crude person; juṣhṭam—practiced; aswargyam—which does not lead to the higher abodes; akīrti-karam—leading to disgrace; arjuna—Arjun
+
+Translation
+The Blessed Lord said, "From whence has this perilous strait come upon you, this dejection which is unworthy of you, disgraceful, and which will close the gates of heaven upon you, O Arjuna?"
+
+Commentary
+2.2 कुतः whence? त्वा upon thee? कश्मलम् dejection? इदम् this? विषमे in perilous strait? समुपस्थितम् comes? अनार्यजुष्टम् unworthy (unaryanlike)? अस्वर्ग्यम् heavenexcluding? अकीर्तिकरम् disgraceful? अर्जुन O Arjuna.No commentary.`,
+      bhagavad_gita_chapter_2_verse_3: `BG 2.3
+क्लैब्यं मा स्म गमः पार्थ नैतत्त्वय्युपपद्यते। क्षुद्रं हृदयदौर्बल्यं त्यक्त्वोत्तिष्ठ परन्तप।।2.3।।
+
+klaibyaṁ mā sma gamaḥ pārtha naitat tvayyupapadyate kṣhudraṁ hṛidaya-daurbalyaṁ tyaktvottiṣhṭha parantapa
+
+klaibyam—unmanliness; mā sma—do not; gamaḥ—yield to; pārtha—Arjun, the son of Pritha; na—not; etat—this; tvayi—to you; upapadyate—befitting; kṣhudram—petty; hṛidaya—heart; daurbalyam—weakness; tyaktvā—giving up; uttiṣhṭha—arise; param-tapa—conqueror of enemies
+
+Translation
+Do not yield to impotence, O Arjuna, son of Pritha. It does not befit you. Cast off this mean weakness of the heart! Stand up, O conqueror of foes!
+
+Commentary
+2.3 क्लैब्यम् impotence? मा स्म गमः do not get? पार्थ O Partha? न not? एतत् this? त्वयि in thee? उपपद्यते is fitting? क्षुद्रम् mean? हृदयदौर्बल्यम् weakness of the heart? त्यक्त्वा having abandoned? उत्तिष्ठ stand up? परन्तप O scorcher of the foes.No commentary.`,
+      bhagavad_gita_chapter_2_verse_4: `BG 2.4
+अर्जुन उवाच कथं भीष्ममहं संख्ये द्रोणं च मधुसूदन। इषुभिः प्रतियोत्स्यामि पूजार्हावरिसूदन।।2.4।।
+
+arjuna uvācha kathaṁ bhīṣhmam ahaṁ sankhye droṇaṁ cha madhusūdana iṣhubhiḥ pratiyotsyāmi pūjārhāvari-sūdana
+
+arjunaḥ uvācha—Arjun said; katham—how; bhīṣhmam—Bheeshma; aham—I; sankhye—in battle; droṇam—Dronacharya; cha—and; madhu-sūdana—Shree Krishn, slayer of the Madhu demon; iṣhubhiḥ—with arrows; pratiyotsyāmi—shall I shoot; pūjā-arhau—worthy of worship; ari-sūdana—destroyer of enemies
+
+Translation
+Arjuna said, "O Madhusudana, how can I fight in battle with arrows against Bhishma and Drona, who are worthy of being worshipped, O destroyer of enemies?"
+
+Commentary
+2.4 कथम् how? भीष्मम् Bhishma? अहम् I? संख्ये in battle? द्रोणम् Drona? च and? मधुसूदन O Madhusudana? इषुभिः with arrows? प्रतियोत्स्यामि shall fight? पूजार्हौ worthy to be worshipped? अरिसूदन O destroyer of enemies.No commentary.`,
+      bhagavad_gita_chapter_2_verse_5: `BG 2.5
+गुरूनहत्वा हि महानुभावान् श्रेयो भोक्तुं भैक्ष्यमपीह लोके। हत्वार्थकामांस्तु गुरूनिहैव भुञ्जीय भोगान् रुधिरप्रदिग्धान्।।2.5।।
+
+gurūnahatvā hi mahānubhāvān śhreyo bhoktuṁ bhaikṣhyamapīha loke hatvārtha-kāmāṁstu gurūnihaiva bhuñjīya bhogān rudhira-pradigdhān
+
+gurūn—teachers; ahatvā—not killing; hi—certainly; mahā-anubhāvān—noble elders; śhreyaḥ—better; bhoktum—to enjoy life; bhaikṣhyam—by begging; api—even; iha loke—in this world; hatvā—killing; artha—gain; kāmān—desiring; tu—but; gurūn—noble elders; iha—in this world; eva—certainly; bhuñjīya—enjoy; bhogān—pleasures; rudhira—blood; pradigdhān—tainted with
+
+Translation
+Better it is, indeed, in this world to accept alms than to slay the most noble teachers. But if I were to kill them, even in this world, all my enjoyments of wealth and fulfilled desires would be stained with their blood.
+
+Commentary
+2.5 गुरून् the Gurus (teachers)? अहत्वा instead of slaying? हि indeed? महानुभावान् most noble? श्रेयः better? भोक्तुम् to eat? भैक्ष्यम् alms? अपि even? इह here? लोके in the world? हत्वा having slain? अर्थकामान् desirous of wealth? तु indeed? गुरून् Gurus? इह here? एव also? भुञ्जीय enjoy? भोगान् enjoyments? रुधिरप्रदिग्धान् stained with blood.No commentary.`,
+      bhagavad_gita_chapter_2_verse_6: `BG 2.6
+न चैतद्विद्मः कतरन्नो गरीयो यद्वा जयेम यदि वा नो जयेयुः। यानेव हत्वा न जिजीविषाम स्तेऽवस्थिताः प्रमुखे धार्तराष्ट्राः।।2.6।।
+
+na chaitadvidmaḥ kataranno garīyo yadvā jayema yadi vā no jayeyuḥ yāneva hatvā na jijīviṣhāmas te ’vasthitāḥ pramukhe dhārtarāṣhṭrāḥ
+
+na—not; cha—and; etat—this; vidmaḥ—we know; katarat—which; naḥ—for us; garīyaḥ—is preferable; yat vā—whether; jayema—we may conquer; yadi—if; vā—or; naḥ—us; jayeyuḥ—they may conquer; yān—whom; eva—certainly; hatvā—after killing; na—not; jijīviṣhāmaḥ—we desire to live; te—they; avasthitāḥ—are standing; pramukhe—before us; dhārtarāṣhṭrāḥ—the sons of Dhritarashtra
+
+Translation
+I can hardly tell which would be better, that we should conquer them or that they should conquer us. Even the sons of Dhritarashtra, whom we do not wish to slay, stand facing us.
+
+Commentary
+2.6 न not? च and? एतत् this? विद्मः (we) know? कतरत् which? नः for us? गरीयः better? यत् that? वा or? जयेम we should coner? यदि if? वा or? नः us? जयेयुः they should coner? यान् whom? एव even? हत्वा having slain? न not? जिजीविषामः we wish to live? ते those? अवस्थिताः (are) standing? प्रमुखे in face? धार्तराष्ट्राः sons of Dhritarashtra.No commentary.`,
+      bhagavad_gita_chapter_2_verse_7: `BG 2.7
+      
+कार्पण्यदोषोपहतस्वभावः पृच्छामि त्वां धर्मसंमूढचेताः। यच्छ्रेयः स्यान्निश्िचतं ब्रूहि तन्मे शिष्यस्तेऽहं शाधि मां त्वां प्रपन्नम्।।2.7।।
+
+kārpaṇya-doṣhopahata-svabhāvaḥ pṛichchhāmi tvāṁ dharma-sammūḍha-chetāḥ yach-chhreyaḥ syānniśhchitaṁ brūhi tanme śhiṣhyaste ’haṁ śhādhi māṁ tvāṁ prapannam
+
+kārpaṇya-doṣha—the flaw of cowardice; upahata—besieged; sva-bhāvaḥ—nature; pṛichchhāmi—I am asking; tvām—to you; dharma—duty; sammūḍha—confused; chetāḥ—in heart; yat—what; śhreyaḥ—best; syāt—may be; niśhchitam—decisively; brūhi—tell; tat—that; me—to me; śhiṣhyaḥ—disciple; te—your; aham—I; śhādhi—please instruct; mām—me; tvām—unto you; prapannam—surrendered
+
+Translation
+My heart is overpowered by the taint of pity; my mind is confused as to my duty. I ask Thee: Tell me decisively what is good for me. I am Thy disciple; instruct me, who has taken refuge in Thee.
+
+Commentary
+2.7 कार्पण्यदोषोपहतस्वभावः with nature overpowered by the taint of pity? पृच्छामि I ask? त्वाम् Thee? धर्मसंमूढचेताः with a mind in confusion about duty? यत् which? श्रेयः good? स्यात् may be? निश्चितम् decisively? ब्रूहि say? तत् that? मे for me? शिष्यः disciple? ते Thy? अहम् I? शाधि teach? माम् me? त्वाम् to Thee? प्रपन्नम् taken refuge.No commentary.`,
+      bhagavad_gita_chapter_2_verse_8: `BG 2.8
+      
+न हि प्रपश्यामि ममापनुद्या द्यच्छोकमुच्छोषणमिन्द्रियाणाम्। अवाप्य भूमावसपत्नमृद्धम् राज्यं सुराणामपि चाधिपत्यम्।।2.8।।
+
+na hi prapaśhyāmi mamāpanudyād yach-chhokam uchchhoṣhaṇam-indriyāṇām avāpya bhūmāv-asapatnamṛiddhaṁ rājyaṁ surāṇāmapi chādhipatyam
+
+na—not; hi—certainly; prapaśhyāmi—I see; mama—my; apanudyāt—drive away; yat—which; śhokam—anguish; uchchhoṣhaṇam—is drying up; indriyāṇām—of the senses; avāpya—after achieving; bhūmau—on the earth; asapatnam—unrivalled; ṛiddham—prosperous; rājyam—kingdom; surāṇām—like the celestial gods; api—even; cha—also; ādhipatyam—sovereignty
+
+Translation
+I do not see that this sorrow that burns up my senses would be removed, even if I were to attain prosperous and unrivaled dominion on earth or lordship over the gods.
+
+Commentary
+2.8 न हि not? प्रपश्यामि I see? मम my? अपनुद्यात् would remove? यत् that? शोकम् grief? उच्छोषणम् drying up? इन्द्रियाणाम् of my senses? अवाप्य having obtained? भूमौ on the earth? असपत्नम् unrivalled? ऋद्धम् prosperous? राज्यम् dominion? सुराणाम् over the gods? अपि even? च and? आधिपत्यम् lordship.No commentary.`,
+      bhagavad_gita_chapter_2_verse_9: `BG 2.9
+सञ्जय उवाच एवमुक्त्वा हृषीकेशं गुडाकेशः परन्तप। न योत्स्य इति गोविन्दमुक्त्वा तूष्णीं बभूव ह।।2.9।।
+
+sañjaya uvācha evam-uktvā hṛiṣhīkeśhaṁ guḍākeśhaḥ parantapa na yotsya iti govindam uktvā tūṣhṇīṁ babhūva ha
+
+sañjayaḥ uvācha—Sanjay said; evam—thus; uktvā—having spoken; hṛiṣhīkeśham—to Shree Krishna, the master of the mind and senses; guḍākeśhaḥ—Arjun, the conquerer of sleep; parantapaḥ—Arjun, the chastiser of the enemies; na yotsye—I shall not fight; iti—thus; govindam—Krishna, the giver of pleasure to the senses; uktvā—having addressed; tūṣhṇīm—silent; babhūva—became ha
+
+Translation
+Sanjaya said: Having spoken thus to Hrishikesha, the Lord of the senses, Arjuna, the conqueror of sleep and destroyer of foes, said, "I will not fight," and became silent.
+
+Commentary
+2.9 एवम् thus? उक्त्वा having spoken? हृषीकेशम् to Hrishikesha? गुडाकेशः Arjuna (the coneror of sleep)? परन्तप destroyer of foes? न योत्स्ये I will not fight? इति thus? गोविन्दम् to Govinda? उक्त्वा having said? तूष्णीम् silent? बभूव ह became.No commentary.`,
+      bhagavad_gita_chapter_2_verse_10: `BG 2.10
+तमुवाच हृषीकेशः प्रहसन्निव भारत। सेनयोरुभयोर्मध्ये विषीदन्तमिदं वचः।।2.10।।
+
+tam-uvācha hṛiṣhīkeśhaḥ prahasanniva bhārata senayorubhayor-madhye viṣhīdantam-idaṁ vachaḥ
+
+tam—to him; uvācha—said; hṛiṣhīkeśhaḥ—Shree Krishna, the master of mind and senses; prahasan—smilingly; iva—as if; bhārata—Dhritarashtra, descendant of Bharat; senayoḥ—of the armies; ubhayoḥ—of both; madhye—in the midst of; viṣhīdantam—to the grief-stricken; idam—this; vachaḥ—words
+
+Translation
+To him who was despondent in the midst of the two armies, Krishna, smiling, O Bharata, spoke these words.
+
+Commentary
+2.10 तम् to him? उवाच spoke? हृषीकेशः Hrishikesha? प्रहसन् smiling? इव as it were? भारत O Bharata? सेनयोः of the armies? उभयोः (of) both? मध्ये in the middle? विषीदन्तम् despondent? इदम् this? वचः word.No commentary.`,
+      bhagavad_gita_chapter_2_verse_11: `BG 2.11
+      
+श्री भगवानुवाच अशोच्यानन्वशोचस्त्वं प्रज्ञावादांश्च भाषसे। गतासूनगतासूंश्च नानुशोचन्ति पण्डिताः।।2.11।।
+
+śhrī bhagavān uvācha aśhochyān-anvaśhochas-tvaṁ prajñā-vādānśh cha bhāṣhase gatāsūn-agatāsūnśh-cha nānuśhochanti paṇḍitāḥ
+
+śhrī-bhagavān uvācha—the Supreme Lord said; aśhochyān—not worthy of grief; anvaśhochaḥ—are mourning; tvam—you; prajñā-vādān—words of wisdom; cha—and; bhāṣhase—speaking; gata āsūn—the dead; agata asūn—the living; cha—and; na—never; anuśhochanti—lament; paṇḍitāḥ—the wise
+
+Translation
+The Blessed Lord said, "You have grieved for those who should not be grieved for; yet, you speak words of wisdom. The wise grieve neither for the living nor for the dead."
+
+Commentary
+2.11 अशोच्यान् those who should not be grieved for? अन्वशोचः hast grieved? त्वम् thou? प्रज्ञावादान् words of wisdom? च and? भाषसे speakest? गतासून् the dead? अगतासून् the living? च and? न अनुशोचन्ति grieve not? पण्डिताः the wise.Commentary -- The philosophy of the Gita begins from this verse.Bhishma and Drona deserve no grief because they are eternal in their real nature and they are virtuous men
+
+who possess very good conduct. Though you speak words of wisdom? you are unwise because you grieve for those who are really eternal and who deserve no grief. They who are endowed with the knowledge of the Self are wise men. They will not grieve for the living or for the dead because they know well that the Self is immortal and that It is unborn. They also know that there is no such a thing as death?
+
+that it is a separation of the astral body from the physical? that death is nothing more than a disintegration of matter and that the five elements of which the body is composed return to their source. Arjuna had forgotten the eternal nature of the Soul and the changing nature of the body. Because of his ignorance? he began to act as if the temporary relations with kinsmen? teachers? etc.? were permanent.
+
+He forgot that his relations with this world in his present life were the results of past actions. These? when exhausted? end all relationship and new ones ones crop up when one takes on another body.The result of past actions is known as karm and that portion of the karma which gave rise to the present incarnation is known as prarabdha karma.`,
+      bhagavad_gita_chapter_2_verse_12: `BG 2.12
+      
+न त्वेवाहं जातु नासं न त्वं नेमे जनाधिपाः। न चैव न भविष्यामः सर्वे वयमतः परम्।।2.12।।
+
+na tvevāhaṁ jātu nāsaṁ na tvaṁ neme janādhipāḥ na chaiva na bhaviṣhyāmaḥ sarve vayamataḥ param
+
+na—never; tu—however; eva—certainly; aham—I; jātu—at any time; na—nor; āsam—exist; na—nor; tvam—you; na—nor; ime—these; jana-adhipāḥ—kings; na—never; cha—also; eva—indeed; na bhaviṣhyāmaḥ—shall not exist; sarve vayam—all of us; ataḥ—from now; param—after
+
+Translation
+Nor, at any time, was I not, nor thou, nor these rulers of men; nor, verily, shall we ever cease to be hereafter.
+
+Commentary
+2.12 न not? तु indeed? एव also? अहम् I? जातु at any time? न not? आसम् was? न not? त्वम् thou? न not? इमे these? जनाधिपाः rulers of men? न not? च and? एव also? न not? भविष्यामः shall be? सर्वे all? वयम् we? अतः from this time? परम् after.Commentary -- Lord Krishna speaks here of the immortality of the Soul or the imperishable nature of the Self (Atman). The Soul exists in the three periods of time (past? present and future). Man continues to exist even after the death of the physical body. There is life beyond.`,
       bhagavad_gita_chapter_1_verse_1: `Bhagavad Gita Chapter 1, Verse 1 sets the stage for the epic conversation between Lord Krishna and Arjuna on the battlefield of Kurukshetra. Dhritarashtra, the blind king, asks his charioteer Sanjaya about the events on the battlefield. He wants to know what his sons, the Kauravas, and the Pandavas, the sons of Pandu, are doing as they prepare for battle. This verse serves as an introduction to the subsequent chapters where Lord Krishna imparts wisdom and guidance to Arjuna, who is torn by moral dilemmas. The dialogue between Lord Krishna and Arjuna forms the essence of the Bhagavad Gita, offering insights into life, duty, righteousness, and spirituality.
   
   धृतराष्ट्र उवाच |
