@@ -947,14 +947,14 @@ Commentary
         ganapati_welcome: "bhagavad_gita_chapter_1_verse_1",
       };
       for (let i = 1; i < 47; i++) {
-          const currentVerse = `bhagavad_gita_chapter_1_verse_${i}`;
-          const nextVerse = `bhagavad_gita_chapter_1_verse_${i + 1}`;
-          templates["bhagavad_gita_chapter_1_verse_47"] = "bhagavad_gita_chapter_2_verse_1";
+          let currentVerse = `bhagavad_gita_chapter_1_verse_${i}`;
+          let nextVerse = `bhagavad_gita_chapter_1_verse_${i + 1}`;
+          templates[currentVerse] = nextVerse;
       }
-      templates[currentVerse] = nextVerse;
+      templates["bhagavad_gita_chapter_1_verse_47"] = "bhagavad_gita_chapter_2_verse_1";
       for (let i = 1; i < 72; i++) {
-        const currentVerse = `bhagavad_gita_chapter_2_verse_${i}`;
-        const nextVerse = `bhagavad_gita_chapter_2_verse_${i + 1}`;
+        let currentVerse = `bhagavad_gita_chapter_2_verse_${i}`;
+        let nextVerse = `bhagavad_gita_chapter_2_verse_${i + 1}`;
         templates[currentVerse] = nextVerse;
     }
 
