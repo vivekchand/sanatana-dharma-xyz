@@ -84,7 +84,24 @@ function getSubjectFromTemplateName(templateName) {
         "bhagavad_gita_chapter_2_verse_25": "BG 2.25: The Unmanifested, Inconceivable Self",
         "bhagavad_gita_chapter_2_verse_26": "BG 2.26: Immortality Despite Birth and Death",
         "bhagavad_gita_chapter_2_verse_27": "BG 2.27: Inevitability of Birth and Death",
-        "bhagavad_gita_chapter_2_verse_28": "BG 2.28: Unmanifest, Manifest, and Unmanifest Again"
+        "bhagavad_gita_chapter_2_verse_28": "BG 2.28: Unmanifest, Manifest, and Unmanifest Again",
+        "bhagavad_gita_chapter_2_verse_29": "BG 2.29: The Marvel of the Soul and Its Incomprehensibility",
+        "bhagavad_gita_chapter_2_verse_30": "BG 2.30: The Immortal Soul Within the Body",
+        "bhagavad_gita_chapter_2_verse_31": "BG 2.31: Duty of a Kshatriya and the Righteous War",
+        "bhagavad_gita_chapter_2_verse_32": "BG 2.32: The Auspiciousness of Righteous Battle",
+        "bhagavad_gita_chapter_2_verse_33": "BG 2.33: Consequences of Avoiding Righteous Action",
+        "bhagavad_gita_chapter_2_verse_34": "BG 2.34: Slander and Its Consequences",
+        "bhagavad_gita_chapter_2_verse_35": "BG 2.35: Joy and Sorrow in Battle",
+        "bhagavad_gita_chapter_2_verse_36": "BG 2.36: The Pain of Dishonor",
+        "bhagavad_gita_chapter_2_verse_37": "BG 2.37: Attaining Heaven or Victory in Battle",
+        "bhagavad_gita_chapter_2_verse_38": "BG 2.38: Equanimity in the Midst of Dualities",
+        "bhagavad_gita_chapter_2_verse_39": "BG 2.39: The Wisdom of Sankhya and Yoga",
+        "bhagavad_gita_chapter_2_verse_40": "BG 2.40: No Loss in Righteous Action",
+        "bhagavad_gita_chapter_2_verse_41": "BG 2.41: Determination of the Irresolute",
+        "bhagavad_gita_chapter_2_verse_42": "BG 2.42: Flowery Speech of the Unwise",
+        "bhagavad_gita_chapter_2_verse_43": "BG 2.43: Desires and Rituals for Pleasure and Power",
+        "bhagavad_gita_chapter_2_verse_44": "BG 2.44: Unsteady Reason of Pleasure-Seekers",
+        "bhagavad_gita_chapter_2_verse_45": "BG 2.45: Transcending the Three Gunas"
     };
     return templates[templateName] || "Template not found.";
 }
