@@ -202,14 +202,6 @@ export default function Home() {
         <Navbar />
         <div className="flex-1 overflow-auto sm:px-10 pb-4 sm:pb-10" style={{backgroundColor: "#f9f4f0"}}>
           <div className="mx-auto mt-4 sm:mt-12">
-          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6557627020167681"
-            crossOrigin="anonymous"></script>
-          <ins className="adsbygoogle"
-              style={{display:"block"}}
-              data-ad-format="fluid"
-              data-ad-layout-key="-gw-3+1f-3d+2z"
-              data-ad-client="ca-pub-6557627020167681"
-              data-ad-slot="7809100071"></ins>
           <script>
             {`
               (adsbygoogle = window.adsbygoogle || []).push({});
