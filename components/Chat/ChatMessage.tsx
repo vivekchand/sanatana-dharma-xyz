@@ -7,9 +7,9 @@ interface Props {
 
 export const ChatMessage: FC<Props> = ({ message }) => {
   return (
-    <div className={`flex flex-col ${message.role === "assistant" ? "items-start" : "items-end"}`}>
+    <div className={`flex flex-col ${message.role === "assistant" ? "items-start" : "items-end"} animate-fadeIn`}>
       <div
-        className={`flex items-center ${message.role === "assistant" ? "bg-neutral-200 text-white" : "bg-blue-500 text-white"} rounded-2xl px-3 py-2 max-w-[67%] whitespace-pre-wrap`}
+        className={`flex items-center ${message.role === "assistant" ? "bg-neutral-200 text-white" : "bg-blue-500 text-white"} rounded-2xl px-4 py-3 max-w-[67%] whitespace-pre-wrap shadow-md transform transition-all duration-200 hover:scale-[1.02]`}
         style={{ overflowWrap: "anywhere", maxWidth: '77%', background: message.role === "assistant"? "#3d348b": "#fac054", color: message.role === "assistant"? "wheat": "black" }}
       >
         {message.content}
