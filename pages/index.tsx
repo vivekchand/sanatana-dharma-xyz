@@ -50,10 +50,10 @@ export default function Home() {
     }
   }
 
-  // Load the subscription popup state from local storage
-  useEffect(() => {
-    showPopup();
-  }, []);
+  // Subscription popup on load disabled
+  // useEffect(() => {
+  //   showPopup();
+  // }, []);
 
   // Function to handle closing the subscription popup
   const handleCloseSubscriptionPopup = () => {
